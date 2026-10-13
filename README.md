@@ -1,6 +1,6 @@
 # Portfolio status
 
-Updated 2026-10-13 19:52 CEST. Generated on the N100 from the ledger; decisions are executed by the paper execution system (no broker).
+Updated 2026-10-13 20:00 CEST. Generated on the N100 from the ledger; decisions are executed by the paper execution system (no broker).
 
 ![Equity vs benchmark](charts/equity.svg)
 
