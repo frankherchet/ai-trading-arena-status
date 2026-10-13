@@ -1,4 +1,4 @@
-# beta
+# Beta
 
 [← overview](../README.md)
 
@@ -9,6 +9,12 @@
 Cash: 100,000.00
 
 No open positions.
+
+## Trades and costs
+
+Costs so far: fees 0.00 EUR + spread 0.00 EUR = 0.00 EUR (policy –)
+
+No trades yet.
 
 ## Memory (memento)
 
