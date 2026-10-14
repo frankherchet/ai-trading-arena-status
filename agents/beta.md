@@ -34,6 +34,8 @@ Reference: iShares Core MSCI World UCITS ETF (Acc) · fill session 2026-10-13
 
 > Retain 100% cash pending timely prices and verifiable, cutoff-compliant catalyst evidence. Confidence describes the directional forecast, not confidence that prices will remain flat. Challenge: cash may underperform a rally, and stale data alone is not an economic reason to avoid equities; nevertheless, the available evidence does not justify selecting a position or using knockout leverage.
 
+**Outcome:** 2026-10-09 → 2026-10-13, +0.08 % (NEUTRAL), forecast correct
+
 
 ## Runs (latest 20)
 

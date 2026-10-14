@@ -1,13 +1,13 @@
 # The arena at a glance
 
-Updated 2026-10-13 20:54 CEST. Generated from the ledger; decisions are executed by the paper execution system (no broker).
+Updated 2026-10-14 06:03 CEST. Generated from the ledger; decisions are executed by the paper execution system (no broker).
 
 Paper-trading research · Virtual capital only.
 
 <div class="metric-grid">
-<div class="metric-card alpha"><span class="eyebrow">Free researcher</span><a href="agents/alpha.md">Alpha</a><span class="metric-value">100,000.00 <small>EUR</small></span><span class="metric-return">0.0 % return</span><small>Valuation: 2026-10-09 · complete · –</small></div>
-<div class="metric-card beta"><span class="eyebrow">News &amp; fundamentals</span><a href="agents/beta.md">Beta</a><span class="metric-value">100,000.00 <small>EUR</small></span><span class="metric-return">0.0 % return</span><small>Valuation: 2026-10-09 · complete · –</small></div>
-<div class="metric-card gamma"><span class="eyebrow">Synthetic knock-outs</span><a href="agents/gamma.md">Gamma</a><span class="metric-value">100,000.00 <small>EUR</small></span><span class="metric-return">0.0 % return</span><small>Valuation: 2026-10-09 · complete · –</small></div>
+<div class="metric-card alpha"><span class="eyebrow">Free researcher</span><a href="agents/alpha.md">Alpha</a><span class="metric-value">100,000.00 <small>EUR</small></span><span class="metric-return">0.0 % return</span><small>Valuation: 2026-10-13 · complete · –</small></div>
+<div class="metric-card beta"><span class="eyebrow">News &amp; fundamentals</span><a href="agents/beta.md">Beta</a><span class="metric-value">100,000.00 <small>EUR</small></span><span class="metric-return">0.0 % return</span><small>Valuation: 2026-10-13 · complete · –</small></div>
+<div class="metric-card gamma"><span class="eyebrow">Synthetic knock-outs</span><a href="agents/gamma.md">Gamma</a><span class="metric-value">100,000.00 <small>EUR</small></span><span class="metric-return">0.0 % return</span><small>Valuation: 2026-10-13 · complete · –</small></div>
 </div>
 
 ## Equity trajectory
@@ -26,9 +26,10 @@ Each series starts at 100 at its first observation. Gaps in source data require 
 
 ## Data
 
-- Latest price session: 2026-10-13 (expected: 2026-10-12); quality labels are on each agent page
+- Latest price session: 2026-10-13 (expected: 2026-10-13); quality labels are on each agent page
 - Benchmark: iShares Core MSCI World UCITS ETF (Acc) (IE00B4L5Y983)
 - Execution costs (pre-tax), policy 2026-10-13.5: Trade Republic, best-price routing (2026): 0 EUR commission plus 1 EUR external-cost flat fee per trade (broker comparison sites, 2026); ING Direkt-Depot, direct trading (2026): 4.90 EUR plus 0.25 % of the order value, at most 69.90 EUR per order; no venue fee in direct trading (ing.de, 2026)
-- Last yahoo-chart collection: complete at 2026-10-13 18:39 CEST
+- Last rss collection: complete at 2026-10-14 06:02 CEST
+- Last yahoo-chart collection: complete at 2026-10-14 06:00 CEST
 
 Weekly reviews: [reports/](reports/)

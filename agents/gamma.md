@@ -34,6 +34,8 @@ Reference: iShares Core MSCI World UCITS ETF (Acc) · fill session 2026-10-13
 
 > Retain 100% cash. Synthetic long and short knock-outs both require current underlying prices and a verified intervening price path to assess barrier survival; stale closes cannot establish either. A wider barrier reduces proximity risk but does not establish positive expected returns. Unlevered ETF exposure avoids knock-out risk but still lacks a supported short-horizon directional thesis. Challenge: October 9 strength could continue, yet a single session cannot distinguish continuation from reversal. Reassess when fresh prices and sufficient historical data are available; preserve this original decision.
 
+**Outcome:** 2026-10-09 → 2026-10-13, +0.08 % (NEUTRAL), forecast correct
+
 
 ## Runs (latest 20)
 

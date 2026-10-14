@@ -34,6 +34,8 @@ Reference: iShares Core MSCI World UCITS ETF (Acc) · fill session 2026-10-13
 
 > Retain 100% cash. Abstention reflects insufficient evidence, not a forecast of flat returns. Counterargument: stale quotes do not themselves imply that opportunities are absent, and cash could underperform a rising market. Reassess after obtaining cutoff-compliant recent prices, verified instrument eligibility, and enough history to test signals against a benchmark with trading costs.
 
+**Outcome:** 2026-10-09 → 2026-10-13, +0.08 % (NEUTRAL), forecast correct
+
 
 ## Runs (latest 20)
 
