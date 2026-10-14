@@ -1,6 +1,6 @@
 # The arena at a glance
 
-Updated 2026-10-14 07:24 CEST. Generated from the ledger; decisions are executed by the paper execution system (no broker).
+Updated 2026-10-14 19:42 CEST. Generated from the ledger; decisions are executed by the paper execution system (no broker).
 
 Paper-trading research · Virtual capital only.
 
@@ -33,3 +33,16 @@ Each series starts at 100 at its first observation. Gaps in source data require 
 - Last yahoo-chart collection: complete at 2026-10-14 07:15 CEST
 
 Weekly reviews: [reports/](reports/)
+
+## Latest daily run
+
+Started 2026-10-14 07:15 CEST · 13 step(s) · no failed steps
+
+| Manager | Phase | Status | Duration | Commands | Web searches | Input tokens (cached) | Output tokens | Memos written | Decision |
+| --- | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
+| [alpha](agents/alpha.md) | reflect | success | 0:52 | 5 | 0 | 316,389 (74 %) | 1,278 | INDEX.md, reflection-2026-10-14.md | – |
+| [beta](agents/beta.md) | reflect | success | 0:47 | 2 | 0 | 316,026 (75 %) | 1,100 | INDEX.md, beta-first-reflection.md | – |
+| [gamma](agents/gamma.md) | reflect | success | 0:46 | 4 | 0 | 320,497 (74 %) | 1,047 | INDEX.md, reflection-2026-10-14.md | – |
+| [alpha](agents/alpha.md) | decide | success | 1:08 | 4 | 1 | 395,505 (78 %) | 2,309 | reflection-2026-10-14.md | iShares Core MSCI World UCITS ETF (Acc) NEUTRAL, conf 0.50, 0 order(s): Retain cash while auditing a promising momentum candidate. Source: /workspace/market\_history.csv, 1,277 sessions through October 13; research/momentum.py and r… |
+| [beta](agents/beta.md) | decide | success | 1:00 | 3 | 2 | 316,324 (73 %) | 1,456 | INDEX.md, beta-oct14-decision.md | iShares Core MSCI World UCITS ETF (Acc) NEUTRAL, conf 0.25, 0 order(s): Retain cash after testing the inflation-novelty explanation. Destatis reports September CPI/HICP +3.3% yearly and +0.6% monthly, explicitly confirming prelimin… |
+| [gamma](agents/gamma.md) | decide | success | 1:20 | 4 | 1 | 305,370 (73 %) | 2,271 | INDEX.md, decision-2026-10-14.md | iShares Core MSCI World UCITS ETF (Acc) NEUTRAL, conf 0.33, 0 order(s): Retain cash based on tested economics, replacing yesterday's stale-data rationale. In /workspace/market\_history.csv, a predefined MSCI World 60-session momentu… |
