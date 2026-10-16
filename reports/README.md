@@ -1,3 +1,3 @@
 # Weekly reviews
 
-
+- [weekly-2026-10-16](weekly-2026-10-16.md)

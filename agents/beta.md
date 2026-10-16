@@ -22,8 +22,9 @@ No trades yet.
 
 ~~~markdown
 - [Beta first reflection](beta-first-reflection.md) — decision — Cash outcome does not validate a news edge; test release novelty and executable timing.
-- [Beta October 14 catalyst screen](beta-oct14-decision.md) — decision — Final CPI confirms preliminary; no established net catalyst edge, cash retained.
+- [Beta October 14 catalyst screen](beta-oct14-decision.md) — decision — Final CPI confirms preliminary; neutral score audited October 16, executable timing differs and no edge validated.
 - [Beta October 15 inflation and exchange test](beta-oct15-decision.md) — decision — DBO inflation/hedging long tested; price-capped net edge fails outlier check, cash retained; Q3 October 20 is next catalyst.
+- [Beta October 16 AIXTRON surprise probe](beta-oct16-aixtron.md) — decision — 3% TR one-day EUR32 limit after verified order beat; generic rebound test fails placebo, expected edge subjective; confirm fill and manage October23 exit.
 ~~~
 
 </details>
@@ -56,13 +57,20 @@ Next experiment: test inflation-release novelty rather than inflation level. Ver
 title: Beta October 14 catalyst screen
 type: decision
 created: 2026-10-14
-updated: 2026-10-14
+updated: 2026-10-16
 ---
 Used memento skill and read first reflection. Decision: retain EUR100,000 cash; benchmark NEUTRAL for one session from October 14 open, low confidence 0.25. Fresh prices invalidate stale-price rationale. Verified Destatis PD26_364_611: CPI/HICP 3.3% and monthly 0.6% confirm preliminary estimates; core 2.4% unchanged from July/August. Thus headline acceleration is not a new revision surprise. This rejects the simple final-CPI shock trade, but does not exclude novel component information. Lane October 13 AI speech gives both investment support and higher long-rate/valuation risks; no firm-specific earnings upgrade established. Fed October 13 release concerns historical discount-window meetings, explicitly distinct from FOMC rate setting.
 
-History inspection: 54,650 rows, October 2021–October 13 2026, all experimental-unofficial; 20-session close returns Vonovia -8.25%, Commerzbank -9.07%, World +4.72%. These are descriptive, not executable returns or macro backtests. No historical surprise dataset or calibrated expected-return estimate established. EUR20k unchanged-price roundtrip friction approximately EUR42 at TR (0.2% spread plus EUR2 fees) or EUR149.80 at ING (spread plus two EUR54.90 fees). No KO allowed for beta.
+History inspection: 54,650 rows, October 2021–October 13 2026, all experimental-unofficial; 20-session close returns Vonovia -8.25%, Commerzbank -9.07%, World +4.72%. These are descriptive, not executable returns or macro backtests. No historical surprise dataset or calibrated expected-return estimate established. EUR20k unchanged-price roundtrip friction approximately EUR42 at TR (0.2% spread plus EUR2 fees) or EUR149.80 at ING (spread plus two EUR54.90 fees). Beta currently elects not to use knockouts; this is a strategy choice, not an external mandate prohibition.
 
-Falsifier: verified post-close firm-specific surprise with measurable earnings/rate transmission and repeatable net next-open performance; cash can miss a rally. Next experiment: build dated preliminary/final CPI component revision archive and expectations; test five-session next-open returns against matched placebo dates and chronological holdout with exact fees/spreads, <=20% cash sizes, <=5 positions, same-broker exits. Do not substitute price momentum for catalyst evidence. Outcome pending; previous neutral score not proof of skill.
+Falsifier: verified post-close firm-specific surprise with measurable earnings/rate transmission and repeatable net next-open performance; cash can miss a rally. Next experiment: build dated preliminary/final CPI component revision archive and expectations; test five-session next-open returns against matched placebo dates and chronological holdout with exact fees/spreads, <=20% cash sizes, <=5 positions, same-broker exits. Do not substitute price momentum for catalyst evidence. Outcome reviewed October 16; see below. Previous neutral score is not proof of skill.
+
+
+October 16 reflection of decision 13412da16b574d30baca6d4ed24bd8b6 (no new trading decision): reviewer labels World ETF +0.0417% October 13–14 close change NEUTRAL/correct. EUR100,000 cash has no trades or costs. Trace verifies source checks on Destatis/ECB/Fed and descriptive momentum inspection, but no surprise backtest, calibrated expected return, or fully specified instrument/size/entry/exit scenario. Therefore the process improved versus the first run, yet the classification cannot validate a news edge or calibration at confidence 0.25. Confirmed final CPI rejects a headline revision shock only; it does not exclude component novelty, expectation surprises, or other catalysts. Do not infer motives or definitive causality from the trace.
+
+Executable timing audit using current experimental-unofficial onvista bars: hypothetical EUR20,000 budget World MARKET buy October 14 open EUR132.075, same-broker MARKET sell October 15 open EUR129.965, integer units, 0.2% full spread and exact fees. TR: 151 shares, entry EUR19,964.268325, net loss EUR360.17804 (-1.80411% deployed; -0.36018% of book); ING: 150 shares, net loss EUR463.8717725 (-2.33271% deployed). This is an ex-post one-complete-session counterfactual, not an original order, expected-return estimate, or the reviewer's close-to-close return. Latest snapshots can differ from original provider/revision; no as-of historical backtest claim. Cash benefited against these specific longs, but subsequent inflation/news and overnight repricing could explain the loss independently of the original rationale. No short counterfactual was executable in beta's stock-only choice. Neither two neutral scores nor one avoided loss establishes repeatability.
+
+Next experiment refined: keep the existing cpi-regime diagnostic exploratory; October 15 research already showed tiny holdout and outlier sensitivity, so do not rerun or optimize it as surprise evidence. Collect dated primary releases, pre-release expectations and component revisions prospectively; distinguish surprise, policy interpretation, opening gap and later return. Before the next eligible trade, specify instrument, <=5% probe budget, TR entry cap/expiry and same-broker exit after five complete sessions, with exact costs and gap stress. Score forecasts separately from executable P&L and compare missed verified catalysts with matched placebo dates and chronological holdout. New October 15–16 news cannot retrospectively support the October 14 decision.
 ~~~
 
 </details>
@@ -94,7 +102,58 @@ Primary links: [BLS CPI](https://www.bls.gov/news.release/cpi.htm), [Destatis wh
 
 </details>
 
+<details><summary>beta-oct16-aixtron.md</summary>
+
+~~~markdown
+---
+title: Beta October 16 AIXTRON surprise probe
+type: decision
+created: 2026-10-16
+updated: 2026-10-16
+---
+
+Decision submitted: BUY DE000A0WMPJ6 through Trade Republic, allocation 3% of EUR100,000 cash (EUR3,000 fee-inclusive budget), LIMIT EUR32 ask, valid October 16 only. No cancellation; no existing holdings. At cap 93 shares cost EUR2,977; lower fills can change units. Eligibility true in supplied universe. Forecast UP, subjective confidence 0.55, five sessions counted October 16, 19, 20, 21, 22. Submission is not evidence of a fill: inspect own_orders/portfolio next run.
+
+Why change cash stance: primary AIXTRON October 15 18:00 CEST ad hoc/18:03 corporate release reports Q3 orders EUR275m against issuer-collected consensus EUR214.6m (+28.15%), revenue EUR184m, EBIT EUR57m and margin ~31%; book-to-bill 1.495. Management attributes demand to lasers for AI data-centre communications and better 2027 visibility. The novelty is magnitude versus reported consensus, not the already-known optoelectronics theme. No independent pre-release consensus vintage was obtained. Release is after Xetra close; supplied October 15 fall 35.49 to 30.98 (-12.708%) PRECEDES release, cannot be called rejection of the beat. Other venues traded later; the opening gap can absorb the surprise. Price cap prevents an uncapped chase, though intraday limit fills have adverse selection.
+
+Challenge: FY2026 guidance stays unchanged; margin benefits from product mix and may not recur. July 30 source already reported strong opto demand (~75% Q2 equipment orders), FY revenue EUR560m +/-30m, EBIT margin17–20%, H1 EBIT -7.6m. Hence 9M EBIT ~49.4m still implies substantial Q4 earnings to reach guidance, not an automatic upgrade. AI investment/sector sentiment can overwhelm good company results. Probe rationale is improved prospective earnings visibility following a genuine reported beat; it is NOT validated statistical alpha.
+
+Costs/expectation: at EUR32 ask (reference 32/1.001), unchanged-mid-price TR roundtrip loses EUR7.946 (0.267% deployed), ING EUR30.611 (1.024% of EUR2,988.34 entry cost for same 93 units). Subjective gross +1% five-complete-session expectation -> TR ~EUR21.75/+0.731% net; not a calibrated estimate or source fact. +3%, +8%, -8% underlying scenarios -> EUR81.16, EUR229.66, -EUR245.55 TR net. No KO/financing. Maximum initial capital exposure EUR3,000; stop gaps can exceed intended losses.
+
+Management plan: intended same-broker time exit October 23 open after five full sessions. On confirmed fill, next decision should consider submitting TR SELL STOP at 90% of actual reference entry, rounded cents, for remaining sessions (near EUR28.77 at cap). NO STOP IS SUBMITTED TODAY; first-session exposure has no protective order. Cancel any pending stop before whole-position time sale to avoid conflicting orders. Reassess immediately on disclosure correction, cancellations, adverse demand evidence or material guidance change. Do not increase size solely after a winning trade. If buy expires, reassess price/new evidence; do not automatically chase.
+
+Diagnostic saved under research/2026-10-16/selloff_diagnostic.py, selloff_trials.csv and selloff_summary.json: retrospective AIX price-shock proxy (daily fall >=8%, next-session one-day limit using close *32/30.98, five full sessions, EUR3k independent trials, one overlapping position max per arm, same-broker exact current fees/spreads/integer sizes). Jan2024 chronological split; ten-session delayed placebo. TR train n4 mean+2.277%; holdout n9 mean+2.373%, median-1.104%, 4/9 winners, 95% t interval[-5.329%,10.076%], excluding best+0.130%. Placebo holdout n9 mean+2.381%. ING signal holdout+1.599%. Thus generic rebound edge not established; NOT a news-surprise test, not portfolio returns, ratio chosen from today's scenario, historical prices retrospective/unofficial and not dividend-adjusted. Stops not tested. No parameter sweep. Do not market the split as pristine prospective validation.
+
+AIX sources cached as aix-q3/aix-q2.html/.txt; links in research/2026-10-16/README.md. UniCredit was verified via web search/open of the issuer page; direct requests cache is HTTP403, not the disclosure text. Archive year pages cached; several paginate at six items, 2021 includes bilingual duplicates. Archive list is INCOMPLETE, never use as an exhaustive event sample. UniCredit October 15 19:40 release confirms permission to cross30% with no upper cap but other conditions expected around year end; does not establish a new cash offer/premium. Rejected CBK as weaker novelty (October14 supplied headlines already expected approval).
+
+Next experiment: collect dated original consensus, all positive AND negative earnings disclosures with publication times, deduplicate and complete pagination, benchmark/sector matched placebo, executable next-open/limit outcomes and prospective October16 observation. Separate opening repricing, conditional fill performance, scored direction and portfolio P&L. Keep DBO October20 results watch; prior UP forecast pending. Cash remainder (~97%) reflects bounded trial risk, not general equity-bear conviction.
+~~~
+
+</details>
+
 ## Decisions (newest first)
+
+### 2026-10-16 06:19 CEST · UP · confidence 0.55 · horizon 5 session(s)
+
+Reference: Aixtron · fill session 2026-10-16
+
+**Why (thesis)**
+
+> Buy a small AIXTRON position following a verified earnings catalyst. Its October 15, 18:03 CEST release reports Q3 orders of EUR275m versus issuer-collected analyst consensus of EUR214.6m: a 28.1% beat. Revenue was EUR184m and EBIT approximately EUR57m. Management connects demand to lasers for AI data-centre communications and improved 2027 visibility. My inference is that stronger orders support earnings expectations. [AIXTRON release](https://aixtron.com/de/investoren/AIXTRON%20Q3%202026%20Auftragseingang%20und%20operative%20Profitabilit%C3%A4t%20deutlich%20%C3%BCber%20Markterwartungen_n5412642).
+> 
+> Challenge: full-year guidance is unchanged, the strong margin partly reflects product mix, and AI investment weakness could overwhelm company results. The optoelectronics growth theme was already public in July; the reported consensus beat provides the novelty. No independent pre-release consensus vintage was obtained. [July results](https://www.aixtron.com/de/investoren/news/finanznachrichten/Starkes%20Momentum%20in%20der%20Optoelektronik%20h%C3%A4lt%20an_n14146).
+> 
+> Supplied unofficial bars show October 15's 12.71% decline occurred before this post-Xetra release. It cannot establish rejection of the results. A retrospective selloff diagnostic offers little independent support: nine chronological holdout trades averaged +2.37% net at Trade Republic, versus +2.38% for delayed placebos; median return was -1.10%. This does not validate a rebound strategy or isolate earnings surprises.
+> 
+> Concrete scenario: allocate at most EUR3,000 through Trade Republic, BUY LIMIT EUR32 for October 16 only, with intended same-broker exit October 23 open after five complete sessions. At the cap, 93 shares cost EUR2,977 including entry fee. Unchanged-reference roundtrip friction is EUR7.95 at Trade Republic versus EUR30.61 at ING, including spreads and fees. My subjective +1% gross expectation implies approximately +0.73% net, or EUR21.75; this is uncalibrated judgment. An 8% underlying decline loses approximately EUR245.55 after costs. The verified surprise supports a limited prospective probe, with the remaining cash preserving capacity for stronger evidence.
+
+**Strategy note**
+
+> Test verified earnings surprises with small, price-capped positions; no knockout products. AIXTRON: 3% cash budget, EUR32 limit valid October16 only. Confirm fill next run. After confirmation, consider a same-broker sell stop at 90% of actual reference entry, rounded cents; no protective stop is submitted today. Intended time exit October23 open; cancel any pending stop before the whole-position sale. Reassess on disclosure corrections, order cancellations or weaker demand/guidance. Do not chase an expired buy or scale after one winner. Expected edge is subjective; the generic selloff diagnostic failed placebo differentiation. Memory and research are saved under .memento/beta-oct16-aixtron.md and research/2026-10-16/. Next experiment: complete timestamped surprise events with dated consensus and executable benchmark comparisons. Deutsche Börse October20 results remain on watch.
+
+| Side | Type | Broker | Instrument | Size | State | Executed | Price | Message |
+| --- | --- | --- | --- | ---: | --- | --- | ---: | --- |
+| BUY | LIMIT limit ≤ 32.00 | trade_republic | Aixtron | 3.0 % | pending | – | – | – |
 
 ### 2026-10-15 06:22 CEST · UP · confidence 0.53 · horizon 5 session(s)
 
@@ -128,6 +187,16 @@ Reference: iShares Core MSCI World UCITS ETF (Acc) · fill session 2026-10-14
 
 > Retain EUR100,000 cash while pursuing release novelty and concrete earnings/rate transmission. Use Trade Republic for ordinary trades where its lower fees suffice; beta does not use knockouts. Change stance on a verified cutoff-compliant surprise with evidence of net executable advantage. Next experiment: dated CPI component revisions and expectations, next-open five-session returns, chronological holdout and matched placebo dates, exact spreads/fees, 20% cash position sizing, five-position cap and same-broker exits. Memento updated; prior neutral score provides no proof of predictive skill.
 
+**Outcome:** 2026-10-13 → 2026-10-14, +0.04 % (NEUTRAL), forecast correct
+
+**Reflection**
+
+> assessment: The October 14 NEUTRAL forecast was scored correct on the World ETF’s +0.0417% close change. Cash remained EUR100,000 without costs. The trace verifies primary-source checks and descriptive price analysis, but no calibrated expected return or complete trade scenario. This supports rejecting a simple final-CPI revision trade; it does not establish predictive skill. An illustrative EUR20,000 next-open purchase and following-open exit would have lost EUR360.18 at Trade Republic or EUR463.87 at ING, including spreads, fees and integer sizing. That counterfactual differs from the scored interval and uses current unofficial price snapshots.
+> 
+> alternative_explanations: The small scored change may reflect offsetting moves and the reviewer’s neutral threshold. The subsequent opening decline could reflect news arriving after submission. Neither outcome demonstrates that confirming preliminary CPI caused the market behavior. Component details or other catalysts could still have offered opportunities; two correct neutral classifications cannot establish calibration or justify persistent cash holdings.
+> 
+> next_test: Collect timestamped releases, dated expectations and component revisions prospectively. Before trading, specify the instrument, size, broker, entry cap and expiry, and same-broker exit; evaluate executable returns after exact costs against chronological holdouts and matched placebo dates. Keep the existing CPI-state diagnostic exploratory because its small holdout and outlier sensitivity remain unresolved. Score forecast accuracy separately from trading returns and missed opportunities. Updated /workspace/.memento/beta-oct14-decision.md and INDEX.md; this reflection submits no new trade.
+
 ### 2026-10-13 14:05 CEST · NEUTRAL · confidence 0.20 · horizon 1 session(s)
 
 Reference: iShares Core MSCI World UCITS ETF (Acc) · fill session 2026-10-13
@@ -155,6 +224,8 @@ Reference: iShares Core MSCI World UCITS ETF (Acc) · fill session 2026-10-13
 
 | Started | Phase | Status | Commands | Web searches | Input tokens | Output tokens | Prompt |
 | --- | --- | --- | ---: | ---: | ---: | ---: | --- |
+| 2026-10-16 06:15 CEST | decide | success | 17 | 5 | 2,021,119 | 10,734 | 2026-10-14.4 |
+| 2026-10-16 06:10 CEST | reflect | success | 3 | 0 | 454,776 | 2,147 | 2026-10-14.4 |
 | 2026-10-15 06:16 CEST | decide | success | 16 | 9 | 2,626,596 | 14,609 | 2026-10-14.4 |
 | 2026-10-14 07:21 CEST | decide | success | 3 | 2 | 316,324 | 1,456 | 2026-10-13.10 |
 | 2026-10-14 07:19 CEST | reflect | success | 2 | 0 | 316,026 | 1,100 | 2026-10-13.10 |
@@ -162,6 +233,11 @@ Reference: iShares Core MSCI World UCITS ETF (Acc) · fill session 2026-10-13
 
 ### Web research
 
+- 2026-10-16 06:15 CEST: site.aixtron.com 15.10.2026 Auftragseingang Profitabilität Q3 2026 ...
+- 2026-10-16 06:15 CEST: https://www.aixtron.com/de/investoren/news/ad-hoc-news/AIXTRON%20Q3%202026%20Auftragseingang%20und%20operative%20Profitabilit%C3%A4t%20deutlich%20%C3%BCber%20Markterwartungen_n5412641
+- 2026-10-16 06:15 CEST: site.aixtron.com "2024" "erhöht" "Prognose" ...
+- 2026-10-16 06:15 CEST: https://www.aixtron.com/de/investoren/news/finanznachrichten/Starkes%20Momentum%20in%20der%20Optoelektronik%20h%C3%A4lt%20an_n14146
+- 2026-10-16 06:15 CEST: 'Prognose für 2026'
 - 2026-10-15 06:16 CEST: https://www.bls.gov/news.release/cpi.htm
 - 2026-10-15 06:16 CEST: site.deutsche-boerse.com October 2026 September trading volumes 2026 results outlook ...
 - 2026-10-15 06:16 CEST: https://deutsche-boerse.com/dbg-de/media/news-stories/media-releases/September-2026-Figures-at-Eurex-5615286
