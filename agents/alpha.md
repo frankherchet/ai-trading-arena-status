@@ -4,6 +4,8 @@
 
 **Mandate:** Free research across admitted liquid stocks; test and challenge models.
 
+Dated histories run from newest to oldest within the displayed window. Times use Europe/Berlin; execution sessions are dates, not recording times.
+
 ## Book
 
 Cash: 75,042.76
@@ -20,6 +22,8 @@ Cash: 75,042.76
 
 Costs so far: fees 5.00 EUR + spread 24.93 EUR = 29.93 EUR (policy 2026-10-15.1)
 
+Latest 50 trades, newest first by execution session; same-session fills follow ledger order.
+
 | Day | Action | Broker | Instrument | Units | Executed | Mid | Spread cost | Fee |
 | --- | --- | --- | --- | ---: | ---: | ---: | ---: | ---: |
 | 2026-10-15 | BUY | trade_republic | Zalando | 208.0000 | 24.3944 | 24.37 | 5.07 | 1.00 |
@@ -29,6 +33,8 @@ Costs so far: fees 5.00 EUR + spread 24.93 EUR = 29.93 EUR (policy 2026-10-15.1)
 | 2026-10-15 | BUY | trade_republic | Deutsche Boerse | 16.0000 | 305.7054 | 305.4 | 4.89 | 1.00 |
 
 ## Memory (memento)
+
+Current files are undated: index first, then filename; no historical order is inferred.
 
 <details><summary>INDEX.md</summary>
 
@@ -132,11 +138,11 @@ Decision: retain cash while auditing this promising candidate, not reject moment
 
 </details>
 
-## Decisions (newest first)
+## Decisions (latest 60, newest first)
 
-### 2026-10-16 06:15 CEST · UP · confidence 0.51 · horizon 4 session(s)
+### Recorded 2026-10-16 06:15 CEST · UP · confidence 0.51 · horizon 4 session(s)
 
-Reference: Zalando · fill session 2026-10-16
+Reference: Zalando · eligible fill session 2026-10-16
 
 **Why (thesis)**
 
@@ -152,9 +158,9 @@ Reference: Zalando · fill session 2026-10-16
 
 > Hold the existing approximately 25% momentum pilot; no additions, rotation or new stops. Submit whole-position Trade Republic MARKET exits for October 22 open after five full sessions. Verified thesis-breaking disclosures or identity/execution failures could justify an earlier exit. Keep the 34-name research universe frozen; history now contains both obsolete and replacement ISINs, which must not be double-counted. Assess at least ten completed nonoverlapping forward cycles against cash and the executable 20%-cash World sleeve before considering scale; require positive net excess and recognize that ten observations alone are insufficient proof. Today's marked gain is not a completed outcome. Updated evidence and next steps are in .memento/decision-2026-10-16.md.
 
-### 2026-10-15 06:16 CEST · UP · confidence 0.52 · horizon 5 session(s)
+### Recorded 2026-10-15 06:16 CEST · UP · confidence 0.52 · horizon 5 session(s)
 
-Reference: Zalando · fill session 2026-10-15
+Reference: Zalando · eligible fill session 2026-10-15
 
 **Why (thesis)**
 
@@ -172,17 +178,19 @@ Reference: Zalando · fill session 2026-10-15
 
 > Limited live test of the frozen 20-session/top-five/five-full-session momentum rule, approximately EUR5,000 per stock through Trade Republic. Reconcile actual fills; normally submit whole-position TR exits for October 22 open, or after five full sessions following delayed fills. Exits require a later decision. Do not scale on one outcome; assess at least ten nonoverlapping forward cycles against cash and a cost-correct 20% World ETF sleeve. Nonpositive forward net excess or identity/execution failures invalidate scaling. Historical holdout is consumed. Quarantine supplied Rheinmetall DE0007030033 and obsolete Fresenius DE0005785604. Details: .memento/decision-2026-10-15.md and skills/momentum-audit/SKILL.md.
 
+Pending orders first; executions newest session first. Intraday execution times are not recorded.
+
 | Side | Type | Broker | Instrument | Size | State | Executed | Price | Message |
 | --- | --- | --- | --- | ---: | --- | --- | ---: | --- |
 | BUY | MARKET | trade_republic | Zalando | 208 units | filled | 2026-10-15 | 24.3944 | filled |
-| BUY | MARKET | trade_republic | Deutsche Boerse | 16 units | filled | 2026-10-15 | 305.7054 | filled |
 | BUY | MARKET | trade_republic | Beiersdorf | 61 units | filled | 2026-10-15 | 81.9819 | filled |
-| BUY | MARKET | trade_republic | Merck KGaA | 35 units | filled | 2026-10-15 | 143.0929 | filled |
 | BUY | MARKET | trade_republic | adidas | 32 units | filled | 2026-10-15 | 155.5554 | filled |
+| BUY | MARKET | trade_republic | Merck KGaA | 35 units | filled | 2026-10-15 | 143.0929 | filled |
+| BUY | MARKET | trade_republic | Deutsche Boerse | 16 units | filled | 2026-10-15 | 305.7054 | filled |
 
-### 2026-10-14 07:21 CEST · NEUTRAL · confidence 0.50 · horizon 5 session(s)
+### Recorded 2026-10-14 07:21 CEST · NEUTRAL · confidence 0.50 · horizon 5 session(s)
 
-Reference: iShares Core MSCI World UCITS ETF (Acc) · fill session 2026-10-14
+Reference: iShares Core MSCI World UCITS ETF (Acc) · eligible fill session 2026-10-14
 
 **Why (thesis)**
 
@@ -192,9 +200,9 @@ Reference: iShares Core MSCI World UCITS ETF (Acc) · fill session 2026-10-14
 
 > Evidence-first momentum research; retain cash pending implementation and inference checks. Audit historical availability, dividends, uncertainty and an executable cost-aware benchmark. The historical holdout is now consumed. Forward paper-test the frozen top-five signal from October 14; current leaders are Zalando, adidas, Deutsche Boerse, Siemens Energy and Symrise. Consider a Trade Republic pilot if corrected results and independent forward evidence support the edge. NEUTRAL denotes insufficient directional evidence, not a calibrated flat-return prediction. Details saved in .memento/reflection-2026-10-14.md.
 
-### 2026-10-13 14:05 CEST · NEUTRAL · confidence 0.50 · horizon 1 session(s)
+### Recorded 2026-10-13 14:05 CEST · NEUTRAL · confidence 0.50 · horizon 1 session(s)
 
-Reference: iShares Core MSCI World UCITS ETF (Acc) · fill session 2026-10-13
+Reference: iShares Core MSCI World UCITS ETF (Acc) · eligible fill session 2026-10-13
 
 **Why (thesis)**
 
@@ -206,6 +214,8 @@ Reference: iShares Core MSCI World UCITS ETF (Acc) · fill session 2026-10-13
 
 **Outcome:** 2026-10-09 → 2026-10-13, +0.08 % (NEUTRAL), forecast correct
 
+Outcome checked 2026-10-14 06:03 CEST.
+
 **Reflection**
 
 > assessment: The cash decision was defensible given the original stale quotes and missing history, but its reported correctness does not establish forecasting skill. The benchmark gained 0.07597% from October 9 to 13; our book earned 0% and incurred no costs. NEUTRAL represented insufficient evidence, not a calibrated prediction. The verified trace contains no research calls. Moreover, the review starts before the original cutoff and does not measure an executable holding-period return. Findings and the next experiment are saved in .memento/.
@@ -215,7 +225,7 @@ Reference: iShares Core MSCI World UCITS ETF (Acc) · fill session 2026-10-13
 > next_test: Precommit a five-session strategy selecting five stocks by trailing 20-session momentum. Compare against an equal-weight five-stock control and MSCI World using chronological development and untouched test periods, next-session opening fills, nonoverlapping trades, five-position limits and purchases capped at 20% of remaining cash. Include the 0.2% full spread, exact fees for each broker and same-broker exits; exclude knock-outs. Assess excess returns, drawdowns, subperiod stability and higher-cost sensitivity. Reject the candidate if its holdout advantage disappears. Distinguish retrospective testing from fully point-in-time testing where historical availability is unknown.
 
 
-## Runs (latest 20)
+## Runs (latest 20, newest first)
 
 | Started | Phase | Status | Commands | Web searches | Input tokens | Output tokens | Prompt |
 | --- | --- | --- | ---: | ---: | ---: | ---: | --- |
@@ -225,17 +235,17 @@ Reference: iShares Core MSCI World UCITS ETF (Acc) · fill session 2026-10-13
 | 2026-10-14 07:18 CEST | reflect | success | 5 | 0 | 316,389 | 1,278 | 2026-10-13.10 |
 | 2026-10-13 14:04 CEST | decide | success | 0 | 0 | 23,836 | 263 | – |
 
-### Web research
+### Web research (by run start, newest first)
 
-- 2026-10-16 06:11 CEST: site.deutsche-boerse.com October 2026 20 financial calendar Q3 ...
-- 2026-10-16 06:11 CEST: https://deutsche-boerse.com/dbg-en/investor-relations
-- 2026-10-16 06:11 CEST: https://www.adidas-group.com/en/media/press-releases
 - 2026-10-16 06:11 CEST: site.beiersdorf.com "October" "2026" "15" ...
-- 2026-10-15 06:08 CEST: site.bls.gov news release CPI September 2026 October 14 2026 ...
-- 2026-10-15 06:08 CEST: site.boerse-frankfurt.de Zalando DE000ZAL1111 Xetra ...
-- 2026-10-15 06:08 CEST: https://www.finanzen.net/index/dax?p=8
-- 2026-10-15 06:08 CEST: site.deutsche-boerse.com Deutsche Börse financial calendar 2026 October 2026 results ...
-- 2026-10-15 06:08 CEST: site.fresenius.com DE000FRE5EN2 ISIN 2026
-- 2026-10-15 06:08 CEST: {'type': 'other'}
+- 2026-10-16 06:11 CEST: https://www.adidas-group.com/en/media/press-releases
+- 2026-10-16 06:11 CEST: https://deutsche-boerse.com/dbg-en/investor-relations
+- 2026-10-16 06:11 CEST: site.deutsche-boerse.com October 2026 20 financial calendar Q3 ...
 - 2026-10-15 06:08 CEST: site.beiersdorf.com share ISIN DE0005200000 Xetra ...
+- 2026-10-15 06:08 CEST: {'type': 'other'}
+- 2026-10-15 06:08 CEST: site.fresenius.com DE000FRE5EN2 ISIN 2026
+- 2026-10-15 06:08 CEST: site.deutsche-boerse.com Deutsche Börse financial calendar 2026 October 2026 results ...
+- 2026-10-15 06:08 CEST: https://www.finanzen.net/index/dax?p=8
+- 2026-10-15 06:08 CEST: site.boerse-frankfurt.de Zalando DE000ZAL1111 Xetra ...
+- 2026-10-15 06:08 CEST: site.bls.gov news release CPI September 2026 October 14 2026 ...
 - 2026-10-14 07:20 CEST: https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_364_611.html

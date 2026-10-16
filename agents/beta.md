@@ -4,6 +4,8 @@
 
 **Mandate:** News, filings, fundamentals, catalysts; distinguish source facts from speculation.
 
+Dated histories run from newest to oldest within the displayed window. Times use Europe/Berlin; execution sessions are dates, not recording times.
+
 ## Book
 
 Cash: 100,000.00
@@ -17,6 +19,8 @@ Costs so far: fees 0.00 EUR + spread 0.00 EUR = 0.00 EUR (policy –)
 No trades yet.
 
 ## Memory (memento)
+
+Current files are undated: index first, then filename; no historical order is inferred.
 
 <details><summary>INDEX.md</summary>
 
@@ -131,11 +135,11 @@ Next experiment: collect dated original consensus, all positive AND negative ear
 
 </details>
 
-## Decisions (newest first)
+## Decisions (latest 60, newest first)
 
-### 2026-10-16 06:19 CEST · UP · confidence 0.55 · horizon 5 session(s)
+### Recorded 2026-10-16 06:19 CEST · UP · confidence 0.55 · horizon 5 session(s)
 
-Reference: Aixtron · fill session 2026-10-16
+Reference: Aixtron · eligible fill session 2026-10-16
 
 **Why (thesis)**
 
@@ -151,13 +155,15 @@ Reference: Aixtron · fill session 2026-10-16
 
 > Test verified earnings surprises with small, price-capped positions; no knockout products. AIXTRON: 3% cash budget, EUR32 limit valid October16 only. Confirm fill next run. After confirmation, consider a same-broker sell stop at 90% of actual reference entry, rounded cents; no protective stop is submitted today. Intended time exit October23 open; cancel any pending stop before the whole-position sale. Reassess on disclosure corrections, order cancellations or weaker demand/guidance. Do not chase an expired buy or scale after one winner. Expected edge is subjective; the generic selloff diagnostic failed placebo differentiation. Memory and research are saved under .memento/beta-oct16-aixtron.md and research/2026-10-16/. Next experiment: complete timestamped surprise events with dated consensus and executable benchmark comparisons. Deutsche Börse October20 results remain on watch.
 
+Pending orders first; executions newest session first. Intraday execution times are not recorded.
+
 | Side | Type | Broker | Instrument | Size | State | Executed | Price | Message |
 | --- | --- | --- | --- | ---: | --- | --- | ---: | --- |
 | BUY | LIMIT limit ≤ 32.00 | trade_republic | Aixtron | 3.0 % | pending | – | – | – |
 
-### 2026-10-15 06:22 CEST · UP · confidence 0.53 · horizon 5 session(s)
+### Recorded 2026-10-15 06:22 CEST · UP · confidence 0.53 · horizon 5 session(s)
 
-Reference: Deutsche Boerse · fill session 2026-10-15
+Reference: Deutsche Boerse · eligible fill session 2026-10-15
 
 **Why (thesis)**
 
@@ -175,9 +181,9 @@ Reference: Deutsche Boerse · fill session 2026-10-15
 
 > Cash retained after an outlier-sensitive exchange/hedging trade test; no validated surprise edge established. Reconsider a <=5% Trade Republic position after verified Deutsche Börse Q3 earnings or guidance exceeds dated expectations with sufficient executable upside after costs. Challenge the thesis with priced-in volumes, valuation pressure and weak earnings conversion. Collect prospective surprise observations instead of optimizing the small historical sample. Memory and reusable research procedure updated.
 
-### 2026-10-14 07:22 CEST · NEUTRAL · confidence 0.25 · horizon 1 session(s)
+### Recorded 2026-10-14 07:22 CEST · NEUTRAL · confidence 0.25 · horizon 1 session(s)
 
-Reference: iShares Core MSCI World UCITS ETF (Acc) · fill session 2026-10-14
+Reference: iShares Core MSCI World UCITS ETF (Acc) · eligible fill session 2026-10-14
 
 **Why (thesis)**
 
@@ -189,6 +195,8 @@ Reference: iShares Core MSCI World UCITS ETF (Acc) · fill session 2026-10-14
 
 **Outcome:** 2026-10-13 → 2026-10-14, +0.04 % (NEUTRAL), forecast correct
 
+Outcome checked 2026-10-16 06:10 CEST.
+
 **Reflection**
 
 > assessment: The October 14 NEUTRAL forecast was scored correct on the World ETF’s +0.0417% close change. Cash remained EUR100,000 without costs. The trace verifies primary-source checks and descriptive price analysis, but no calibrated expected return or complete trade scenario. This supports rejecting a simple final-CPI revision trade; it does not establish predictive skill. An illustrative EUR20,000 next-open purchase and following-open exit would have lost EUR360.18 at Trade Republic or EUR463.87 at ING, including spreads, fees and integer sizing. That counterfactual differs from the scored interval and uses current unofficial price snapshots.
@@ -197,9 +205,9 @@ Reference: iShares Core MSCI World UCITS ETF (Acc) · fill session 2026-10-14
 > 
 > next_test: Collect timestamped releases, dated expectations and component revisions prospectively. Before trading, specify the instrument, size, broker, entry cap and expiry, and same-broker exit; evaluate executable returns after exact costs against chronological holdouts and matched placebo dates. Keep the existing CPI-state diagnostic exploratory because its small holdout and outlier sensitivity remain unresolved. Score forecast accuracy separately from trading returns and missed opportunities. Updated /workspace/.memento/beta-oct14-decision.md and INDEX.md; this reflection submits no new trade.
 
-### 2026-10-13 14:05 CEST · NEUTRAL · confidence 0.20 · horizon 1 session(s)
+### Recorded 2026-10-13 14:05 CEST · NEUTRAL · confidence 0.20 · horizon 1 session(s)
 
-Reference: iShares Core MSCI World UCITS ETF (Acc) · fill session 2026-10-13
+Reference: iShares Core MSCI World UCITS ETF (Acc) · eligible fill session 2026-10-13
 
 **Why (thesis)**
 
@@ -211,6 +219,8 @@ Reference: iShares Core MSCI World UCITS ETF (Acc) · fill session 2026-10-13
 
 **Outcome:** 2026-10-09 → 2026-10-13, +0.08 % (NEUTRAL), forecast correct
 
+Outcome checked 2026-10-14 06:03 CEST.
+
 **Reflection**
 
 > assessment: The NEUTRAL forecast was scored correct on the benchmark’s +0.076% close change, while cash remained EUR100,000 without trading costs. This does not validate a predictive edge: there was one observation, no research or backtest in the trace, and the review starts October 9, before the October 13 submission. The decision reasonably reflected limited supplied evidence, but did not establish that useful public evidence was unavailable. Fresh prices now remove the stale-data rationale.
@@ -220,7 +230,7 @@ Reference: iShares Core MSCI World UCITS ETF (Acc) · fill session 2026-10-13
 > next_test: Test release novelty rather than inflation level: verify whether the supplied September inflation figure revised preliminary data or surprised dated expectations. Examine transmission to Vonovia and banks, including opposing margin and credit-risk effects. Predefine next-session-open entry and a five-session holding period; use chronological holdouts and placebo dates, incorporating spreads, broker fees, sizing limits and broker-consistent exits. Historical release data are required alongside price bars. Reflection and next experiment recorded in /workspace/.memento/.
 
 
-## Runs (latest 20)
+## Runs (latest 20, newest first)
 
 | Started | Phase | Status | Commands | Web searches | Input tokens | Output tokens | Prompt |
 | --- | --- | --- | ---: | ---: | ---: | ---: | --- |
@@ -231,21 +241,21 @@ Reference: iShares Core MSCI World UCITS ETF (Acc) · fill session 2026-10-13
 | 2026-10-14 07:19 CEST | reflect | success | 2 | 0 | 316,026 | 1,100 | 2026-10-13.10 |
 | 2026-10-13 14:05 CEST | decide | success | 0 | 0 | 23,838 | 241 | – |
 
-### Web research
+### Web research (by run start, newest first)
 
-- 2026-10-16 06:15 CEST: site.aixtron.com 15.10.2026 Auftragseingang Profitabilität Q3 2026 ...
-- 2026-10-16 06:15 CEST: https://www.aixtron.com/de/investoren/news/ad-hoc-news/AIXTRON%20Q3%202026%20Auftragseingang%20und%20operative%20Profitabilit%C3%A4t%20deutlich%20%C3%BCber%20Markterwartungen_n5412641
-- 2026-10-16 06:15 CEST: site.aixtron.com "2024" "erhöht" "Prognose" ...
-- 2026-10-16 06:15 CEST: https://www.aixtron.com/de/investoren/news/finanznachrichten/Starkes%20Momentum%20in%20der%20Optoelektronik%20h%C3%A4lt%20an_n14146
 - 2026-10-16 06:15 CEST: 'Prognose für 2026'
-- 2026-10-15 06:16 CEST: https://www.bls.gov/news.release/cpi.htm
-- 2026-10-15 06:16 CEST: site.deutsche-boerse.com October 2026 September trading volumes 2026 results outlook ...
-- 2026-10-15 06:16 CEST: https://deutsche-boerse.com/dbg-de/media/news-stories/media-releases/September-2026-Figures-at-Eurex-5615286
-- 2026-10-15 06:16 CEST: https://www.bls.gov/bls/news-release/cpi.htm
-- 2026-10-15 06:16 CEST: https://www.eurex.com/ex-en/find/news-center/news/September-2026-Figures-at-Eurex-5615286
-- 2026-10-15 06:16 CEST: "Deutsche Börse" "20 October 2026" results ...
-- 2026-10-15 06:16 CEST: Cleveland Fed inflation nowcasting historical data download daily inflation nowcast csv ...
-- 2026-10-15 06:16 CEST: https://www.eurex.com/ex-en/find/news-center/news/September-2026-figures-at-Eurex-5615284
+- 2026-10-16 06:15 CEST: https://www.aixtron.com/de/investoren/news/finanznachrichten/Starkes%20Momentum%20in%20der%20Optoelektronik%20h%C3%A4lt%20an_n14146
+- 2026-10-16 06:15 CEST: site.aixtron.com "2024" "erhöht" "Prognose" ...
+- 2026-10-16 06:15 CEST: https://www.aixtron.com/de/investoren/news/ad-hoc-news/AIXTRON%20Q3%202026%20Auftragseingang%20und%20operative%20Profitabilit%C3%A4t%20deutlich%20%C3%BCber%20Markterwartungen_n5412641
+- 2026-10-16 06:15 CEST: site.aixtron.com 15.10.2026 Auftragseingang Profitabilität Q3 2026 ...
 - 2026-10-15 06:16 CEST: '20 October'
-- 2026-10-14 07:21 CEST: https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_364_611.html
+- 2026-10-15 06:16 CEST: https://www.eurex.com/ex-en/find/news-center/news/September-2026-figures-at-Eurex-5615284
+- 2026-10-15 06:16 CEST: Cleveland Fed inflation nowcasting historical data download daily inflation nowcast csv ...
+- 2026-10-15 06:16 CEST: "Deutsche Börse" "20 October 2026" results ...
+- 2026-10-15 06:16 CEST: https://www.eurex.com/ex-en/find/news-center/news/September-2026-Figures-at-Eurex-5615286
+- 2026-10-15 06:16 CEST: https://www.bls.gov/bls/news-release/cpi.htm
+- 2026-10-15 06:16 CEST: https://deutsche-boerse.com/dbg-de/media/news-stories/media-releases/September-2026-Figures-at-Eurex-5615286
+- 2026-10-15 06:16 CEST: site.deutsche-boerse.com October 2026 September trading volumes 2026 results outlook ...
+- 2026-10-15 06:16 CEST: https://www.bls.gov/news.release/cpi.htm
 - 2026-10-14 07:21 CEST: {'type': 'other'}
+- 2026-10-14 07:21 CEST: https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_364_611.html

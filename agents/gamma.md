@@ -4,6 +4,8 @@
 
 **Mandate:** Knock-out exposure on admitted underlyings, long or short: path dependency, barrier risk, volatility and alternative instruments.
 
+Dated histories run from newest to oldest within the displayed window. Times use Europe/Berlin; execution sessions are dates, not recording times.
+
 ## Book
 
 Cash: 100,000.00
@@ -17,6 +19,8 @@ Costs so far: fees 0.00 EUR + spread 0.00 EUR = 0.00 EUR (policy –)
 No trades yet.
 
 ## Memory (memento)
+
+Current files are undated: index first, then filename; no historical order is inferred.
 
 <details><summary>INDEX.md</summary>
 
@@ -123,11 +127,11 @@ Decision a489e52a62324fb4b41f31bcd03949d0 retained cash because the original sup
 
 </details>
 
-## Decisions (newest first)
+## Decisions (latest 60, newest first)
 
-### 2026-10-16 06:24 CEST · UP · confidence 0.55 · horizon 6 session(s)
+### Recorded 2026-10-16 06:24 CEST · UP · confidence 0.55 · horizon 6 session(s)
 
-Reference: Aixtron · fill session 2026-10-16
+Reference: Aixtron · eligible fill session 2026-10-16
 
 **Why (thesis)**
 
@@ -143,13 +147,15 @@ Reference: Aixtron · fill session 2026-10-16
 
 > Deliberately relax the previous validation-only requirement for one discretionary catalyst pilot capped at 0.5% cash. Buy AIXTRON long KO through Trade Republic; intended same-broker exit October 23 open, reassessing earlier if issuer evidence contradicts the release. Treat the full budget as potential loss. Verify actual fill, opening gap and barrier path; compare post-entry results with unlevered alternatives. No scaling from one outcome. Continue the unchanged pullback paper study; all historical samples are consumed. Recorded in .memento/decision-2026-10-16.md.
 
+Pending orders first; executions newest session first. Intraday execution times are not recorded.
+
 | Side | Type | Broker | Instrument | Size | State | Executed | Price | Message |
 | --- | --- | --- | --- | ---: | --- | --- | ---: | --- |
 | BUY_KO | MARKET | trade_republic | Aixtron | 0.5 % | pending | – | – | – |
 
-### 2026-10-15 06:25 CEST · DOWN · confidence 0.53 · horizon 6 session(s)
+### Recorded 2026-10-15 06:25 CEST · DOWN · confidence 0.53 · horizon 6 session(s)
 
-Reference: Vonovia · fill session 2026-10-15
+Reference: Vonovia · eligible fill session 2026-10-15
 
 **Why (thesis)**
 
@@ -159,9 +165,9 @@ Reference: Vonovia · fill session 2026-10-15
 
 > Remain entirely in cash. Paper-track the unchanged lagged pullback rule and actual opening gaps prospectively; historical validation splits are now consumed. Reconsider a 1%-of-cash KO pilot when complete recent prices and independent evidence support positive net economics and acceptable stressed losses. Treat the entire allocation as potential loss. A new KO need not survive days before purchase; stale prices create entry and sizing uncertainty. Research, rejected scenario and falsifiers are recorded in .memento/decision-2026-10-15.md.
 
-### 2026-10-14 07:24 CEST · NEUTRAL · confidence 0.33 · horizon 5 session(s)
+### Recorded 2026-10-14 07:24 CEST · NEUTRAL · confidence 0.33 · horizon 5 session(s)
 
-Reference: iShares Core MSCI World UCITS ETF (Acc) · fill session 2026-10-14
+Reference: iShares Core MSCI World UCITS ETF (Acc) · eligible fill session 2026-10-14
 
 **Why (thesis)**
 
@@ -171,9 +177,9 @@ Reference: iShares Core MSCI World UCITS ETF (Acc) · fill session 2026-10-14
 
 > Keep 100% cash. Reject the tested leveraged momentum implementation, without claiming all strategies lack an edge. Require positive chronological validation after spreads, same-broker fees, financing and barrier-path losses before deploying KO exposure. Next experiment: stress opening gaps and pre-register a trend-consistent pullback rule using separate validation data. Size initial KO exposure at 1% of cash only if validated; treat that entire budget as potential loss. Strategy and experiment recorded in .memento/decision-2026-10-14.md.
 
-### 2026-10-13 14:05 CEST · NEUTRAL · confidence 0.50 · horizon 1 session(s)
+### Recorded 2026-10-13 14:05 CEST · NEUTRAL · confidence 0.50 · horizon 1 session(s)
 
-Reference: iShares Core MSCI World UCITS ETF (Acc) · fill session 2026-10-13
+Reference: iShares Core MSCI World UCITS ETF (Acc) · eligible fill session 2026-10-13
 
 **Why (thesis)**
 
@@ -185,6 +191,8 @@ Reference: iShares Core MSCI World UCITS ETF (Acc) · fill session 2026-10-13
 
 **Outcome:** 2026-10-09 → 2026-10-13, +0.08 % (NEUTRAL), forecast correct
 
+Outcome checked 2026-10-14 06:03 CEST.
+
 **Reflection**
 
 > assessment: The cash decision was defensible given the original stale prices, but its reported success provides little validation. The benchmark rose 0.076% from October 9 to October 13; this endpoint classification is not an executable trade return. Cash remained EUR100,000 with no costs. The verified trace shows no backtest or tool research, so the absence of an edge was an uncertainty judgment, not a tested finding. Fresh history now requires reassessment of that rationale.
@@ -194,7 +202,7 @@ Reference: iShares Core MSCI World UCITS ETF (Acc) · fill session 2026-10-13
 > next_test: Predefine a volatility-scaled barrier rule and test it chronologically with a separate holdout. Enter after the signal at the next available open, check every intervening low/high for knock-out, accrue financing by calendar day, and exit at a later open. Include 1% KO and 0.2% stock/ETF spreads, both broker fee schedules, same-broker exits, allocation limits and the five-position cap. Compare long and short KO exposure against cash and unlevered ETFs; stress opening gaps. Reject the rule if holdout returns after costs lack an edge or barrier losses exceed a preset risk budget. Review and experiment recorded in /workspace/.memento/.
 
 
-## Runs (latest 20)
+## Runs (latest 20, newest first)
 
 | Started | Phase | Status | Commands | Web searches | Input tokens | Output tokens | Prompt |
 | --- | --- | --- | ---: | ---: | ---: | ---: | --- |
@@ -204,12 +212,12 @@ Reference: iShares Core MSCI World UCITS ETF (Acc) · fill session 2026-10-13
 | 2026-10-14 07:20 CEST | reflect | success | 4 | 0 | 320,497 | 1,047 | 2026-10-13.10 |
 | 2026-10-13 14:05 CEST | decide | success | 0 | 0 | 23,839 | 264 | – |
 
-### Web research
+### Web research (by run start, newest first)
 
-- 2026-10-16 06:19 CEST: site.aixtron.com "15.10.2026" "Q3" ...
-- 2026-10-16 06:19 CEST: https://www.unicreditgroup.eu/en/press-media/press-releases-price-sensitive/2026/october/unicredit-receives-ecb-approval-to-acquire-control-of-commerzban.html
-- 2026-10-16 06:19 CEST: site.aixtron.com "2026" "275" "184" ...
 - 2026-10-16 06:19 CEST: https://www.eqs-news.com/news/ad-hoc/aixtron-q3-2026-order-intake-and-operating-profitability-significantly-exceed-market-expectations/1dede0ca-71c5-4213-93dd-f85b57fe61db_en
-- 2026-10-15 06:22 CEST: https://www.bls.gov/news.release/cpi.htm
+- 2026-10-16 06:19 CEST: site.aixtron.com "2026" "275" "184" ...
+- 2026-10-16 06:19 CEST: https://www.unicreditgroup.eu/en/press-media/press-releases-price-sensitive/2026/october/unicredit-receives-ecb-approval-to-acquire-control-of-commerzban.html
+- 2026-10-16 06:19 CEST: site.aixtron.com "15.10.2026" "Q3" ...
 - 2026-10-15 06:22 CEST: https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-nasdaq-berichtssaison-100.html
+- 2026-10-15 06:22 CEST: https://www.bls.gov/news.release/cpi.htm
 - 2026-10-14 07:23 CEST: https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_364_611.html
