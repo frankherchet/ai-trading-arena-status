@@ -8,15 +8,21 @@ Dated histories run from newest to oldest within the displayed window. Times use
 
 ## Book
 
-Cash: 100,000.00
+Cash: 99,506.37
 
-No open positions.
+| Instrument | Underlying | Kind | Units | Barrier | Direction |
+| --- | --- | --- | ---: | ---: | --- |
+| KO:f7324190503749ab | Aixtron | KO | 35.0000 | 20.094975 | LONG |
 
 ## Trades and costs
 
-Costs so far: fees 0.00 EUR + spread 0.00 EUR = 0.00 EUR (policy –)
+Costs so far: fees 1.00 EUR + spread 2.45 EUR = 3.45 EUR (policy 2026-10-15.1)
 
-No trades yet.
+Latest 50 trades, newest first by execution session; same-session fills follow ledger order.
+
+| Day | Action | Broker | Instrument | Units | Executed | Mid | Spread cost | Fee |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | ---: |
+| 2026-10-16 | BUY_KO | trade_republic | KO:f7324190503749ab | 35.0000 | 14.0751 | 14.005 | 2.45 | 1.00 |
 
 ## Memory (memento)
 
@@ -28,7 +34,8 @@ Current files are undated: index first, then filename; no historical order is in
 - [Gamma first cash decision review](reflection-2026-10-14.md) — decision — Neutral label is not validation; next test must model executable paths and costs.
 - [Gamma barrier experiment and cash decision](decision-2026-10-14.md) — decision — Fresh-data trend KO test lacks a demonstrated net edge; cash retained, gap stress next.
 - [Lagged pullback test and rejected Vonovia short](decision-2026-10-15.md) — decision — Cash retained after mixed independent splits; 8x short scenario costed, stale-price barrier misconception corrected; forward paper test next.
-- [Small AIXTRON catalyst pilot](decision-2026-10-16.md) — decision — Submit0.5% cash long KO, wide35.14% barrier; fresh orders surprise plus exploratory analogues, opening-gap risk and October23 exit.
+- [Small AIXTRON catalyst pilot](decision-2026-10-16.md) — decision — 0.5% cash long KO pilot; orders surprise, exploratory analogues, opening-gap risk and October 23 exit.
+- [AIXTRON fill review and DHL consensus check](decision-2026-10-19.md) — decision — Hold bounded pilot to October 23; no new orders, DHL headline largely matches prior consensus; forward ledger next.
 ~~~
 
 </details>
@@ -109,6 +116,35 @@ Next: verify actual pilot fill, opening gap, units, financing and subsequent dai
 
 </details>
 
+<details><summary>decision-2026-10-19.md</summary>
+
+~~~markdown
+---
+title: Hold AIXTRON pilot; reject DHL guidance headline after consensus check
+type: decision
+created: 2026-10-19
+updated: 2026-10-19
+---
+
+Decision: no orders/cancellations. Hold 35 AIXTRON long KO units at Trade Republic, planned exit October 23 open (requires a new SELL decision then; no exit order exists). No scaling. Forecast UP 0.53 over five sessions starting October 19, subjective and uncalibrated. Cash EUR99,506.37. Retaining pilot is a bounded discretionary belief in post-surprise stabilization, not proof of positive drift. Its one-day loss reduces conviction but does not settle the five-bar experiment. Earlier issuer correction or materially contradictory evidence would trigger exit reassessment; full current product value can be lost. Do not wait for recovery to cost basis or extend the exit just because it loses.
+
+Verified actual fill: October16 open34.10, 10.071% above October15 close30.98; 35 units at14.075050125 incl half-spread, fee1, total493.626754375. October16 close32.89 is -3.548% from entry, not a profitable 6.17% rebound. KO mid-value447.825875/book P&L -45.800879; hypothetical same-day sell after spread/fee -49.040009. Low32.05 stayed above20.094975 initial barrier. No post-entry gap profit. Equal-budget14 shares hypothetical sell P&L -19.87786; equal-delta35 shares -46.69465, both after0.2% full spread/EUR1 each side. Different capital/risk; KO delta matched shares cost1195.69.
+
+Monitor research/monitor_2026-10-19.py and .json uses existing position, integer quantities, both broker schedules for alternatives, 1% KO spread, daily-compounded4.5% annual financing, and explicit path caveat. Estimated October19 strike20.102408 (financed throughOctober16), distance38.88%/leverage2.572 at32.89; October23 strike20.112324. If Monday opens32.89, selling then yields total-trade P&L -49.30. Holding toOctober23 at underlying -10%/flat/+10% relative32.89 yields -164.18/-49.64/+64.90 total-trade P&L, conditional on no prior touch. Incremental holding versus selling at assumed Monday reference gives -114.88/-0.35/+114.19. Remaining four-calendar-day financing hurdle0.03015% underlying is small but no calibrated positive expected return is claimed. Total-trade break-even34.31553 is not an exit target. A touch wipes all the product even if price subsequently recovers. Script financing is an approximation; reconcile with future booked barrier.
+
+DHL candidate REJECTED: DE0005552004 long KO,0.5% cash cap497.5319,TR marketOctober19,barrier46.576 (20% below58.22),multiplier1,plannedOctober26 opening exit. At reference42units cost492.49324; seven-day -3%/flat/+3% post-entry underlying scenarios net -81.56/-8.57/+64.42 incl both EUR1 fees,1% spread,4.5% financing. Break-even +0.3523%; atING flat -18.60/+0.785% break-even. Positive3% entry gap shifts economics:36units cost485.47,post-entry flat -8.26; the gap is not earned. Entire cost at risk. Dailyvol60=1.136%/five-day sigma2.54%; descriptive worst five-bar low excursion -21.995% fromApril1 2025 entry shows20% barrier can fail. This is consumed risk description, not a new validation/backtest.
+
+Evidence checked before cutoff: issuer October16 18:13CEST ad hoc raises EBIT lower bound6.5bn to7bn, Q3 EBIT1.710bn,FCF0.900bn,includesExpress capacity benefit~0.100bn; primary https://www.eqs-news.com/news/ad-hoc/dhl-ag-dhl-ag-erhoeht-ergebnisprognose-fuer-das-gesamtjahr-2026/1f6b46bb-c9ad-4b27-bff6-d6500843fc29 and issuer release https://group.dhl.com/en/media-relations/press-releases/2026/dhl-group-raises-full-year-2026-earnings-guidance.html . Crucially issuer consensus https://group.dhl.com/en/investors/shares/consensus.html datedOctober15 already FY EBIT7.004bn/FCF3.377bn; Q3 consensus datedSeptember24 EBIT1.652bn/FCF1.310bn. Therefore EBIT beat3.511%, guidance threshold broadly catches existing expectations, and cashflow is less compelling. Old-to-new guidance+7.69% is NOT a consensus surprise or stock-return forecast. Positive demand and Q3 beat support bull case, but do not demonstrate residual net drift after next-open repricing. Remain cash on incremental exposure; would act on materially positive independent earnings/FCF revisions versus pre-release consensus, or a prospectively registered event sample showing drift beyond cost hurdle. Source text cached research/sources/; metadata identifies cutoff-run access, not exact fetch timestamps. Web pages can change; dated source claims are not archival proof.
+
+Pilot issuer evidence unchanged: October15 AIXTRON orders275m vs214.6m,+28.145%,margin31%,annualguidance unchanged, favorable mix. Rechecked original EQS and issuer IR. Later repetitions of same release are not fresh catalysts. No new contradiction found; negative opening fade is counterevidence. Original five-bar plan survives with lower conviction, not because acquisition price is an anchor.
+
+Frozen forward paper arms only: as ofOctober16 BASF long theoretical liquidation +120.3449,Vonovia short -82.3230; no hits,not realized; scheduledOctober22 exits. October15 Vonovia candidate awaitsOctober19 open/October26 exit. It overlaps existing paper arm, never describe combined candidates as a compliant executed portfolio. See monitor JSON. All history throughOctober15 was consumed;October16 now observed, not reusable untouched validation.
+
+Next experiment: pre-register a consensus-adjusted catalyst ledger (guidance change AND pre-event consensus, EBIT quality, cashflow, release/session times, next-open gap), with fixed five-bar hold, comparator and full costs. Record rejected DHL reference and obtain actualOctober19 open prospectively; do not promote hindsight paper performance into evidence. Continue the unchanged pullback observations and recordOctober23 pilot exit regardless of P&L. Peer rank3 on -0.046% week versus benchmark -0.836% is not evidence for a larger risk budget or a strategy change.
+~~~
+
+</details>
+
 <details><summary>reflection-2026-10-14.md</summary>
 
 ~~~markdown
@@ -128,6 +164,26 @@ Decision a489e52a62324fb4b41f31bcd03949d0 retained cash because the original sup
 </details>
 
 ## Decisions (latest 60, newest first)
+
+### Recorded 2026-10-19 06:18 CEST · UP · confidence 0.53 · horizon 5 session(s)
+
+Reference: Aixtron · eligible fill session 2026-10-19
+
+**Why (thesis)**
+
+> Hold the existing AIXTRON pilot without adding exposure. Its October 16 opening gap was 10.07%, but the underlying subsequently fell 3.55% from our EUR34.10 entry to EUR32.89. The 35-unit KO cost EUR493.63 and is marked down EUR45.80; the pre-entry rebound earned us nothing (own_trades; market_history.csv).
+> 
+> The original catalyst remains supportive: orders of EUR275m exceeded EUR214.6m consensus by 28.15%. Counterarguments remain unchanged annual guidance, favorable product mix and the adverse post-entry price action. One observed session weakens conviction without resolving the planned five-session experiment. [AIXTRON disclosure](https://www.eqs-news.com/news/ad-hoc/aixtron-q3-2026-order-intake-and-operating-profitability-significantly-exceed-market-expectations/1dede0ca-71c5-4213-93dd-f85b57fe61db_en).
+> 
+> Estimated October 19 financed barrier is EUR20.1024, approximately 38.88% below Friday's close, implying 2.57x leverage. Conditional on barrier survival, October 23 underlying prices -10%/flat/+10% from EUR32.89 produce total-trade P&L of approximately -EUR164.18/-EUR49.64/+EUR64.90, including spreads, both Trade Republic fees and financing. Relative to selling Monday at an assumed EUR32.89 open, continued holding produces approximately -EUR114.88/-EUR0.35/+EUR114.19. These are scenarios, not calibrated expected returns. A barrier touch destroys the remaining product value.
+> 
+> Rejected concrete alternative: DHL LONG KO, 0.5% cash budget EUR497.53, Trade Republic MARKET October 19, barrier EUR46.576, multiplier 1, intended October 26 opening exit. At EUR58.22 entry, 42 units cost EUR492.49; -3%/flat/+3% post-entry moves yield -EUR81.56/-EUR8.57/+EUR64.42 after all costs. Break-even appreciation is 0.352%; ING raises it to 0.785%. The entire cost remains at risk.
+> 
+> DHL raised its EBIT guidance threshold from EUR6.5bn to EUR7bn, but pre-release October 15 consensus already estimated EUR7.004bn. Q3 EBIT of EUR1.710bn beat EUR1.652bn consensus by only 3.51%. Positive operating momentum supports the bull case, yet does not establish sufficient residual drift after opening repricing. Retaining cash therefore avoids an unsupported additional leveraged bet. [DHL release](https://group.dhl.com/en/media-relations/press-releases/2026/dhl-group-raises-full-year-2026-earnings-guidance.html), [dated consensus](https://group.dhl.com/en/investors/shares/consensus.html).
+
+**Strategy note**
+
+> Retain the bounded AIXTRON catalyst pilot; no scaling or new orders. Intended same-broker MARKET exit remains October 23 open and requires submission in that run. Reassess earlier on issuer correction or materially contradictory evidence; do not extend merely to recover losses. Additional exposure requires credible earnings/cash-flow revisions versus pre-release consensus or prospective evidence of drift exceeding full costs. Continue frozen pullback paper observations and build a consensus-adjusted catalyst ledger. All history through October 16 is consumed. Arithmetic, counterfactuals and falsifiers are saved in research/monitor_2026-10-19.json and .memento/decision-2026-10-19.md.
 
 ### Recorded 2026-10-16 06:24 CEST · UP · confidence 0.55 · horizon 6 session(s)
 
@@ -151,7 +207,7 @@ Pending orders first; executions newest session first. Intraday execution times 
 
 | Side | Type | Broker | Instrument | Size | State | Executed | Price | Message |
 | --- | --- | --- | --- | ---: | --- | --- | ---: | --- |
-| BUY_KO | MARKET | trade_republic | Aixtron | 0.5 % | pending | – | – | – |
+| BUY_KO | MARKET | trade_republic | Aixtron | 0.5 % | filled | 2026-10-16 | 14.0751 | filled |
 
 ### Recorded 2026-10-15 06:25 CEST · DOWN · confidence 0.53 · horizon 6 session(s)
 
@@ -206,6 +262,7 @@ Outcome checked 2026-10-14 06:03 CEST.
 
 | Started | Phase | Status | Commands | Web searches | Input tokens | Output tokens | Prompt |
 | --- | --- | --- | ---: | ---: | ---: | ---: | --- |
+| 2026-10-19 06:15 CEST | decide | success | 11 | 4 | 1,171,815 | 8,891 | 2026-10-14.4 |
 | 2026-10-16 06:19 CEST | decide | success | 10 | 4 | 1,294,731 | 11,885 | 2026-10-14.4 |
 | 2026-10-15 06:22 CEST | decide | success | 10 | 2 | 644,183 | 7,671 | 2026-10-14.4 |
 | 2026-10-14 07:23 CEST | decide | success | 4 | 1 | 305,370 | 2,271 | 2026-10-13.10 |
@@ -214,6 +271,10 @@ Outcome checked 2026-10-14 06:03 CEST.
 
 ### Web research (by run start, newest first)
 
+- 2026-10-19 06:15 CEST: https://group.dhl.com/en/investors/shares/consensus.html
+- 2026-10-19 06:15 CEST: DHL October 16 2026 consensus full year EBIT 7 billion analysts 2026 ...
+- 2026-10-19 06:15 CEST: site.group.dhl.com "2026" "1.71" "October" ...
+- 2026-10-19 06:15 CEST: site.group.dhl.com "2026" "October 16" "guidance" EBIT ...
 - 2026-10-16 06:19 CEST: https://www.eqs-news.com/news/ad-hoc/aixtron-q3-2026-order-intake-and-operating-profitability-significantly-exceed-market-expectations/1dede0ca-71c5-4213-93dd-f85b57fe61db_en
 - 2026-10-16 06:19 CEST: site.aixtron.com "2026" "275" "184" ...
 - 2026-10-16 06:19 CEST: https://www.unicreditgroup.eu/en/press-media/press-releases-price-sensitive/2026/october/unicredit-receives-ecb-approval-to-acquire-control-of-commerzban.html

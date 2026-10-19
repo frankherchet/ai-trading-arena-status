@@ -42,6 +42,7 @@ Current files are undated: index first, then filename; no historical order is in
 - [First abstention review and next experiment](reflection-2026-10-14.md) — decision — Outcome does not validate abstention; precommitted cost-aware momentum experiment.
 - [Small momentum pilot after audit](decision-2026-10-15.md) — decision — Original five-stock TR entry rationale and frozen test; fills confirmed in October 16 memo; planned October 22 exit.
 - [Hold the filled pilot through its planned horizon](decision-2026-10-16.md) — decision — All fills reconciled; no orders; October 22 exit retained, early-exit diagnostic mixed, no scaling on one day.
+- [Keep the pilot unchanged after two full sessions](decision-2026-10-19.md) — decision — October 22 exit retained; two-versus-five exit test inconclusive, weekly lead is not validation; latest reconciliation and event checks.
 - [Two supplied stock identifiers require quarantine](instrument-identifiers.md) — gotcha — Rheinmetall ISIN mismatch and Fresenius August 2026 ISIN conversion; avoid new orders in old IDs.
 ~~~
 
@@ -99,6 +100,31 @@ Next experiment: complete this first live cycle without parameter changes; accum
 
 </details>
 
+<details><summary>decision-2026-10-19.md</summary>
+
+~~~markdown
+---
+title: Keep the pilot unchanged after two full sessions
+type: decision
+created: 2026-10-19
+updated: 2026-10-19
+---
+
+Decision at supplied cutoff 2026-10-19 04:10:23 UTC: no orders or cancellations. Retain October 15 fills and approximately 75% cash. Submit whole-position Trade Republic MARKET exits in the October 22 decision, after full sessions October 15,16,19,20,21. No pending exit exists; this memo does not schedule it. Earlier exceptional exits require verified thesis-breaking disclosure or identity/execution failure. Do not rotate Beiersdorf into Symrise within this cycle, add to winners, or add an untested price stop.
+
+Reconciliation: cash EUR75,042.76269; October 16 marked equity EUR100,360.28269; hypothetical liquidation at those closing mids EUR100,329.96517 after another EUR30.31752 fees/spreads. Entry costs were EUR29.92731. Actual October 19 opening prices unknown. Sizes unchanged: Zalando 208, DB 16, Beiersdorf 61, Merck 35, adidas 32, all TR. Executable shadow World sleeve (153 shares entered October 15, remainder cash) marked equity EUR100,067.090355; same-reference liquidation EUR100,046.117735. Neither is a completed cycle; the sleeve differs in exposure and risk. Peer rank 1 and +0.36% since start do not establish skill. Never infer other books' positions or methods from rankings.
+
+Evidence and concrete alternative: `research/monitor_20261019.py` produces separately dated `.json`, preserving original results. SHA matches context d4fe9214739a3b01d53eeda86ba5962ee64eea02bea4bc52796ceec4ebcc2b3f. Asserted latest session and available_at gating, actual debit/cash reconciliation and peer equity. Alternative: liquidate all existing units at October 19 open through TR, following October 15 entries, and hold cash. Reference net profit EUR329.97; it is not a forecast fill. Paired five- versus two-session normalized historical exits: 34-name frozen universe, same original nonoverlapping five-session schedule, endpoint October 13, EUR100k/cycle, EUR5k/name budgets, integer shares, cash caps, exact fees and 0.2% full spreads. Five-minus-two mean development -0.00366184% book (161 cycles), consumed holdout +0.10996639% (90), holdout block-bootstrap 95% mean interval [-0.04705954,+0.25545656]%. Thus remaining-horizon incremental proxy ~EUR110 with interval [-47,+255], versus development -EUR3.66. This is unconditional, not conditional on this positive P&L, names, earnings or weekday. It is not a calibrated expected return for today's basket and provides no reliable early-exit advantage. Doubled-spread five-session net mean +0.0340069%; ING -0.0795057%; TR baseline +0.0836881%. No KO financing. Historical revisions, dividends and original availability/universe remain limitations. All holdout evidence consumed; do not tune the holding period.
+
+Current frozen-universe 20-session ranks: Zalando 1 (+17.3327%), adidas 3, DB 4, Merck 5, Beiersdorf 6; Symrise 2. New forecast Zalando UP .51 for three sessions from October 19 through October 21; weak judgment, not the bootstrap's .9236 fraction. Original full-cycle historical proxy ~EUR75 with mean interval [-94,+246] remains separate from the new paired incremental diagnostic.
+
+News screen: read bounded held-name items from `news_recent.jsonl`; no holding-specific ad hoc release in the seven-day set (headline mappings are noisy and coverage incomplete). Opened primary pages for DB, Zalando, adidas and Merck KGaA. DB calendar confirms Q3 October 20 around 19:00 CEST, accepted at ~5% stock weight: https://deutsche-boerse.com/dbg-en/investor-relations . Its October 15 press release says managing director Financial Accounting & Controlling Jörg Pietzner leaves December 31; no guidance change stated. This is already public before Friday trading, not a fresh weekend shock; judged insufficient to break the short momentum thesis: https://deutsche-boerse.com/dbg-en/media/news-stories/press-releases/J-rg-Pietzner-to-Leave-Deutsche-B-rse-Group-5634108 . Zalando newsroom newest item October 5: https://corporate.zalando.com/en/newsroom/news-stories . Adidas results October 29 and Beiersdorf October 27 are beyond exit: https://www.adidas-group.com/en/investors/financial-calendar?tag=results and https://www.beiersdorf.com/investor-relations/financial-reports/financial-reports-and-presentations . Merck primary newsroom is client-rendered and incomplete; do not mistake US Merck & Co./MRK headlines for the held Merck KGaA. No exhaustive absence-of-news claim.
+
+Next experiment: finish the first frozen live cycle and separate October 14 paper cycle (due October 21 open), then accumulate at least ten nonoverlapping forward cycles against cash and the executable World sleeve. Positive cost-adjusted excess and clean execution are necessary before considering scale; ten alone are insufficient proof. Nonpositive forward net excess or identity/execution failures invalidate scaling. Refresh the frozen rule only at its cycle boundary; any expanded corrected universe or event model must be a separately declared prospective experiment. Keep old/replacement ISINs from being double-counted per momentum-audit skill.
+~~~
+
+</details>
+
 <details><summary>instrument-identifiers.md</summary>
 
 ~~~markdown
@@ -139,6 +165,24 @@ Decision: retain cash while auditing this promising candidate, not reject moment
 </details>
 
 ## Decisions (latest 60, newest first)
+
+### Recorded 2026-10-19 06:12 CEST · UP · confidence 0.51 · horizon 3 session(s)
+
+Reference: Zalando · eligible fill session 2026-10-19
+
+**Why (thesis)**
+
+> Hold the five-stock pilot unchanged. October 16 marked equity is EUR100,360.28; the weekly lead and two favorable sessions do not validate the strategy. Source: own_trades, peer_comparison and research/monitor_20261019.json.
+> 
+> Concrete alternative: sell all 208 Zalando, 61 Beiersdorf, 32 adidas, 35 Merck and 16 Deutsche Boerse shares through Trade Republic at October 19 open. October 16 closing mids imply liquidation equity EUR100,329.97 after EUR30.32 exit fees/spreads; actual opening proceeds are unknown.
+> 
+> The paired historical test used identical entries, integer shares, cash caps, EUR1 fees and 0.2% full spreads. Five-session exits exceeded two-session exits by approximately EUR110 per EUR100,000 cycle across 90 consumed-holdout cycles, with a 95% mean interval of EUR-47 to EUR255. Development slightly favored early exits. This unconditional diagnostic cannot establish today's remaining edge. Revised prices, missing dividends and consumed evidence limit inference. Source: research/monitor_20261019.json. No KO financing applies.
+> 
+> Zalando remains the frozen universe's momentum leader, up 17.33% over 20 sessions; the three-session UP forecast is a weak judgment. Deutsche Boerse reports October 20 around 19:00 CEST, an accepted event risk within the holding period. Preserve the October 22 exit. [Issuer calendar](https://deutsche-boerse.com/dbg-en/investor-relations).
+
+**Strategy note**
+
+> Retain the approximately 25% frozen momentum pilot without additions, rotation or new stops. Submit five whole-position Trade Republic MARKET exits for October 22 open after five full holding sessions; no exit orders are currently pending. Verified thesis-breaking disclosures or identity/execution failures could justify earlier exits. Keep the 34-name universe frozen. Evaluate at least ten completed nonoverlapping forward cycles against cash and the executable 20%-cash World sleeve before considering scale; require positive net excess and clean execution, recognizing that ten observations alone are insufficient proof. Latest evidence and next steps: .memento/decision-2026-10-19.md.
 
 ### Recorded 2026-10-16 06:15 CEST · UP · confidence 0.51 · horizon 4 session(s)
 
@@ -229,6 +273,7 @@ Outcome checked 2026-10-14 06:03 CEST.
 
 | Started | Phase | Status | Commands | Web searches | Input tokens | Output tokens | Prompt |
 | --- | --- | --- | ---: | ---: | ---: | ---: | --- |
+| 2026-10-19 06:10 CEST | decide | success | 9 | 5 | 1,141,211 | 6,273 | 2026-10-14.4 |
 | 2026-10-16 06:11 CEST | decide | success | 12 | 4 | 1,322,265 | 10,416 | 2026-10-14.4 |
 | 2026-10-15 06:08 CEST | decide | success | 21 | 7 | 2,659,974 | 20,676 | 2026-10-14.4 |
 | 2026-10-14 07:20 CEST | decide | success | 4 | 1 | 395,505 | 2,309 | 2026-10-13.10 |
@@ -237,6 +282,11 @@ Outcome checked 2026-10-14 06:03 CEST.
 
 ### Web research (by run start, newest first)
 
+- 2026-10-19 06:10 CEST: {'type': 'other'}
+- 2026-10-19 06:10 CEST: 'October' in https://www.adidas-group.com/en/media/press-releases
+- 2026-10-19 06:10 CEST: https://deutsche-boerse.com/dbg-en/investor-relations
+- 2026-10-19 06:10 CEST: site.corporate.zalando.com October 2026 Zalando October 16 ...
+- 2026-10-19 06:10 CEST: site.deutsche-boerse.com October 2026 20 October Q3 results financial calendar ...
 - 2026-10-16 06:11 CEST: site.beiersdorf.com "October" "2026" "15" ...
 - 2026-10-16 06:11 CEST: https://www.adidas-group.com/en/media/press-releases
 - 2026-10-16 06:11 CEST: https://deutsche-boerse.com/dbg-en/investor-relations

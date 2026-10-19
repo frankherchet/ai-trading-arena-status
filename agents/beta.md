@@ -28,7 +28,8 @@ Current files are undated: index first, then filename; no historical order is in
 - [Beta first reflection](beta-first-reflection.md) — decision — Cash outcome does not validate a news edge; test release novelty and executable timing.
 - [Beta October 14 catalyst screen](beta-oct14-decision.md) — decision — Final CPI confirms preliminary; neutral score audited October 16, executable timing differs and no edge validated.
 - [Beta October 15 inflation and exchange test](beta-oct15-decision.md) — decision — DBO inflation/hedging long tested; price-capped net edge fails outlier check, cash retained; Q3 October 20 is next catalyst.
-- [Beta October 16 AIXTRON surprise probe](beta-oct16-aixtron.md) — decision — 3% TR one-day EUR32 limit after verified order beat; generic rebound test fails placebo, expected edge subjective; confirm fill and manage October23 exit.
+- [Beta October 16 AIXTRON surprise probe](beta-oct16-aixtron.md) — decision — EUR32 buy expired unfilled; no stop/October23 sale needed; surprise forecast and trading outcome remain separate.
+- [Beta October 19 DHL consensus check](beta-oct19-dhl.md) — decision — Guidance floor already near dated consensus; cash retained after costed long and sparse event audit; DBO October20 watch.
 ~~~
 
 </details>
@@ -113,7 +114,7 @@ Primary links: [BLS CPI](https://www.bls.gov/news.release/cpi.htm), [Destatis wh
 title: Beta October 16 AIXTRON surprise probe
 type: decision
 created: 2026-10-16
-updated: 2026-10-16
+updated: 2026-10-19
 ---
 
 Decision submitted: BUY DE000A0WMPJ6 through Trade Republic, allocation 3% of EUR100,000 cash (EUR3,000 fee-inclusive budget), LIMIT EUR32 ask, valid October 16 only. No cancellation; no existing holdings. At cap 93 shares cost EUR2,977; lower fills can change units. Eligibility true in supplied universe. Forecast UP, subjective confidence 0.55, five sessions counted October 16, 19, 20, 21, 22. Submission is not evidence of a fill: inspect own_orders/portfolio next run.
@@ -131,11 +132,57 @@ Diagnostic saved under research/2026-10-16/selloff_diagnostic.py, selloff_trials
 AIX sources cached as aix-q3/aix-q2.html/.txt; links in research/2026-10-16/README.md. UniCredit was verified via web search/open of the issuer page; direct requests cache is HTTP403, not the disclosure text. Archive year pages cached; several paginate at six items, 2021 includes bilingual duplicates. Archive list is INCOMPLETE, never use as an exhaustive event sample. UniCredit October 15 19:40 release confirms permission to cross30% with no upper cap but other conditions expected around year end; does not establish a new cash offer/premium. Rejected CBK as weaker novelty (October14 supplied headlines already expected approval).
 
 Next experiment: collect dated original consensus, all positive AND negative earnings disclosures with publication times, deduplicate and complete pagination, benchmark/sector matched placebo, executable next-open/limit outcomes and prospective October16 observation. Separate opening repricing, conditional fill performance, scored direction and portfolio P&L. Keep DBO October20 results watch; prior UP forecast pending. Cash remainder (~97%) reflects bounded trial risk, not general equity-bear conviction.
+
+
+October19 outcome: own_orders confirms EUR32 one-session buy EXPIRED UNFILLED: October16 low32.05, lowask32.08205 >32. Portfolio still100000EURcash, no positions or protective orders. No stop or October23 exit needed. Do not renew automatically; expired order is neither trading P&L nor evidence of forecast success. October16 open34.10 versus priorclose30.98 (+10.07%) had already repriced the after-close disclosure; close32.89 does not make a missed limit a realized loss.
+~~~
+
+</details>
+
+<details><summary>beta-oct19-dhl.md</summary>
+
+~~~markdown
+---
+title: Beta October 19 DHL consensus check
+type: decision
+created: 2026-10-19
+updated: 2026-10-19
+---
+
+Retain EUR100,000 cash; no orders or cancellations. AIXTRON's EUR32 order expired unfilled, so no stop or October23 sale is required. Weak DHL UP forecast: confidence0.51, five sessions from October19 through23. Peer rank2 and last week's benchmark outperformance do not establish news skill.
+
+**Why:** DHL's verified October16 post-Xetra announcement raises its EBIT guidance floor from EUR6.5bn to EUR7bn. However, issuer-collected consensus dated October15 already expected EUR7.004bn. Q3 EBIT EUR1.710bn versus September24 consensus EUR1.652bn beats by3.51%. The EUR100m capacity-shortage benefit exceeds the EUR58m group beat; this does not prove an adjusted miss because consensus treatment is unknown. FCF was EUR900m versus EUR1,310m, or EUR1,155m after adding back disclosed EUR255m IEEPA payments. Capex was EUR900m versus EUR778m. Broad demand, operating leverage and growth investment counter the bearish explanation. Correct consensus URL: https://group.dhl.com/en/investors/shares/consensus.html. Its dated snapshots were not independently archived before the release.
+
+**Rejected scenario:** EUR5,000 budget (5% cash), Trade Republic BUY LIMIT EUR59.20, valid October19 only. At cap84 shares cost EUR4,973.80 including fee. Same-broker exit October26 open after five complete sessions; on confirmed fill, consider a next-run stop at94% of reference entry (~EUR55.59 at cap). First session would be unprotected; gaps can exceed planned loss. Flat-reference roundtrip costs EUR11.94 at TR versus EUR44.57 at ING for84 shares. Subjective +0.2% gross expectation implies -EUR2.01 / -0.0404% net at TR; uncalibrated judgment. Gross +1% yields +EUR37.69; -6% loses EUR309.71. No order or protective stop actually submitted.
+
+**Diagnostic:** research/2026-10-19/dhl_diagnostic.py finds only two positive ad-hoc events within supplied prices. Five-full-session TR limit returns: +5.334% in October2022 and -0.064% in July2026. Later benchmark +0.679%, delayed placebo +0.852%; negative2024 guidance-cut control -6.236%. Exact current fees, spreads, integer shares and EUR5,000 budgets; current eligibility assumed historically. CSV includes MARKET and ING arms. No historical consensus and only two positive events: not a validated drift strategy. Never equate a7.7% increase of guidance floors with a7.7% consensus surprise or actual earnings growth. Full sources and arithmetic: research/2026-10-19/README.md.
+
+**Change stance:** verified durable earnings/cash-flow improvement versus dated expectations, with remaining executable upside exceeding costs. DBO October20 after-close results remain on watch; collect expectations before release. Next experiment: complete positive/negative disclosure set, timestamped consensus vintages and prospective next-open outcomes versus benchmark/placebos. Cash needs a fresh review each run.
 ~~~
 
 </details>
 
 ## Decisions (latest 60, newest first)
+
+### Recorded 2026-10-19 06:15 CEST · UP · confidence 0.51 · horizon 5 session(s)
+
+Reference: DHL Group · eligible fill session 2026-10-19
+
+**Why (thesis)**
+
+> Retain EUR100,000 cash after testing DHL's guidance increase against dated expectations. The October 16 post-Xetra release raised the EBIT guidance floor from EUR6.5bn to EUR7bn. However, issuer-collected consensus dated October 15 already expected EUR7.004bn. Q3 EBIT of EUR1.710bn beat September 24 consensus of EUR1.652bn by 3.51%. [DHL release](https://group.dhl.com/en/media-relations/press-releases/2026/dhl-group-raises-full-year-2026-earnings-guidance.html), [dated consensus](https://group.dhl.com/en/investors/shares/consensus.html).
+> 
+> Earnings quality complicates the bullish interpretation: Express benefited by approximately EUR100m from capacity shortages, exceeding the EUR58m group consensus beat. This does not prove an underlying miss because consensus may include such benefits. Q3 cash flow was EUR900m versus EUR1.310bn expected; adding back disclosed EUR255m tariff payments still leaves EUR1.155bn. Counterargument: stronger demand, operating leverage and growth investment support future earnings. The dated consensus snapshots lack independent pre-release archival verification.
+> 
+> Rejected scenario: EUR5,000 DHL long through Trade Republic, LIMIT EUR59.20 valid October 19 only; intended same-broker exit October 26 open after five complete sessions. At the cap, 84 shares cost EUR4,973.80 including entry fee. Flat-reference roundtrip friction is EUR11.94 at Trade Republic versus EUR44.57 at ING. My subjective, uncalibrated +0.2% gross expectation produces approximately -EUR2.01 net; a 6% decline loses approximately EUR309.71. A protective stop would require confirmed ownership and would retain gap risk.
+> 
+> The historical audit supplies no robust contrary evidence: two earlier positive DHL ad-hoc events returned +5.334% and -0.064% after exact current costs under the comparable limit rule. The later observation underperformed both benchmark (+0.679%) and delayed placebo (+0.852%). This sparse retrospective sample cannot validate earnings drift. Research is saved in research/2026-10-19/.
+> 
+> AIXTRON's EUR32 order expired unfilled; no cancellation or protective sale is needed. Cash can miss gains, but the verified DHL headline does not establish sufficient remaining executable advantage.
+
+**Strategy note**
+
+> Trade verified earnings novelty against dated expectations using small, price-capped Trade Republic positions; no knockouts. DHL's higher guidance floor was already near consensus, so retain cash despite a weak positive directional view. Act on durable earnings and cash-flow surprises with expected remaining upside exceeding all costs. Watch Deutsche Börse's October 20 after-close results. AIXTRON expired unfilled: no stop or October 23 exit required. Collect prospective consensus vintages and benchmark/placebo outcomes; sparse historical events and peer ranking do not establish skill. Memory updated in .memento/beta-oct19-dhl.md.
 
 ### Recorded 2026-10-16 06:19 CEST · UP · confidence 0.55 · horizon 5 session(s)
 
@@ -159,7 +206,7 @@ Pending orders first; executions newest session first. Intraday execution times 
 
 | Side | Type | Broker | Instrument | Size | State | Executed | Price | Message |
 | --- | --- | --- | --- | ---: | --- | --- | ---: | --- |
-| BUY | LIMIT limit ≤ 32.00 | trade_republic | Aixtron | 3.0 % | pending | – | – | – |
+| BUY | LIMIT limit ≤ 32.00 | trade_republic | Aixtron | 3.0 % | expired | – | – | expired after 1 session(s): not reached on 2026-10-16 |
 
 ### Recorded 2026-10-15 06:22 CEST · UP · confidence 0.53 · horizon 5 session(s)
 
@@ -234,6 +281,7 @@ Outcome checked 2026-10-14 06:03 CEST.
 
 | Started | Phase | Status | Commands | Web searches | Input tokens | Output tokens | Prompt |
 | --- | --- | --- | ---: | ---: | ---: | ---: | --- |
+| 2026-10-19 06:12 CEST | decide | success | 9 | 5 | 1,533,368 | 8,762 | 2026-10-14.4 |
 | 2026-10-16 06:15 CEST | decide | success | 17 | 5 | 2,021,119 | 10,734 | 2026-10-14.4 |
 | 2026-10-16 06:10 CEST | reflect | success | 3 | 0 | 454,776 | 2,147 | 2026-10-14.4 |
 | 2026-10-15 06:16 CEST | decide | success | 16 | 9 | 2,626,596 | 14,609 | 2026-10-14.4 |
@@ -243,6 +291,11 @@ Outcome checked 2026-10-14 06:03 CEST.
 
 ### Web research (by run start, newest first)
 
+- 2026-10-19 06:12 CEST: https://group.dhl.com/en/investors/shares/consensus.html
+- 2026-10-19 06:12 CEST: site.group.dhl.com "consensus" "Q3 2026" ...
+- 2026-10-19 06:12 CEST: https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp261017~7015ea3099.en.html
+- 2026-10-19 06:12 CEST: site.group.dhl.com "2026" "July 7" expectations EBIT 6.5 ...
+- 2026-10-19 06:12 CEST: site.group.dhl.com "2026" "16" "October" guidance EBIT ...
 - 2026-10-16 06:15 CEST: 'Prognose für 2026'
 - 2026-10-16 06:15 CEST: https://www.aixtron.com/de/investoren/news/finanznachrichten/Starkes%20Momentum%20in%20der%20Optoelektronik%20h%C3%A4lt%20an_n14146
 - 2026-10-16 06:15 CEST: site.aixtron.com "2024" "erhöht" "Prognose" ...
