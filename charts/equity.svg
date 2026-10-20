@@ -8,14 +8,14 @@
 <line x1="65" x2="850" y1="113.8" y2="113.8" stroke="#8491a5" stroke-opacity=".22"/><text x="59" y="117.8" text-anchor="end">100.5</text>
 <line x1="65" x2="850" y1="45.0" y2="45.0" stroke="#8491a5" stroke-opacity=".22"/><text x="59" y="49.0" text-anchor="end">100.8</text>
 <text x="65.0" y="345" text-anchor="middle">2026-10-05</text>
-<text x="501.1" y="345" text-anchor="middle">2026-10-12</text>
-<text x="850.0" y="345" text-anchor="middle">2026-10-16</text>
-<polyline fill="none" stroke="#3875df" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" points="65.0,213.9 152.2,213.9 239.4,213.9 326.7,213.9 413.9,213.9 501.1,213.9 588.3,213.9 675.6,213.9 762.8,184.9 850.0,137.8"/>
+<text x="457.5" y="345" text-anchor="middle">2026-10-12</text>
+<text x="850.0" y="345" text-anchor="middle">2026-10-19</text>
+<polyline fill="none" stroke="#3875df" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" points="65.0,213.9 143.5,213.9 222.0,213.9 300.5,213.9 379.0,213.9 457.5,213.9 536.0,213.9 614.5,213.9 693.0,184.9 771.5,137.8 850.0,118.9"/>
 <line x1="860" x2="880" y1="55" y2="55" stroke="#3875df" stroke-width="3"/><text x="886" y="59">alpha</text>
-<polyline fill="none" stroke="#a75bce" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" points="65.0,213.9 152.2,213.9 239.4,213.9 326.7,213.9 413.9,213.9 501.1,213.9 588.3,213.9 675.6,213.9 762.8,213.9 850.0,213.9"/>
+<polyline fill="none" stroke="#a75bce" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" points="65.0,213.9 143.5,213.9 222.0,213.9 300.5,213.9 379.0,213.9 457.5,213.9 536.0,213.9 614.5,213.9 693.0,213.9 771.5,213.9 850.0,213.9"/>
 <line x1="860" x2="880" y1="75" y2="75" stroke="#a75bce" stroke-width="3"/><text x="886" y="79">beta</text>
-<polyline fill="none" stroke="#138776" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" points="65.0,213.9 152.2,213.9 239.4,213.9 326.7,213.9 413.9,213.9 501.1,213.9 588.3,213.9 675.6,213.9 762.8,213.9 850.0,223.5"/>
+<polyline fill="none" stroke="#138776" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" points="65.0,213.9 143.5,213.9 222.0,213.9 300.5,213.9 379.0,213.9 457.5,213.9 536.0,213.9 614.5,213.9 693.0,213.9 771.5,223.5 850.0,224.5"/>
 <line x1="860" x2="880" y1="95" y2="95" stroke="#138776" stroke-width="3"/><text x="886" y="99">gamma</text>
-<polyline fill="none" stroke="#8491a5" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" points="65.0,213.9 152.2,111.7 239.4,168.0 326.7,250.8 413.9,143.1 501.1,45.0 588.3,127.0 675.6,118.2 762.8,280.6 850.0,320.0"/>
+<polyline fill="none" stroke="#8491a5" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" points="65.0,213.9 143.5,111.7 222.0,168.0 300.5,250.8 379.0,143.1 457.5,45.0 536.0,127.0 614.5,118.2 693.0,280.6 771.5,320.0 850.0,291.1"/>
 <line x1="860" x2="880" y1="115" y2="115" stroke="#8491a5" stroke-width="3"/><text x="886" y="119">benchmark</text>
 </svg>

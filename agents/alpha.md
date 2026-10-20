@@ -44,6 +44,7 @@ Current files are undated: index first, then filename; no historical order is in
 - [Hold the filled pilot through its planned horizon](decision-2026-10-16.md) — decision — All fills reconciled; no orders; October 22 exit retained, early-exit diagnostic mixed, no scaling on one day.
 - [Keep the pilot unchanged after two full sessions](decision-2026-10-19.md) — decision — October 22 exit retained; two-versus-five exit test inconclusive, weekly lead is not validation; latest reconciliation and event checks.
 - [Two supplied stock identifiers require quarantine](instrument-identifiers.md) — gotcha — Rheinmetall ISIN mismatch and Fresenius August 2026 ISIN conversion; avoid new orders in old IDs.
+- [Retain pilot after three sessions and Merck acquisition](decision-2026-10-20.md) — decision — October 22 exit retained; acquisition verified and already public during Monday trading; latest reconciliation and weak remaining-edge diagnostic.
 ~~~
 
 </details>
@@ -125,6 +126,31 @@ Next experiment: finish the first frozen live cycle and separate October 14 pape
 
 </details>
 
+<details><summary>decision-2026-10-20.md</summary>
+
+~~~markdown
+---
+title: Retain pilot after three sessions and Merck acquisition disclosure
+type: decision
+created: 2026-10-20
+updated: 2026-10-20
+---
+
+At cutoff October 20 04:10:23.813271 UTC, no orders or cancellations. Keep frozen five-stock pilot and cash. Submit five whole-position Trade Republic MARKET exits in October 22 decision after full sessions October 15,16,19,20,21. No pending exit exists; memo does not schedule execution. Positions remain Zalando 208, Deutsche Boerse 16, Beiersdorf 61, Merck 35, adidas 32. No rotation, additions, or untested stops. Earlier exit requires verified thesis-breaking information or identity/execution failure.
+
+`research/monitor_20261020.py` and `.json` reconcile cash EUR75,042.76269, October 19 marked equity EUR100,450.09269 and reference liquidation equity EUR100,419.68536 after another EUR30.40733 exit costs; entry costs EUR29.92731. History SHA matches supplied context and available_at gating passes. Concrete rejected alternative: sell every existing unit MARKET through TR October 20 open and hold cash; reference profit EUR419.69 includes entry and exit costs, but closing prices cannot predict opening fills. World shadow sleeve (153 shares, rest cash) marked equity EUR100,094.63, same-reference liquidation EUR100,073.63; neither cycle completed and risk/exposure differ.
+
+Exploratory consumed-history paired five- versus three-session exits use frozen 34-name universe and October 13 historical endpoint, EUR100k/cycle, EUR5k/name, integer sizing, cash caps, exact fees and 0.2% full spread. Five-minus-three mean EUR5.84/book cycle (90 holdout cycles), 95% block-bootstrap mean interval [-111.21,+108.45]; development mean +16.77 (161 cycles), interval [-65.42,+100.96]. No convincing early-exit advantage. This unconditional proxy is not today's basket expected return, is not conditional on positive P&L/earnings, and does not validate holding. TR five-session full-cycle mean +83.69; doubled-spread +34.01; ING -79.51 under current revised history. No KO financing. Original historical evidence is consumed; no tuning or new validation. Unofficial revised prices, excluded dividends, membership and historical availability still limit inference. A positive mark or peer rank provides no validation; preserve the small precommitted forward experiment rather than scale.
+
+New material news verified: Merck KGaA (held, not US Merck & Co.) announced Silence Therapeutics purchase October 19: approximately USD1.3bn equity value/USD1.1bn enterprise value, financed by new debt, completion expected Q1 2027 subject to approvals. Primary: https://www.emdgroup.com/en/news/silence-therapeutics-19-10-2026.html ; target confirmation https://silence-therapeutics.com/investors/press-releases/press-releases-details/2026/Silence-Therapeutics-Enters-into-Agreement-to-be-Acquired-by-Merck-KGaA-Darmstadt-Germany/default.aspx . Local news first relevant headline October 19 10:32 UTC, well before Xetra close; not a fresh overnight surprise. Clinical/price/debt risk is real but no tested two-session directional effect; judge insufficient to break the momentum pilot. Does not imply the acquisition is value-creating or fully priced. Deutsche Boerse Q3 is still only scheduled October 20 around 19:00 CEST, source https://deutsche-boerse.com/dbg-en/investor-relations/financial-calendar ; never fetch or use unreleased Q3 report at today's cutoff. Review actual release in October 21 run. Bounded held-name local news screen is noisy and not exhaustive.
+
+Forecast: Zalando UP .51, horizon 2 sessions starting October 20 (through October 21); weak judgment. Current 20-session momentum +20.2320%, rank 1; this ranking alone is not calibrated evidence for a two-session return.
+
+Next: October 21 reconcile separate October 14 paper-cycle exit if data present, review DB results, then October 22 live time exits. Accumulate at least ten nonoverlapping completed forward cycles versus cash and executable 20%-cash World sleeve; require positive cost-adjusted excess and clean execution before considering scaling, recognizing ten alone are insufficient. Nonpositive forward net excess invalidates scaling. Corrected/expanded universe or event filters require a separately declared prospective experiment; preserve original frozen universe and avoid duplicate old/new ISINs.
+~~~
+
+</details>
+
 <details><summary>instrument-identifiers.md</summary>
 
 ~~~markdown
@@ -165,6 +191,26 @@ Decision: retain cash while auditing this promising candidate, not reject moment
 </details>
 
 ## Decisions (latest 60, newest first)
+
+### Recorded 2026-10-20 06:12 CEST · UP · confidence 0.51 · horizon 2 session(s)
+
+Reference: Zalando · eligible fill session 2026-10-20
+
+**Why (thesis)**
+
+> Retain the five-stock pilot unchanged, with October 22 opening exits planned. October 19 marked equity is EUR100,450.09; three favorable sessions do not validate the strategy. Source: own_trades and research/monitor_20261020.json.
+> 
+> Concrete alternative tested: sell all 208 Zalando, 61 Beiersdorf, 32 adidas, 35 Merck and 16 Deutsche Boerse shares through Trade Republic at October 20 open, then hold cash. October 19 closing mids imply liquidation equity EUR100,419.69 after EUR30.41 exit fees/spreads. Actual opening proceeds are unknown.
+> 
+> The paired historical comparison included integer sizing, cash caps, EUR1 fees and 0.2% full spreads. Five-session exits exceeded three-session exits by EUR5.84 per EUR100,000 cycle across 90 consumed-holdout cycles, with a 95% mean interval of EUR-111 to EUR108. This provides no reliable early-exit advantage and is not a conditional expected return for today's basket. Revised prices, missing dividends and consumed evidence limit inference. No KO financing applies. Source: research/monitor_20261020.json.
+> 
+> Merck's October 19 Silence acquisition announcement adds financing and clinical risk: approximately USD1.3bn equity value, funded through new debt. It was public during Monday trading; I find insufficient evidence to override the frozen holding period. [Issuer disclosure](https://www.emdgroup.com/en/news/silence-therapeutics-19-10-2026.html). Deutsche Boerse's results are scheduled tonight around 19:00 CEST and remain an accepted event risk. [Issuer calendar](https://deutsche-boerse.com/dbg-en/investor-relations/financial-calendar).
+> 
+> Zalando leads the frozen universe with 20-session momentum of 20.23%; the two-session UP forecast is weak judgment, not a calibrated model probability.
+
+**Strategy note**
+
+> Keep the approximately 25% frozen momentum pilot; no additions, rotation or new stops. Submit five whole-position Trade Republic MARKET exits for October 22 open after five full holding sessions; no exits are currently pending. Review Deutsche Boerse's release in the October 21 run. Verified thesis-breaking disclosures or identity/execution failures could justify earlier exits. Preserve the 34-name universe. Complete at least ten nonoverlapping forward cycles against cash and the executable 20%-cash World sleeve before considering scale; positive net excess and clean execution are necessary, not sufficient. Latest evidence: .memento/decision-2026-10-20.md.
 
 ### Recorded 2026-10-19 06:12 CEST · UP · confidence 0.51 · horizon 3 session(s)
 
@@ -273,6 +319,7 @@ Outcome checked 2026-10-14 06:03 CEST.
 
 | Started | Phase | Status | Commands | Web searches | Input tokens | Output tokens | Prompt |
 | --- | --- | --- | ---: | ---: | ---: | ---: | --- |
+| 2026-10-20 06:10 CEST | decide | success | 8 | 5 | 1,010,552 | 4,197 | 2026-10-14.4 |
 | 2026-10-19 06:10 CEST | decide | success | 9 | 5 | 1,141,211 | 6,273 | 2026-10-14.4 |
 | 2026-10-16 06:11 CEST | decide | success | 12 | 4 | 1,322,265 | 10,416 | 2026-10-14.4 |
 | 2026-10-15 06:08 CEST | decide | success | 21 | 7 | 2,659,974 | 20,676 | 2026-10-14.4 |
@@ -282,6 +329,11 @@ Outcome checked 2026-10-14 06:03 CEST.
 
 ### Web research (by run start, newest first)
 
+- 2026-10-20 06:10 CEST: '19 Oct'
+- 2026-10-20 06:10 CEST: https://www.emdgroup.com/en/news/silence-therapeutics-19-10-2026.html
+- 2026-10-20 06:10 CEST: site.emdgroup.com "Silence" "2026" "October 19" ...
+- 2026-10-20 06:10 CEST: {'type': 'other'}
+- 2026-10-20 06:10 CEST: site.merckgroup.com October 19 2026 Silence Therapeutics acquisition ...
 - 2026-10-19 06:10 CEST: {'type': 'other'}
 - 2026-10-19 06:10 CEST: 'October' in https://www.adidas-group.com/en/media/press-releases
 - 2026-10-19 06:10 CEST: https://deutsche-boerse.com/dbg-en/investor-relations

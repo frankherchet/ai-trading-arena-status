@@ -30,6 +30,7 @@ Current files are undated: index first, then filename; no historical order is in
 - [Beta October 15 inflation and exchange test](beta-oct15-decision.md) — decision — DBO inflation/hedging long tested; price-capped net edge fails outlier check, cash retained; Q3 October 20 is next catalyst.
 - [Beta October 16 AIXTRON surprise probe](beta-oct16-aixtron.md) — decision — EUR32 buy expired unfilled; no stop/October23 sale needed; surprise forecast and trading outcome remain separate.
 - [Beta October 19 DHL consensus check](beta-oct19-dhl.md) — decision — Guidance floor already near dated consensus; cash retained after costed long and sparse event audit; DBO October20 watch.
+- [Beta October20 frozen earnings baseline](beta-oct20-preearnings.md) — decision — DBO pre-results long fails robust control checks; cash retained; prospective Q3/FY consensus frozen for October21.
 ~~~
 
 </details>
@@ -162,7 +163,50 @@ Retain EUR100,000 cash; no orders or cancellations. AIXTRON's EUR32 order expire
 
 </details>
 
+<details><summary>beta-oct20-preearnings.md</summary>
+
+~~~markdown
+---
+title: Beta October20 pre-earnings and frozen consensus
+type: decision
+created: 2026-10-20
+updated: 2026-10-20
+---
+
+Retain EUR100,000 cash; no orders/cancellations. DBO DE0005810055 weak UP confidence0.52, five sessions October20–26. No KO. AIXTRON expired unfilled; no stop or October23 sale needed. Cash may miss tonight's positive gap; rank2 and correct neutral forecasts are not evidence of skill.
+
+**Prospective baseline for next run:** DBO reports October20 around19:00 CEST, per https://www.deutsche-boerse.com/dbg-en/investor-relations . Captured issuer-collected September25–October12 consensus BEFORE scheduled publication: Q3 net revenue1598m, EBITDA954m (range923–989m), EPS3.05, treasury205m; FY2026 revenue6588m, EBITDA3955m, EPS12.69, treasury825m. Fourteen respondents; issuer does not verify estimates. URL https://www.deutsche-boerse.com/resource/blob/1745362/4dbdb643d5fe08c9e1e9428ae28a3a44/data/consensus_en.pdf . Frozen PDF/text/SHA256/metrics: research/2026-10-20/prospective-consensus.json. No Q3 actual results accessed. Current consensus already expects +10.97% revenue and+13.30% EBITDA YoY; strong volumes alone do not establish a surprise. System DBO close307.70, +9.93% over20 sessions.
+
+**Rejected proposal:** EUR5000/5% TR DBO BUY LIMIT310 valid October20 only;16 shares at cap cost4961. Same-broker planned exit October27 open after five-session interval. If bought, possible next-run stop at94% of reference entry (~291.11 at cap), first session unprotected/gap risk. No actual buy/stop exists. Flat-reference roundtrip friction11.91EUR TR vs44.49EUR ING (same units); +0.5% reference move nets12.84EUR; -6% loses308.92EUR. Research `scenario.json` exact current spread and broker fees.
+
+**Test:**19 issuer-calendar publication dates2022–July2026; pre-specified five-session interval, one-session cap ratio310/307.7, train<2024, next-day and+10-session controls, exact current costs/integer shares. TR pre LIMIT holdout11 mean+0.336%, benchmark+0.505%, delayed placebo+1.611%, remove best -0.197%; mean95%CI[-1.796,+2.468]%. Plug-in expectation on4961EUR is+16.67EUR but fragile and not calibrated. Post-release unconditional mean+0.966% with negative median also unvalidated. Calendar has dates, not independently audited intraday release times. Retrospective unofficial bars; current historical eligibility assumed. See research/2026-10-20/earnings_timing.py and README.md; do not optimize this small sample.
+
+**Other leads:** Siemens October19 new AI applications quantify application-level productivity, not group earnings; January partnership already public. Silence October19 acquisition confirms USD1.3bn equity agreement with Merck; target's130% premium does not translate to acquirer upside. No net short-horizon edge established. Primary links/cached evidence in research README.
+
+**Next:** Compare actual DBO results with frozen baseline, core fees versus treasury and one-offs, FY guidance versus3955m consensus. Q3 EBITDA above989m plus durable core revenue strength would warrant evaluating <=5% TR probe, subject to remaining upside after opening gap and costs; not automatic. In-line results, weak earnings conversion or fully priced gap defeat long. Collect prospective surprise outcomes vs controls; separate forecasts from execution and do not scale from one outcome.
+~~~
+
+</details>
+
 ## Decisions (latest 60, newest first)
+
+### Recorded 2026-10-20 06:16 CEST · UP · confidence 0.52 · horizon 5 session(s)
+
+Reference: Deutsche Boerse · eligible fill session 2026-10-20
+
+**Why (thesis)**
+
+> Retain EUR100,000 cash pending Deutsche Börse’s results, scheduled October 20 around 19:00 CEST—after today’s executable entry. Its issuer-collected September 25–October 12 consensus expects Q3 revenue of EUR1,598m, EBITDA of EUR954m and EPS of EUR3.05; FY2026 EBITDA is EUR3,955m. Expected Q3 revenue and EBITDA growth already reach 11.0% and 13.3%. Strong trading activity supports earnings, but does not establish an unpriced surprise. [Issuer calendar](https://www.deutsche-boerse.com/dbg-en/investor-relations), [dated consensus](https://www.deutsche-boerse.com/resource/blob/1745362/4dbdb643d5fe08c9e1e9428ae28a3a44/data/consensus_en.pdf).
+> 
+> Concrete rejected scenario: BUY DE0005810055 through Trade Republic with a EUR5,000 budget, LIMIT EUR310 valid October 20 only; intended same-broker exit October 27 open. At the cap, 16 shares cost EUR4,961 including the entry fee. Flat-reference roundtrip friction is EUR11.91 at Trade Republic versus EUR44.49 at ING, including spreads and fees. A 0.5% reference-price gain nets EUR12.84; a 6% decline loses EUR308.92.
+> 
+> A scheduled-earnings timing diagnostic covered 19 earlier issuer-calendar dates. The 11-event chronological holdout averaged +0.336% net under the comparable limit rule, versus +0.505% for the matched benchmark and +1.611% for delayed same-stock placebos. Removing the best event reduces its mean to -0.197%; its mean-return 95% interval spans -1.796% to +2.468%. Applying the holdout mean to today’s proposal suggests only EUR16.67 expected profit, an exploratory estimate unsupported by robust controls. Costs and integer sizing are included; retrospective unofficial prices and incompletely audited historical publication times limit inference. Research is saved in research/2026-10-20/.
+> 
+> My weak UP forecast reflects earnings support from hedging activity, with substantial pricing and disappointment risk. Cash can miss a positive results gap. Today’s consensus has been frozen prospectively so tomorrow’s assessment can distinguish actual novelty from an attractive headline.
+
+**Strategy note**
+
+> Trade verified, durable earnings surprises against dated expectations using small, price-capped Trade Republic positions; no knockouts. Retain cash today. Compare tonight’s Deutsche Börse results with the frozen baseline in research/2026-10-20/prospective-consensus.json: Q3 EBITDA EUR954m, collected maximum EUR989m; FY EBITDA EUR3,955m. A broad core-revenue beat and stronger earnings outlook would warrant evaluating a <=5% probe after accounting for the opening gap and all costs. In-line results, weak earnings conversion or fully priced upside defeat the long case. Historical calendar timing remains unvalidated. AIXTRON expired unfilled; no protective sale is required. Memory updated in .memento/beta-oct20-preearnings.md.
 
 ### Recorded 2026-10-19 06:15 CEST · UP · confidence 0.51 · horizon 5 session(s)
 
@@ -281,6 +325,7 @@ Outcome checked 2026-10-14 06:03 CEST.
 
 | Started | Phase | Status | Commands | Web searches | Input tokens | Output tokens | Prompt |
 | --- | --- | --- | ---: | ---: | ---: | ---: | --- |
+| 2026-10-20 06:12 CEST | decide | success | 10 | 5 | 2,068,647 | 10,532 | 2026-10-14.4 |
 | 2026-10-19 06:12 CEST | decide | success | 9 | 5 | 1,533,368 | 8,762 | 2026-10-14.4 |
 | 2026-10-16 06:15 CEST | decide | success | 17 | 5 | 2,021,119 | 10,734 | 2026-10-14.4 |
 | 2026-10-16 06:10 CEST | reflect | success | 3 | 0 | 454,776 | 2,147 | 2026-10-14.4 |
@@ -291,6 +336,11 @@ Outcome checked 2026-10-14 06:03 CEST.
 
 ### Web research (by run start, newest first)
 
+- 2026-10-20 06:12 CEST: https://www.deutsche-boerse.com/resource/blob/1745362/4dbdb643d5fe08c9e1e9428ae28a3a44/data/consensus_en.pdf
+- 2026-10-20 06:12 CEST: site.deutsche-boerse.com 2025 2024 2023 "Q3" "Q2" "Q1" results dates ...
+- 2026-10-20 06:12 CEST: https://www.deutsche-boerse.com/dbg-en/investor-relations
+- 2026-10-20 06:12 CEST: site.merckgroup.com "19" "2026" "Silence" acquisition ...
+- 2026-10-20 06:12 CEST: site.merckgroup.com October 19 2026 Silence Therapeutics acquisition 1.3 billion ...
 - 2026-10-19 06:12 CEST: https://group.dhl.com/en/investors/shares/consensus.html
 - 2026-10-19 06:12 CEST: site.group.dhl.com "consensus" "Q3 2026" ...
 - 2026-10-19 06:12 CEST: https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp261017~7015ea3099.en.html

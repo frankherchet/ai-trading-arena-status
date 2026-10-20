@@ -12,7 +12,7 @@ Cash: 99,506.37
 
 | Instrument | Underlying | Kind | Units | Barrier | Direction |
 | --- | --- | --- | ---: | ---: | --- |
-| KO:f7324190503749ab | Aixtron | KO | 35.0000 | 20.094975 | LONG |
+| KO:f7324190503749ab | Aixtron | KO | 35.0000 | 20.1024073880137 | LONG |
 
 ## Trades and costs
 
@@ -36,6 +36,7 @@ Current files are undated: index first, then filename; no historical order is in
 - [Lagged pullback test and rejected Vonovia short](decision-2026-10-15.md) — decision — Cash retained after mixed independent splits; 8x short scenario costed, stale-price barrier misconception corrected; forward paper test next.
 - [Small AIXTRON catalyst pilot](decision-2026-10-16.md) — decision — 0.5% cash long KO pilot; orders surprise, exploratory analogues, opening-gap risk and October 23 exit.
 - [AIXTRON fill review and DHL consensus check](decision-2026-10-19.md) — decision — Hold bounded pilot to October 23; no new orders, DHL headline largely matches prior consensus; forward ledger next.
+- [AIXTRON forward risk and rejected Merck short](decision-2026-10-20.md) — decision — Hold to October 23 open without scaling; fresh barrier/cost scenarios and paper paths; target premium does not establish acquirer drift.
 ~~~
 
 </details>
@@ -145,6 +146,35 @@ Next experiment: pre-register a consensus-adjusted catalyst ledger (guidance cha
 
 </details>
 
+<details><summary>decision-2026-10-20.md</summary>
+
+~~~markdown
+---
+title: Hold bounded AIXTRON pilot; reject unsupported Merck acquisition short
+type: decision
+created: 2026-10-20
+updated: 2026-10-20
+---
+
+Decision: no orders or cancellations. Keep 35 AIXTRON long KO units at Trade Republic, retain October23 OPEN exit plan; submit same-broker MARKET SELL for KO:f7324190503749ab in that run. No automatic future exit exists. Forecast UP0.52, four sessions starting October20, subjective. No scaling. Continued pilot is the original bounded discretionary test of stabilization after the order surprise; it is not validated drift. Cost basis must not determine holding or extend the exit. Earlier issuer correction/materially contradictory evidence triggers reassessment. Peer ranking does not change risk budget.
+
+Verified October19: open32.66/high33.50/low32.26/close32.77; close return-0.36485%, intraday+0.33680%, actual-entry return-3.90029%. Thus rally headlines do not describe Monday close-to-close performance. Booked strike20.1024073880137, financed throughOctober19; authoritative over last script's approximate projection. Mid value443.365741, total book equity99949.738987, marked total-trade P&L-50.261013. October20 projected strike20.104885767,38.6485% below reference/2.5874x leverage. Monday low did not touch barrier. Entire remaining value can still disappear.
+
+Forward decision economics: if October20 opens at32.77, selling yields440.062603 net proceeds, total P&L-53.564151. Conditional on no intervening touch, October23 underlying-10%/flat/+10% from32.77 produces total-trade P&L-167.944669/-53.823144/+60.298381, or incremental versus selling October20 -114.380517/-0.258992/+113.862533. Includes1% KO full spread, same-broker EUR1 fees,4.5%pa calendar financing. Flat holding hurdle is0.022694% underlying. These are scenarios, not a fitted expected return. Positive orders surprise supports a weak stabilization belief; unchanged guidance and adverse post-entry action challenge it. Wide barrier only bounds path exposure, not alpha.
+
+Primary AIXTRON October15 18:00CEST EQS release rechecked: orders275m vs214.6m(+28.145%), EBIT57m/margin31%, favorable mix, annualguidance unchanged, full reportOctober29 (after planned exit). No new issuer correction found in checked sources; repeated headlines/unchanged targets are not incremental consensus revisions. URL https://www.eqs-news.com/news/ad-hoc/aixtron-q3-2026-order-intake-and-operating-profitability-significantly-exceed-market-expectations/1dede0ca-71c5-4213-93dd-f85b57fe61db_en . Source caches/metadata research/sources/metadata_2026-10-20.json.
+
+Concrete rejected alternative: Merck DE0006599905 SHORT KO,0.5%cash budget497.531866,TradeRepublic MARKETOctober20,barrier173.22(20% above144.35),multiplier1,October27 open exit. At reference17units cost494.243950; underlying-3%/flat/+3% terminal moves net+66.061559/-7.188849/-80.439256 incl1%spread,bothEUR1 fees,0.5%pa short financing. Break-even decline0.294422%; ING16units cost470.290174,flat loss16.992561,decline hurdle0.741287%. Entire cost at risk; check every high and exit gap, declining short barrier. Vol60daily1.2714% is a descriptive risk scale, not barrier-survival probability. +3% opening-gap scenario also saved, never count pre-entry moves as earned. Zero-drift conditional null is negative; no credible negative post-entry drift estimate, so reject.
+
+Merck primaryOctober19 https://www.emdgroup.com/en/news/silence-therapeutics-19-10-2026.html : Silence acquisition equityvalue~$1.3bn/EV$1.1bn,$20/ADS,new debt funding,expectedQ1 2027 close,clinical-stagePhase3-ready asset. Target release https://silence-therapeutics.com/investors/press-releases/press-releases-details/2026/Silence-Therapeutics-Enters-into-Agreement-to-be-Acquired-by-Merck-KGaA-Darmstadt-Germany/default.aspx confirms130%premium toOctober16 target close. This premium is NOT return offered to Merck holders. Debt and clinical execution support bearish scenario; promising Phase2 results and rare-disease pipeline support bull case. Neither determines acquirer value versus expectations. Would reconsider on quantified earnings/FCF revisions versus dated pre-announcement consensus and evidence of residual move exceeding0.294% cost hurdle; not merely debt or target premium. Release dated before cutoff; precise original intraday timestamp not verified from primary page. Local requests403 for target, web tool read succeeded; metadata records limitation.
+
+Updated frozen paper paths in research/monitor_2026-10-20.py/.json: BASFlong hypothetical liquidation+35.9711,Vonoviashort+49.9776,neither hit,scheduledOctober22 exit. Separately registered overlappingVonoviaOct19 candidate entered16.395,404units,cost998.9461,Monday liquidation-82.2763,exitOctober26. RejectedDHLOct19 candidate actual open57.94,43units,cost492.09526,Mondayhypothetical-17.15492,nohit,plannedOctober26. None is realized, proof of rejecting being correct, or a combined compliant portfolio. All history throughOctober19 now consumed. Do not rerun prior scripts against newer data and call results independent validation.
+
+Next: keep recording these frozen paths and actual October23 pilot exit regardless of profit. Before the next admitted earnings event, freeze dated consensus EBIT/EPS/FCF, cashflow quality, release timing, next-open gap, fixed five-full-bar hold/sixth-open exit, all costs and equal-cash/equal-delta stock comparators. Merck acquisition is a separate event family from earnings surprises and must not enlarge that sample. Additional real exposure needs independent material revisions or prospective drift evidence after costs; tiny one-off outcomes cannot justify scaling.
+~~~
+
+</details>
+
 <details><summary>reflection-2026-10-14.md</summary>
 
 ~~~markdown
@@ -164,6 +194,24 @@ Decision a489e52a62324fb4b41f31bcd03949d0 retained cash because the original sup
 </details>
 
 ## Decisions (latest 60, newest first)
+
+### Recorded 2026-10-20 06:19 CEST · UP · confidence 0.52 · horizon 4 session(s)
+
+Reference: Aixtron · eligible fill session 2026-10-20
+
+**Why (thesis)**
+
+> Hold the bounded AIXTRON pilot without adding exposure. October 19 closed at EUR32.77, down 3.90% from our actual EUR34.10 entry. The 35-unit KO has a EUR443.37 mid-value and EUR50.26 marked loss (own_trades; market_history.csv). The projected October 20 barrier is EUR20.1049, 38.65% below the reference price, implying 2.59x leverage. This distance reduces proximity risk but does not establish safety or positive returns.
+> 
+> The original orders surprise still supports a weak stabilization scenario: EUR275m versus EUR214.6m consensus, a 28.15% beat. Unchanged annual guidance, favorable product mix and adverse post-entry performance challenge that explanation. The checked headlines provide no fresh issuer revision. Retain the October 23 opening exit; do not extend to recover losses. [AIXTRON disclosure](https://www.eqs-news.com/news/ad-hoc/aixtron-q3-2026-order-intake-and-operating-profitability-significantly-exceed-market-expectations/1dede0ca-71c5-4213-93dd-f85b57fe61db_en).
+> 
+> Assuming today's unknown opening price equals EUR32.77, selling now returns EUR440.06 after costs. Holding until October 23 with underlying moves of -10%/flat/+10% produces incremental proceeds versus selling now of -EUR114.38/-EUR0.26/+EUR113.86, including spreads, Trade Republic fees and calendar financing. These are scenarios conditional on barrier survival, not calibrated expected returns; a touch destroys the remaining product value.
+> 
+> Rejected concrete alternative: Merck SHORT KO, 0.5% cash budget, Trade Republic MARKET October 20, barrier EUR173.22, multiplier 1, intended October 27 opening exit. At EUR144.35, 17 units cost EUR494.24. Underlying -3%/flat/+3% yields +EUR66.06/-EUR7.19/-EUR80.44 after all costs; break-even requires a 0.294% decline. New debt funding and clinical execution risk support the bear case, while promising trial results support the bull case. The acquisition disclosure establishes neither sufficient negative residual drift nor overpayment. Retain cash for incremental exposure. [Merck announcement](https://www.emdgroup.com/en/news/silence-therapeutics-19-10-2026.html). Calculations and frozen paper observations are saved in research/monitor_2026-10-20.json.
+
+**Strategy note**
+
+> Keep the original small discretionary AIXTRON pilot; no scaling. Submit same-broker MARKET SELL for KO:f7324190503749ab for October 23 open; no future exit order exists. Reassess earlier on an issuer correction or materially contradictory evidence. Additional exposure requires credible revisions versus dated pre-release consensus or prospective drift evidence exceeding full costs. Continue frozen paper paths and compare actual pilot results with unlevered alternatives. All history through October 19 is consumed. Decision, scenarios, limitations and next experiment recorded in .memento/decision-2026-10-20.md.
 
 ### Recorded 2026-10-19 06:18 CEST · UP · confidence 0.53 · horizon 5 session(s)
 
@@ -262,6 +310,7 @@ Outcome checked 2026-10-14 06:03 CEST.
 
 | Started | Phase | Status | Commands | Web searches | Input tokens | Output tokens | Prompt |
 | --- | --- | --- | ---: | ---: | ---: | ---: | --- |
+| 2026-10-20 06:16 CEST | decide | success | 10 | 4 | 1,014,133 | 8,806 | 2026-10-14.4 |
 | 2026-10-19 06:15 CEST | decide | success | 11 | 4 | 1,171,815 | 8,891 | 2026-10-14.4 |
 | 2026-10-16 06:19 CEST | decide | success | 10 | 4 | 1,294,731 | 11,885 | 2026-10-14.4 |
 | 2026-10-15 06:22 CEST | decide | success | 10 | 2 | 644,183 | 7,671 | 2026-10-14.4 |
@@ -271,6 +320,10 @@ Outcome checked 2026-10-14 06:03 CEST.
 
 ### Web research (by run start, newest first)
 
+- 2026-10-20 06:16 CEST: 'cash'
+- 2026-10-20 06:16 CEST: https://www.emdgroup.com/en/news/silence-therapeutics-19-10-2026.html
+- 2026-10-20 06:16 CEST: site.emdgroup.com "Silence" "2026" ...
+- 2026-10-20 06:16 CEST: site.aixtron.com October 2026 19 order intake 275 million ...
 - 2026-10-19 06:15 CEST: https://group.dhl.com/en/investors/shares/consensus.html
 - 2026-10-19 06:15 CEST: DHL October 16 2026 consensus full year EBIT 7 billion analysts 2026 ...
 - 2026-10-19 06:15 CEST: site.group.dhl.com "2026" "1.71" "October" ...
