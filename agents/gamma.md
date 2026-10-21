@@ -12,7 +12,7 @@ Cash: 99,506.37
 
 | Instrument | Underlying | Kind | Units | Barrier | Direction |
 | --- | --- | --- | ---: | ---: | --- |
-| KO:f7324190503749ab | Aixtron | KO | 35.0000 | 20.1024073880137 | LONG |
+| KO:f7324190503749ab | Aixtron | KO | 35.0000 | 20.104885767006742 | LONG |
 
 ## Trades and costs
 
@@ -37,6 +37,8 @@ Current files are undated: index first, then filename; no historical order is in
 - [Small AIXTRON catalyst pilot](decision-2026-10-16.md) — decision — 0.5% cash long KO pilot; orders surprise, exploratory analogues, opening-gap risk and October 23 exit.
 - [AIXTRON fill review and DHL consensus check](decision-2026-10-19.md) — decision — Hold bounded pilot to October 23; no new orders, DHL headline largely matches prior consensus; forward ledger next.
 - [AIXTRON forward risk and rejected Merck short](decision-2026-10-20.md) — decision — Hold to October 23 open without scaling; fresh barrier/cost scenarios and paper paths; target premium does not establish acquirer drift.
+- [October 14 forecast miss and barrier-test audit](reflection-2026-10-21.md) — decision — Separate neutral miss from cash economics; counterfactual exit remains unavailable, audit sizing/financing/gaps before prospective tests.
+- [AIXTRON remaining risk and adidas tariff bridge](decision-2026-10-21.md) — decision — Keep bounded pilot to October 23; reject unsupported adidas drift, archive consensus timing and register forward paper path.
 ~~~
 
 </details>
@@ -48,13 +50,15 @@ Current files are undated: index first, then filename; no historical order is in
 title: Gamma barrier experiment and cash decision
 type: decision
 created: 2026-10-14
-updated: 2026-10-14
+updated: 2026-10-21
 ---
 Retain EUR100,000 cash on October 14; fresh data invalidates the old stale-data rationale. New reason: predefined MSCI World 60-session momentum long/short rule failed to demonstrate a net edge. Script research/barrier_test.py and results research/barrier_results.csv use next-open entry, five held sessions, subsequent-open exit, every held low/high, calendar-day financing, 1% KO spread, both broker fee schedules, EUR1,000 KO budget and EUR20,000 unlevered comparator. Single sequential exposure respects five-position and allocation caps. No portfolio compounding modeled; historical revisions and missing-session gaps limit inference.
 
 Training signals before January 2025: 153 trades, TR mean KO -4.648%, ING -5.882%; one knock-out. Holdout: 89 trades, TR mean -0.013% (SE 3.272 percentage points), ING -1.291%; no knock-outs. Unconditional long unlevered comparator holdout +0.066% TR versus -0.470% ING. These are sample trade returns, not forward expected returns or proof all strategies fail. Current 60-session momentum +4.780%, volatility 0.596%, barrier distance max(5%,4*sigma*sqrt(5)) =5.328%; long indicative barrier EUR124.7204, leverage ~18.77 at last close. A 1% adverse move means ~18.77% intrinsic loss before costs; full budget loss at barrier. No gap stress simulation performed yet; do not claim robustness or calibrated survival probability.
 
 Destatis October 13 inflation release verified online: headline 3.3%, core 2.4%, preliminary estimate confirmed. Already known headline and uncertain transmission do not justify an automatic short. Positive trend is the counterargument to cash; reject only this tested leveraged implementation, not the existence of every possible edge. NEUTRAL five-session forecast has weak confidence, not a claim prices remain unchanged. Next experiment: stress next-open gaps and separately pre-register a trend-consistent pullback entry; use a new chronological validation segment rather than selecting variants on this holdout. Do not interpret first decision's neutral score as mechanism validation.
+
+**October 21 audit:** Original test used fractional KO units and linear financing. It checked held-bar touches, but its exit-gap zero payout was not counted in the hit flag and could incur an erroneous exit fee. Ordinary SE does not establish robustness to serial dependence. The trace verifies research, not an ex-ante written preregistration. See reflection-2026-10-21.md for the missed forecast, hypothetical marked path and prospective next test. Pullback validation subsequently occurred and is consumed; do not repeat it as untouched validation.
 ~~~
 
 </details>
@@ -175,6 +179,33 @@ Next: keep recording these frozen paths and actual October23 pilot exit regardle
 
 </details>
 
+<details><summary>decision-2026-10-21.md</summary>
+
+~~~markdown
+---
+title: Keep bounded AIXTRON pilot; reject adidas headline drift
+type: decision
+created: 2026-10-21
+updated: 2026-10-21
+---
+
+Decision: no orders or cancellations. Retain 35 AIXTRON long KO units at Trade Republic. Forecast UP, subjective confidence 0.51, three sessions starting October 21. Submit MARKET SELL for KO:f7324190503749ab through Trade Republic in the October 23 run for that opening exit; there is no pending future exit. Do not extend to recover losses. No scaling or second discretionary exception. Earlier issuer correction or materially contradictory business evidence warrants reassessment. The positive orders surprise still supports a weak near-term stabilization scenario, but unchanged guidance and worsening post-entry prices strongly challenge it. Holding remains the original bounded discretionary test, not validated alpha; the very small remaining financing cost does not itself justify holding. Peer rank does not change the budget.
+
+October 20 verified open32.05/high32.35/low30.50/close31.42, down4.1196% daily and7.8592% from actual34.10 entry. Booked strike20.104885767 throughOctober20; mid value396.0290, marked total P&L-97.5978, equity99902.4022. October21 projected strike20.107364452, distance36.0046%, leverage2.7774x; daily60 volatility3.7937%. The low did not hit, but all remaining intrinsic value can disappear. At an assumed October21 open31.42, immediate liquidation returns392.9625 net and total trade loss100.6642. Conditional on every intervening low and exit gap surviving, October23 terminal prices-10%/flat/+10% yield incremental holding versus selling today -109.5928/-0.1727/+109.2475 euros, including1%full spread, same-broker EUR1 fees and calendar4.5%pa financing. Flat-price holding hurdle0.01578% underlying; this is not a calibrated expected return. Equal-cash14shares and equal-delta35shares hypothetical Oct20 liquidation P&Ls -40.4373/-98.0932; different stock budgets preclude interpreting raw euro differences as alpha.
+
+Concrete rejected candidate: adidas DE000A1EWWW0 LONG KO,TradeRepublic,MARKETOctober21,0.5%cash budget497.5319,barrier126.48,multiplier1,intendedOctober28OPEN exit before October29 full results. Barrier20% below158.10 reference equals max(20%,4*vol60*sqrt5),vol60daily2.2087%,5x leverage; worst last60daily close return-11.5226% illustrates jump exposure, not survival probability. At reference15units cost477.6715; underlying-5%/flat/+5% terminal moves yield -126.3549/-8.3727/+109.6094 euros after all costs and seven-day financing. Break-even gain0.35483%; ING flat loss18.5402/hurdle0.78769%. Full cost at risk; no KO price stop permitted. Positive/negative5% opening-gap scenarios and both brokers are in research/monitor_2026-10-21.json. The gap earns us nothing. Equal-budget TR3shares cost475.7743,flat loss2.9486; equal-delta15shares require2374.8715,flat loss6.7430. Smaller unlevered costs do not establish positive expected drift either.
+
+adidas October20 18:34CEST release: quarterly EBIT1008m includes200m tariff refund; mechanically subtracting leaves808m,up9.7826% against736m,not reported36.9565%. This is a simple bridge, not issuer-adjusted EBIT or an adjustment to the prior-year basis. Annual guidance2300m+100m better profitability+200m refund-100m Q4 reinvestment=2500m. Healthy full-price demand and reinvestment support bull case; slowing currency-neutral growth and footwear discounting challenge it. Cannot infer either a profitable long or short after opening repricing. Conditional flat/no-touch null loses8.37euros; there is no supported calibrated mean exceeding costs. Reconsider on independently verified recurring earnings/FCF revisions versus archived pre-release expectations plus evidence of residual drift beyond opening repricing/costs.
+
+Primary https://www.adidas-group.com/en/media/press-releases/adidas-reports-record-results-and-increases-full-year-profit-outlook . Issuer consensus PDF datedOctober20 shows Q3sales7150m/EBIT742m,FYEBIT2393m. However Cloudinary version1792514557 corresponds16:42:37UTC,Last-Modified16:42:39UTC,after release16:34UTC. PRE-release public availability is not verified: never call this an archived pre-release consensus. This does not prove estimates changed after release. PDF locally cached; URLs, timing and numeric facts in research/sources/metadata_2026-10-21.json. Web reading succeeded; local request of press release timed out, so no raw page cache. Same-day dates alone do not establish event ordering. Original AIXTRON EQS release reread; no new issuer correction found in checked sources, which is not exhaustive evidence of absence.
+
+Frozen forward observations throughOctober20: BASFlong hypothetical liquidated mark+29.2985; originalVonoviashort+68.0586,both exitsOctober22. Separately registered overlappingVonoviaOct19 mark-68.3108,exitOctober26. RejectedDHLOct19 mark-18.2563,exitOctober26. None hit; none is realized or a combined compliant portfolio. All history throughOctober20 now consumed. Do not rerun old training/validation as untouched data. Review's World diagnostic October21 opening exit still unavailable at cutoff.
+
+Next experiment: paper-register adidas specification above at this pre-open cutoff; next run record actualOctober21 entry and all lows without selection, exitOctober28open, compare both brokers and equal-cash/equal-delta stock exposure. Keep its tariff/refund event family separate from AIXTRON order surprises; consensus timing uncertainty excludes it from a confirmed earnings-beat sample. Continue existing paper arms and actual pilot exit. Audit original trend backtest integer sizing/financing/exit-gap handling before any future mechanical deployment; today's monitoring does not repair or revalidate that old test.
+~~~
+
+</details>
+
 <details><summary>reflection-2026-10-14.md</summary>
 
 ~~~markdown
@@ -193,7 +224,50 @@ Decision a489e52a62324fb4b41f31bcd03949d0 retained cash because the original sup
 
 </details>
 
+<details><summary>reflection-2026-10-21.md</summary>
+
+~~~markdown
+---
+title: October 14 forecast miss and barrier-test audit
+type: decision
+created: 2026-10-21
+updated: 2026-10-21
+---
+
+Review decision 20c3bff443414aa3a1ac9427d71c0eae only; this reflection submits no orders and leaves the existing AIXTRON pilot plan unchanged. NEUTRAL missed MSCI World's October 13–20 close decline of 0.9906%. Separate forecast calibration from abstention economics: rejection of an unproven leveraged rule can remain reasonable when its neutral forecast misses. Do not retrospectively claim a bearish forecast or short edge. Cash earned zero and avoided transaction costs during abstention; current book performance also includes the separate October 16 AIXTRON purchase, so it is not a pure-cash outcome.
+
+Verified original trace contains real backtest work: TR 89-trade holdout mean -0.01275%, ordinary SE 3.27193 percentage points; ING -1.29072%. Wide uncertainty supports no demonstrated net edge, not proven negative expectancy. No evidence of written preregistration before inspecting results. Fractional KO sizing, linear financing, incomplete exit-gap hit classification/fee handling and ordinary SE require audit. Current history replaced the original Yahoo vintage with onvista bars; retain original artifacts and identify revisions rather than presenting a rerun as exact reproduction.
+
+Retrospective diagnostic in research/reflection_2026-10-21.py/.json: long KO with original indicative barrier124.7203608, hypothetical October14 open132.075 entry, EUR1000 budget; TR135units cost998.84068, ING134units cost997.82539. October20 close130.435 marks indicative liquidation P&L -244.61826 TR/-254.97128 ING including1% spread,both fees and six calendar days of4.5%pa daily-compounded financing (explicit diagnostic assumption; verify engine convention). No held low touched the financed barrier; minimum129.605 versus October20 strike124.81265. These are hypothetical close marks, NOT executable close orders or realized results. Fixed five-held-session experiment exits October21 OPEN, unavailable at cutoff. October13 is not a signal on the original frozen five-session cadence; this is a diagnostic of the indicative scenario, not an extra original strategy trade. Equal EUR20k stock comparator costs19964.27 TR/19885.54 ING and has indicative close liquidation P&L -289.28/-393.62 respectively; different budgets prohibit comparing raw euro losses as leverage alpha.
+
+Alternative explanations: ordinary volatility or later shocks can reverse a positive trend; endpoints alone establish neither inflation causality nor negative trend expectancy. A surviving barrier on one path does not validate its safety. Peers' ranks do not reveal their positions or mechanisms and should not induce risk-budget changes. Use NEUTRAL as the scored price category; inability to estimate a direction is a separate abstention judgment, not a calibrated neutral-price prediction.
+
+Next test: verify integer sizing, idle cash, financing, gap knock-outs, no fee after total loss, same-broker exits,5% KO/20% stock caps and five-position handling against execution conventions. Archive data/spec before prospective observations; retain the original cadence and October21 intended exit for this diagnostic, record costs and equal-budget/equal-delta stock alternatives, and use serial-dependence-aware uncertainty. Existing 2025/2026 trend/pullback history is consumed. Continue frozen prospective paper observations; do not tune on this loss or enlarge the discretionary pilot based on one observation.
+~~~
+
+</details>
+
 ## Decisions (latest 60, newest first)
+
+### Recorded 2026-10-21 06:26 CEST · UP · confidence 0.51 · horizon 3 session(s)
+
+Reference: Aixtron · eligible fill session 2026-10-21
+
+**Why (thesis)**
+
+> Retain the bounded AIXTRON pilot without adding exposure. October 20 closed at EUR31.42, 7.86% below our EUR34.10 entry. The 35-unit KO has EUR396.03 mid-value and a EUR97.60 marked loss. The projected October 21 barrier is EUR20.1074, 36.00% below the reference price, implying 2.78x leverage (own_trades; market_history.csv). All remaining product value remains at risk.
+> 
+> Orders of EUR275m versus EUR214.6m consensus still support a weak stabilization scenario. Unchanged annual guidance, favorable product mix and deteriorating post-entry prices challenge it. Retain the October 23 opening exit without extending to recover losses. [AIXTRON disclosure](https://www.eqs-news.com/news/ad-hoc/aixtron-q3-2026-order-intake-and-operating-profitability-significantly-exceed-market-expectations/1dede0ca-71c5-4213-93dd-f85b57fe61db_en).
+> 
+> Assuming today's unknown opening price equals EUR31.42, selling returns EUR392.96 net. Holding until October 23 with underlying moves of -10%/flat/+10% produces incremental proceeds versus selling today of -EUR109.59/-EUR0.17/+EUR109.25, including spreads, Trade Republic fees and calendar financing. These scenarios require barrier survival; they are not calibrated expected returns. Continued holding remains the original small discretionary experiment.
+> 
+> Rejected concrete alternative: adidas LONG KO, 0.5% cash budget, Trade Republic MARKET October 21, barrier EUR126.48, multiplier 1, intended October 28 opening exit. At EUR158.10 entry, 15 units cost EUR477.67. Underlying -5%/flat/+5% produces -EUR126.35/-EUR8.37/+EUR109.61 after all costs; break-even requires 0.355% appreciation. ING raises that hurdle to 0.788%. The 20% barrier distance compares with 2.21% daily volatility, but does not establish safety.
+> 
+> adidas raised annual EBIT guidance from EUR2.3bn to EUR2.5bn, including a EUR200m tariff refund, EUR100m better operating profitability and EUR100m reinvestment. Healthy demand supports the bull case, while the refund limits the recurring earnings interpretation. The current consensus PDF's upload timestamp follows the announcement, so pre-release public availability is unverified. Neither the headline nor these estimates establish residual drift exceeding costs. Retain cash for additional exposure; reconsider on verified recurring earnings/FCF revisions against archived expectations and prospective net-return evidence. [adidas release](https://www.adidas-group.com/en/media/press-releases/adidas-reports-record-results-and-increases-full-year-profit-outlook). Calculations and paper specifications are saved in research/monitor_2026-10-21.json.
+
+**Strategy note**
+
+> Keep the original AIXTRON pilot bounded; no scaling. Submit Trade Republic MARKET SELL for KO:f7324190503749ab in the October 23 run for that opening exit; no future exit order exists. Reassess earlier on issuer correction or materially contradictory business evidence. Reject additional adidas exposure; paper-track October 21 entry through October 28 opening exit with full costs and stock comparators. Preserve consensus-publication timing uncertainty. All history through October 20 is consumed. Decision and falsifiers recorded in .memento/decision-2026-10-21.md.
 
 ### Recorded 2026-10-20 06:19 CEST · UP · confidence 0.52 · horizon 4 session(s)
 
@@ -281,6 +355,18 @@ Reference: iShares Core MSCI World UCITS ETF (Acc) · eligible fill session 2026
 
 > Keep 100% cash. Reject the tested leveraged momentum implementation, without claiming all strategies lack an edge. Require positive chronological validation after spreads, same-broker fees, financing and barrier-path losses before deploying KO exposure. Next experiment: stress opening gaps and pre-register a trend-consistent pullback rule using separate validation data. Size initial KO exposure at 1% of cash only if validated; treat that entire budget as potential loss. Strategy and experiment recorded in .memento/decision-2026-10-14.md.
 
+**Outcome:** 2026-10-13 → 2026-10-20, -0.99 % (DOWN), forecast wrong
+
+Outcome checked 2026-10-21 06:10 CEST.
+
+**Reflection**
+
+> assessment: The NEUTRAL forecast missed: MSCI World fell 0.9906% from October 13 to October 20. Abstaining remained defensible because the verified backtest showed no demonstrated net edge: Trade Republic’s 89-trade holdout mean was -0.013%, with standard error 3.272 percentage points. One subsequent decline cannot validate that conclusion. A hypothetical EUR1,000 long KO entered October 14 would show an indicative October 20 liquidation loss of EUR244.62 at Trade Republic or EUR254.97 at ING, including spreads, both fees and financing. Its barrier survived. These are retrospective marks; the planned October 21 opening exit is unavailable at cutoff. The actual book’s later AIXTRON position must be assessed separately.
+> 
+> alternative_explanations: Ordinary volatility or subsequent news could explain the reversal; the endpoint establishes neither inflation causality nor a profitable short strategy. One surviving barrier provides little safety evidence. The original test used fractional KO units, simplified financing and incomplete exit-gap hit accounting; its ordinary standard error also leaves serial dependence unresolved. Current history replaces the original price vintage, limiting exact reproduction. Uncertainty about direction should be distinguished from a forecast that prices will remain within the NEUTRAL category.
+> 
+> next_test: Audit integer sizing, unused cash, exact financing, exit-gap knock-outs and fee handling against execution conventions. Preserve same-broker exits, allocation caps and the five-position limit. Continue frozen prospective observations with archived specifications, actual next-open entries and exits, full barrier paths, and equal-budget/equal-delta unlevered comparisons. Use dependence-aware uncertainty and retain all previously inspected validation samples as consumed. Do not tune the rule or scale exposure from this single outcome. Findings and calculations are saved in .memento/reflection-2026-10-21.md and research/reflection_2026-10-21.json. This reflection submits no orders.
+
 ### Recorded 2026-10-13 14:05 CEST · NEUTRAL · confidence 0.50 · horizon 1 session(s)
 
 Reference: iShares Core MSCI World UCITS ETF (Acc) · eligible fill session 2026-10-13
@@ -310,6 +396,8 @@ Outcome checked 2026-10-14 06:03 CEST.
 
 | Started | Phase | Status | Commands | Web searches | Input tokens | Output tokens | Prompt |
 | --- | --- | --- | ---: | ---: | ---: | ---: | --- |
+| 2026-10-21 06:21 CEST | decide | success | 13 | 7 | 1,984,072 | 11,511 | 2026-10-14.4 |
+| 2026-10-21 06:11 CEST | reflect | success | 5 | 0 | 598,455 | 4,478 | 2026-10-14.4 |
 | 2026-10-20 06:16 CEST | decide | success | 10 | 4 | 1,014,133 | 8,806 | 2026-10-14.4 |
 | 2026-10-19 06:15 CEST | decide | success | 11 | 4 | 1,171,815 | 8,891 | 2026-10-14.4 |
 | 2026-10-16 06:19 CEST | decide | success | 10 | 4 | 1,294,731 | 11,885 | 2026-10-14.4 |
@@ -320,6 +408,13 @@ Outcome checked 2026-10-14 06:03 CEST.
 
 ### Web research (by run start, newest first)
 
+- 2026-10-21 06:21 CEST: https://www.adidas-group.com/en/investors/statutory-publications/ad-hoc-news/adidas-grows-top-line-14percent-and-achieves-record-sales-in-q2-increases-full-year-top-line-guidance-2026-07-30
+- 2026-10-21 06:21 CEST: "adidas" "742" "2026" "October 20" ...
+- 2026-10-21 06:21 CEST: {'type': 'other'}
+- 2026-10-21 06:21 CEST: https://www.adidas-group.com/en/investors/financial-reports
+- 2026-10-21 06:21 CEST: site.adidas-group.com/en/investors "consensus" ...
+- 2026-10-21 06:21 CEST: adidas October 20 2026 consensus 2.5 billion 808 million tariff refund expectations ...
+- 2026-10-21 06:21 CEST: site.adidas-group.com "2026" "October 20" "profit" ...
 - 2026-10-20 06:16 CEST: 'cash'
 - 2026-10-20 06:16 CEST: https://www.emdgroup.com/en/news/silence-therapeutics-19-10-2026.html
 - 2026-10-20 06:16 CEST: site.emdgroup.com "Silence" "2026" ...

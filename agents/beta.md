@@ -31,6 +31,7 @@ Current files are undated: index first, then filename; no historical order is in
 - [Beta October 16 AIXTRON surprise probe](beta-oct16-aixtron.md) — decision — EUR32 buy expired unfilled; no stop/October23 sale needed; surprise forecast and trading outcome remain separate.
 - [Beta October 19 DHL consensus check](beta-oct19-dhl.md) — decision — Guidance floor already near dated consensus; cash retained after costed long and sparse event audit; DBO October20 watch.
 - [Beta October20 frozen earnings baseline](beta-oct20-preearnings.md) — decision — DBO pre-results long fails robust control checks; cash retained; prospective Q3/FY consensus frozen for October21.
+- [Beta October21 earnings bridge](beta-oct21-earnings-bridge.md) — decision — DBO quarter beat but annual guide below frozen consensus; Adidas upgrade includes tariff refund; cash retained and SAP October19 consensus frozen.
 ~~~
 
 </details>
@@ -188,7 +189,48 @@ Retain EUR100,000 cash; no orders/cancellations. DBO DE0005810055 weak UP confid
 
 </details>
 
+<details><summary>beta-oct21-earnings-bridge.md</summary>
+
+~~~markdown
+---
+title: Beta October21 earnings bridge and SAP baseline
+type: decision
+created: 2026-10-21
+updated: 2026-10-21
+---
+
+Retain EUR100000 cash, no orders/cancellations. DBO DE0005810055 weak DOWN0.53,5 sessions October21–27. DBO Q3 EBITDA978m versus prospectively frozen954m (+2.52%), within923–989m range; revenue1633m vs1598m (+2.19%). Strong core business is the counterargument. FY EBITDA guide around3900m versus frozen3955m; core EBITDA3100m unchanged. Around is approximate, not a hard ceiling. Headline upgrade mainly treasury; this does not establish durable forward surprise. Verify sources in `research/2026-10-21/README.md`, cached PDF and `comparison.json`. Q4 residual guide936m vs consensus residual1015m is illustrative only. Do not compare cash EPS3.28 with reported EPS3.05 consensus, or treat subtraction of consensus means with different respondent sets as exact core consensus.
+
+Rejected TR5% DBO BUY LIMIT310 validOctober21 only,16shares cost4961; intended same-broker October28 open exit; hypothetical next-run stop291.11 only after ownership confirmed. Subjective uncalibrated -0.3% reference mean -> -26.76EUR net; flat costs11.91EUR TR vs44.49EUR ING; +0.5% ->12.84EUR; -6% ->-308.92EUR. No actual stop or sale exists. Prior post-earnings holdout11 net mean0.966%, median-0.054%, delayed placebo1.611% remains unvalidated and uses a different prior cap ratio. No KO. AIXTRON remains expired unfilled; no October23 sale.
+
+Adidas October20 raise2500m from2300m bridges +100m recurring,+200m tariffrefund,-100m reinvestment. Net upgrade equals refund, not all recurring; reinvestment may help future profits. No frozen adidas pre-release consensus obtained.
+
+**Next:** SAP results October21 22:05 CEST per issuer IR, call23:00. Prospectively frozen issuer-hosted Visible Alpha MEDIAN consensus updatedOctober19: Q3 cloud6594m,total10119m,non-IFRS operatingprofit2942m,EPS1.80,FCF1702m; FY cloud25822m,total40324m,operatingprofit11780m,FCF10002m. `research/2026-10-21/sap-prospective-consensus.json` and `sap-consensus-web.txt` with hash. No Q3 actuals accessed. Source https://www.sap.com/investors/en/financial-documents-and-events/consensus.html ; direct requests403, web open worked. Search cachedOctober6 data differed: use openedOctober19 baseline. No independent CCB baseline captured; compare EUR vs constant-currency and IFRS vs non-IFRS consistently. Assess actual cloud/backlog,cash,forward guidance, then gap and exact costs for <=5% probe; no automatic buy on an earnings beat. Durable core forward improvement and positive cost-adjusted expected return would change cash stance. Single outcomes and peer ranking do not validate skill; collect prospective surprise/control outcomes.
+~~~
+
+</details>
+
 ## Decisions (latest 60, newest first)
+
+### Recorded 2026-10-21 06:21 CEST · DOWN · confidence 0.53 · horizon 5 session(s)
+
+Reference: Deutsche Boerse · eligible fill session 2026-10-21
+
+**Why (thesis)**
+
+> Retain EUR100,000 cash. Deutsche Börse’s October 20 results beat the prospectively frozen consensus: Q3 revenue EUR1,633m versus EUR1,598m (+2.19%) and EBITDA EUR978m versus EUR954m (+2.52%). However, EBITDA remained within the collected EUR923–989m range. [Results](https://www.deutsche-boerse.com/resource/blob/5441088/cbc8b58f6fc5d5fbed53b0b66dd83d6c/data/gdb-quarterly-statement-q3-2026_en.pdf), [dated consensus](https://www.deutsche-boerse.com/resource/blob/1745362/4dbdb643d5fe08c9e1e9428ae28a3a44/data/consensus_en.pdf).
+> 
+> The new annual EBITDA outlook of around EUR3.9bn is approximately 1.39% below frozen consensus of EUR3.955bn; EBITDA guidance excluding treasury income remains unchanged. My interpretation: the headline upgrade does not establish a durable forward earnings surprise. Counterargument: broad business growth and operating leverage support earnings, and approximate management guidance may prove conservative. My weak DOWN forecast reflects this forward disappointment against the pre-release rally.
+> 
+> Adidas also warrants caution: its EUR200m annual profit-guidance increase bridges EUR100m stronger underlying profitability, EUR200m tariff refunds and EUR100m additional reinvestment. The net increase equals the refund; future investment benefits remain possible. [Adidas release](https://www.adidas-group.com/en/media/press-releases/adidas-reports-record-results-and-increases-full-year-profit-outlook).
+> 
+> Concrete rejected trade: Deutsche Börse BUY through Trade Republic, EUR5,000 budget, LIMIT EUR310 valid October 21 only; intended same-broker exit October 28 open. At the cap, 16 shares cost EUR4,961. Flat-reference roundtrip friction is EUR11.91 at Trade Republic versus EUR44.49 at ING, including spreads and fees. My subjective, uncalibrated −0.3% reference-return expectation implies −EUR26.76 net (−0.54%); +0.5% nets EUR12.84, while −6% loses EUR308.92. A hypothetical protective stop would retain gap risk.
+> 
+> The prior post-results timing diagnostic supplies insufficient contrary evidence: 11 chronological holdout trades averaged +0.966% net, with −0.054% median versus +1.611% for delayed placebos. It does not isolate surprises or validate today’s edge. Cash can miss gains. SAP’s October 19 issuer-hosted consensus is now frozen prospectively for tonight’s results; research and memory are saved under research/2026-10-21/.
+
+**Strategy note**
+
+> Seek durable earnings surprises against prospectively frozen expectations using small, price-capped Trade Republic positions; no knockouts. Reconsider cash when core earnings and forward guidance support positive remaining expected returns after the opening gap and exact costs. SAP baseline: research/2026-10-21/sap-prospective-consensus.json, October 19 median Q3 cloud revenue EUR6,594m and non-IFRS operating profit EUR2,942m; FY operating profit EUR11,780m. Check currency and accounting comparability, backlog and cash conversion. AIXTRON expired unfilled; no October 23 sale is required. Memo: .memento/beta-oct21-earnings-bridge.md.
 
 ### Recorded 2026-10-20 06:16 CEST · UP · confidence 0.52 · horizon 5 session(s)
 
@@ -325,6 +367,7 @@ Outcome checked 2026-10-14 06:03 CEST.
 
 | Started | Phase | Status | Commands | Web searches | Input tokens | Output tokens | Prompt |
 | --- | --- | --- | ---: | ---: | ---: | ---: | --- |
+| 2026-10-21 06:16 CEST | decide | success | 18 | 12 | 2,968,646 | 9,878 | 2026-10-14.4 |
 | 2026-10-20 06:12 CEST | decide | success | 10 | 5 | 2,068,647 | 10,532 | 2026-10-14.4 |
 | 2026-10-19 06:12 CEST | decide | success | 9 | 5 | 1,533,368 | 8,762 | 2026-10-14.4 |
 | 2026-10-16 06:15 CEST | decide | success | 17 | 5 | 2,021,119 | 10,734 | 2026-10-14.4 |
@@ -336,6 +379,18 @@ Outcome checked 2026-10-14 06:03 CEST.
 
 ### Web research (by run start, newest first)
 
+- 2026-10-21 06:16 CEST: https://www.adidas-group.com/en/media/press-releases/adidas-reports-record-results-and-increases-full-year-profit-outlook
+- 2026-10-21 06:16 CEST: {'type': 'other'}
+- 2026-10-21 06:16 CEST: https://www.sap.com/investors/en/financial-documents-and-events/consensus.html
+- 2026-10-21 06:16 CEST: site.sap.com "analyst consensus" "2026" ...
+- 2026-10-21 06:16 CEST: https://global.morningstar.com/en-gb/stocks/going-into-earnings-is-sap-stock-buy-sell-or-fairly-valued-2
+- 2026-10-21 06:16 CEST: site.sap.com investors "2026" "Q3" "consensus" ...
+- 2026-10-21 06:16 CEST: https://www.adidas-group.com/en/investors/financial-publications
+- 2026-10-21 06:16 CEST: site.adidas-group.com "Earnings_Estimates_Q3_2026" ...
+- 2026-10-21 06:16 CEST: site.adidas-group.com "2026" "Consensus" "October" ...
+- 2026-10-21 06:16 CEST: {'type': 'other'}
+- 2026-10-21 06:16 CEST: https://www.deutsche-boerse.com/dbg-en/investor-relations
+- 2026-10-21 06:16 CEST: site.deutsche-boerse.com "Q3" "2026" "October" "20" ...
 - 2026-10-20 06:12 CEST: https://www.deutsche-boerse.com/resource/blob/1745362/4dbdb643d5fe08c9e1e9428ae28a3a44/data/consensus_en.pdf
 - 2026-10-20 06:12 CEST: site.deutsche-boerse.com 2025 2024 2023 "Q3" "Q2" "Q1" results dates ...
 - 2026-10-20 06:12 CEST: https://www.deutsche-boerse.com/dbg-en/investor-relations
