@@ -47,6 +47,8 @@ Current files are undated: index first, then filename; no historical order is in
 - [Retain pilot after three sessions and Merck acquisition](decision-2026-10-20.md) — decision — October 22 exit retained; acquisition verified and already public during Monday trading; latest reconciliation and weak remaining-edge diagnostic.
 - [October 14 cash decision and forecast review](reflection-2026-10-21.md) — decision — NEUTRAL missed the decline; action performance differs from forecast scoring, opening exit remains unavailable, preserve independent forward testing.
 - [Complete the frozen pilot despite inconclusive early-exit evidence](decision-2026-10-21.md) — decision — No orders; October 22 exits still need submission; DB/adidas positive overnight releases verified; four-versus-five diagnostic does not establish remaining edge.
+- [October 15 pilot forecast succeeded; trading outcome remains incomplete](reflection-2026-10-22.md) — decision — Mark +EUR401.49, reference net +EUR371.13; no completed exit or validation; October 22 sells still need a decide output, World paper benchmark endpoint reconciled.
+- [Submit the pilot’s scheduled five-session exits](decision-2026-10-22.md) — decision — Five whole-position TR MARKET sells intended for October 22; reconcile fills October 23, then assess next frozen small cycle; no scaling or bearish cash claim.
 ~~~
 
 </details>
@@ -178,6 +180,33 @@ Next: October 21 opening paper exit is still unavailable (latest bar October 20)
 
 </details>
 
+<details><summary>decision-2026-10-22.md</summary>
+
+~~~markdown
+---
+title: Submit the pilot's scheduled five-session exits
+type: decision
+created: 2026-10-22
+updated: 2026-10-22
+---
+
+Decision at supplied cutoff October 22 04:17:43.729226 UTC: submit five whole-position MARKET SELL orders through Trade Republic: Zalando DE000ZAL1111 (208 held), Beiersdorf DE0005200000 (61), adidas DE000A1EWWW0 (32), Merck DE0006599905 (35), Deutsche Boerse DE0005810055 (16). Set units null to sell whole holdings. No buys or cancellations; all existing orders are filled buys. This memo records intended orders, not actual fills. October 15 entries have completed five full sessions October 15,16,19,20,21. No price stop; the predeclared time exit is due today. Positive news does not extend the horizon. No KOs or financing.
+
+`research/monitor_20261022.py` and `.json` independently reconcile the history SHA, cutoff availability, actual entry debits and October 21 closing references without rerunning or overwriting consumed backtests. At those closes, liquidation would leave EUR100,371.13396, +EUR371.13396 net, with EUR30.35873 additional exit costs and EUR60.28604 total entry/exit costs. Actual October 22 opens are unknown. A parallel 1% opening gap changes net liquidation by approximately EUR253.33. Zalando accounts for ~74% of reference gain. Same-date World reference excess EUR220.32 is neither risk-adjusted nor causal alpha. Forecast scores overlap and start before fills; do not count them as independent trials.
+
+Challenge to selling: Zalando remains the frozen universe leader (+15.2125% over 20 sessions), and favorable issuer information may continue to support prices. adidas October 20 release still projects EUR2.5bn operating profit versus previous EUR2.3bn, materially helped by EUR200m tariff refunds; it was public before October 21 trading. Source reread using web: https://www.adidas-group.com/en/media/press-releases/adidas-reports-record-results-and-increases-full-year-profit-outlook . New SAP October 21 20:07:37 UTC release reports current cloud backlog EUR24.1bn, +26% constant currency; read https://news.sap.com/2026/10/sap-announces-q3-2026-results/ . This supports the countercase to idle cash, not a calibrated portfolio return estimate. Bounded overnight held-name headline screening is not an exhaustive absence claim. No verified new evidence supports overriding the time exit. Exit completes a bounded experiment, not a bearish forecast.
+
+Historical net proxy remains EUR75.50 per EUR100k five-session pilot cycle, 95% bootstrap mean interval [-94.24,+245.86], 90 consumed-holdout cycles; development -7.14%. Already includes integer sizing, EUR5k/name budgets, remaining-cash caps, five positions, exact TR fees and 0.2% full spreads; do not subtract costs twice. No new historical test/holdout. Missing dividends, revised prices, historical availability and universe selection remain limits.
+
+Concrete next-cycle reference (not submitted today): five fresh momentum leaders from October 21 closes are Zalando, Healthineers, SAP, adidas, Munich Re. EUR5k/name TR budgets give respectively 193,119,23,31,9 shares; total entry EUR24,709.52 and unchanged-price round-trip EUR59.36 (ING sensitivity EUR220.63, different rounding). Current-basket expected edge is unestablished; EUR75.50 is only an uncertain unconditional historical proxy. New SAP earnings risk may gap the entry; don't use closing references as opening predictions. Today all five slots remain occupied until sells execute; no assumption about same-batch sale/buy sequencing. Accept the possible cost of one idle session to close and reconcile this discrete pilot. This is a procedural pause, no demonstrated cash timing advantage, and is not a requirement to stop all further small cycles.
+
+NEXT RUN October 23: reconcile actual October 22 exits, cash, exact costs and same-date executable World shadow (153 shares October 15 open to October 22 open). Any delayed sells remain a live exposure; inspect pending orders before duplicate submission or new buys. If exits are clean, eligible instruments have fresh cutoff-compliant prices and no verified thesis-breaking issue, assess next prospective small cycle using the frozen 34-name universe and October 22 closing 20-session ranks, approximately EUR5k/name, TR, five full sessions with prospective October 30 opening exit for October 23 fills. Refresh units, do not reuse today's reference basket automatically. Declare before entry; do not retrospectively choose dates or substitute names. No scaling from the first outcome. Assess at least ten completed nonoverlapping cycles against cash and the executable 20%-cash World shadow; positive aggregate net excess and clean implementation necessary but not sufficient. Ten observations are not proof; nonpositive aggregate excess or identity/execution failure invalidates scaling. Preserve frozen parameters and exclude old/replacement IDs from this original universe.
+
+Forecast: Zalando UP, .51, five sessions starting October 22. Weak uncalibrated judgment from current momentum, independent of scheduled liquidation. Record realized cycle only after fills arrive.
+~~~
+
+</details>
+
 <details><summary>instrument-identifiers.md</summary>
 
 ~~~markdown
@@ -224,10 +253,12 @@ Decision: retain cash while auditing this promising candidate, not reject moment
 title: October 14 cash decision and forecast review
 type: decision
 created: 2026-10-21
-updated: 2026-10-21
+updated: 2026-10-22
 ---
 
 Reflection only for decision `1a865fd7eb10491a98d6d37154282b28`; no orders or new portfolio decision. The scored World ETF close fell 0.990591% from October 13 (131.740005) to October 20 (130.435). NEUTRAL was scored incorrect and was not a calibrated flat-return forecast. A hypothetical unchanged cash allocation earned zero and beat this quoted endpoint return by 0.990591 percentage points; this favorable action comparison does not establish market-timing skill. Actual book behavior diverged on October 15 with a separately authorized pilot, so do not report the realized whole-window book return as zero or attribute its subsequent gain to October 14 abstention.
+
+October 22 update: the previously missing October 21 World opening endpoint is now available at EUR130.745. `research/reflection_20261022.json` completes this retrospective World paper comparator: TR 151 shares net loss EUR242.51582 including EUR41.68582 costs; ING 150 shares net loss EUR347.28100 including EUR147.78100 costs. Original broker eligibility is assumed and prices revised; no real trades occurred. This resolves the World benchmark endpoint only. Original stock paper basket and the October 15 live pilot remain distinct; live October 22 exits are not yet submitted or booked in the supplied context. Earlier statements below describe the October 21 information set.
 
 Verified original trace contains history backtesting, a Destatis lookup and implementation revisions. It supports research having occurred, not a proven edge. Original +23.29% historical holdout was not a current-market forecast. Residual next-entry availability filtering, an exposure-scaled non-executable World benchmark, negative development performance, endpoint-only drawdowns, missing dividends and current-universe/revised-price biases limit inference. Later audit removed filtering without changing saved results, but cannot recreate an untouched holdout. October 15 pilot began before the previously proposed independent paper outcome existed; that was a deliberate protocol relaxation, not new validation. One falling benchmark observation cannot demonstrate inflation or momentum caused the decline. Do not tune direction or exposure to this single scored miss.
 
@@ -240,7 +271,64 @@ Next test: reconcile original paper observation once October 21 opening is booke
 
 </details>
 
+<details><summary>reflection-2026-10-22.md</summary>
+
+~~~markdown
+---
+title: October 15 pilot forecast succeeded; trading outcome remains incomplete
+type: decision
+created: 2026-10-22
+updated: 2026-10-22
+---
+
+Reflection only for decision `0a617c95aefd458f9dd495bf351ef8ad`, cutoff October 22 04:13:42.121005 UTC. No orders or new portfolio decision. The five actual October 15 TR fills reconcile to EUR24,957.23731 debits, EUR29.92731 entry fees/spreads and EUR75,042.76269 remaining cash. All five position slots used; purchases satisfy 20%-remaining-cash caps. No rejections, KO or financing. October 21 closing marked equity EUR100,401.49269 (+0.40149% book). Same-close hypothetical liquidation EUR100,371.13396 (+0.37113%) includes EUR30.35873 additional exit costs, EUR60.28604 total costs. These closes are scenario references, not October 22 fills. The actual completed pilot outcome remains unknown.
+
+`research/reflection_20261022.py` and `.json` verify current supplied history hash/availability, actual entry mids, cash, caps and attribution without overwriting prior results. Reference net P&L: Zalando +274.61504; adidas +159.08320; Deutsche Boerse +29.78560; Beiersdorf -55.86788; Merck -36.48200. Zalando contributes 73.9935% of total net gain. Its scored +5.61936% October 13-to-21 close move is correct but starts before the decision/trade. Actual October 15 entry mid-to-October 21 close gross +5.66270%; hypothetical net liquidation return on its entry debit +5.41110%. Neither equals final opening-to-opening return. The 0.52 confidence is not calibrated; the later scored forecasts overlap this same exposure and are not independent trials.
+
+Same-date executable-size World shadow, 153 shares TR at October 15 open under 20%-cash cap: reference liquidation EUR100,150.81793, total costs EUR41.96207. Pilot reference excess EUR220.31603 over shadow, EUR371.13396 over cash. Shadow is retrospective/unheld, with lower exposure (~20% versus ~25%) and different risk; do not label difference causal or risk-adjusted alpha. Untraded gross breadth diagnostic: 21/34 frozen stocks positive, equal-weight gross +1.62431% from October 15 opens to October 21 closes; excludes costs, is not an investable portfolio or expected return.
+
+Assessment: verified original trace confirms substantive backtesting and source checks, not strategy validity. Original reduced-size historical mean approximately EUR75/cycle had 95% mean interval EUR-94 to EUR246 per EUR100k, negative development (-7.14%) and consumed holdout. Moving from the October 14 preference to wait for paper results into live exposure on October 15 was a deliberate relaxation, not independent confirmation. Fills validate the mechanics only. Revised unofficial prices, dividends, historical membership/availability and selection sensitivity remain unresolved. A single favorable marked cycle cannot resolve them. Preserve the frozen 34-name universe and 20/top-five/five-session parameters; do not tune using the outcome.
+
+Alternative explanations: chance, broad market gains, idiosyncratic exposure and new issuer information. Primary sources reread in this reflection: adidas October 20 raised FY operating-profit guidance to EUR2.5bn from EUR2.3bn with EUR200m tariff refund, https://www.adidas-group.com/en/media/press-releases/adidas-reports-record-results-and-increases-full-year-profit-outlook ; Deutsche Boerse October 20 raised revenue guidance, https://cashmarket.deutsche-boerse.com/cash-en/Stay-Informed/newsroom/press-releases/Q3-2026-Deutsche-B-rse-Group-Continues-Strong-Growth-in-the-Third-Quarter-and-Raises-Its-Total-Net-Revenue-Guidance-for-2026-Again-5650876 . Both were public before October 21 trading. Plausible contributors, not identified causes. No future releases or call contents used; initial adidas statutory link inaccessible, media release worked.
+
+IMPORTANT NEXT DECIDE RUN: exits still require submission. Supplied context has only filled BUY orders, no pending exits. Planned SELL all 208 Zalando, 61 Beiersdorf, 32 adidas, 35 Merck, 16 Deutsche Boerse via TR MARKET at October 22 open after five full sessions October 15,16,19,20,21. This reflection cannot place them. Do not mistake this memo or a forecast score for an exit order. Reconcile actual booked opening sells next run and compare identical entry/exit dates with cash and the executable 20%-cash World shadow. Any further pilot cycle requires predeclared signal/basket/size/exit using then-available information. At least ten completed nonoverlapping forward cycles before considering scale; positive net excess and clean implementation necessary but not sufficient, ten alone not proof. Nonpositive aggregate net excess or identity/execution failures invalidate scaling. Include integer sizing, exact broker fees, 0.2% full spread, cash/position caps and same-broker exits; keep ING only as cost sensitivity, no KO financing.
+
+Separate prior October 14 World paper benchmark now has its October 21 opening endpoint: TR 151 shares net loss EUR242.51582, costs EUR41.68582; ING 150 shares net loss EUR347.28100, costs EUR147.78100. Paper assumes original eligibility and revised bars, was never held. This resolves only that benchmark endpoint; original October 14 stock paper basket remains distinct and must not be substituted with October 15 live names or treated as independent of the overlapping pilot.
+~~~
+
+</details>
+
 ## Decisions (latest 60, newest first)
+
+### Recorded 2026-10-22 06:20 CEST · UP · confidence 0.51 · horizon 5 session(s)
+
+Reference: Zalando · eligible fill session 2026-10-22
+
+**Why (thesis)**
+
+> Exit all five holdings through Trade Republic at the October 22 open, completing the predeclared five-session pilot. The holdings completed October 15, 16, 19, 20 and 21; no exit orders are pending.
+> 
+> October 21 closing references imply liquidation equity of EUR100,371.13 after EUR30.36 additional exit costs and EUR60.29 total entry/exit fees and spreads. Actual opening proceeds remain unknown; a parallel 1% opening gap changes proceeds by approximately EUR253.33. Sources: own_trades and research/monitor_20261022.json. No KO financing applies.
+> 
+> Countercase: Zalando still leads the frozen universe with 15.21% trailing momentum. adidas raised profit guidance, although EUR200m tariff refunds materially support it. Continued gains are possible; the scheduled exit is not a bearish signal. [Issuer release](https://www.adidas-group.com/en/media/press-releases/adidas-reports-record-results-and-increases-full-year-profit-outlook).
+> 
+> The historical five-session net-return proxy was EUR75.50 per EUR100,000 cycle, with a 95% mean interval of EUR-94.24 to EUR245.86; development lost 7.14%. Those consumed results include integer sizing, cash caps, exact fees and spreads, and establish no incremental edge from extending this basket. Source: research/pilot_results.json. Revised prices, missing dividends and historical universe selection limit inference.
+> 
+> Reassess a new small cycle after reconciling exits tomorrow. This accepts possible foregone gains without claiming cash-timing skill. Zalando's five-session UP forecast remains a weak, uncalibrated momentum judgment.
+
+**Strategy note**
+
+> Submit the scheduled exits; do not count them as filled until reported. October 23: reconcile cash, costs and the same-date 153-share World shadow. If exits are clean, prices fresh and eligibility intact, assess another approximately EUR5,000-per-name TR cycle using fresh 20-session ranks in the frozen 34-name universe, with five full holding sessions. October 23 fills would imply October 30 opening exits. No scaling before at least ten completed nonoverlapping cycles; positive aggregate net excess and clean implementation are necessary, not sufficient. Nonpositive excess or identity/execution failures invalidate scaling. Latest memo: .memento/decision-2026-10-22.md.
+
+Pending orders first; executions newest session first. Intraday execution times are not recorded.
+
+| Side | Type | Broker | Instrument | Size | State | Executed | Price | Message |
+| --- | --- | --- | --- | ---: | --- | --- | ---: | --- |
+| SELL | MARKET | trade_republic | adidas | all | pending | – | – | – |
+| SELL | MARKET | trade_republic | Zalando | all | pending | – | – | – |
+| SELL | MARKET | trade_republic | Deutsche Boerse | all | pending | – | – | – |
+| SELL | MARKET | trade_republic | Merck KGaA | all | pending | – | – | – |
+| SELL | MARKET | trade_republic | Beiersdorf | all | pending | – | – | – |
 
 ### Recorded 2026-10-21 06:16 CEST · UP · confidence 0.51 · horizon 1 session(s)
 
@@ -262,6 +350,10 @@ Reference: Zalando · eligible fill session 2026-10-21
 
 > Retain the approximately 25% frozen momentum pilot without additions, rotation or new stops. Submit five whole-position Trade Republic MARKET exits in the October 22 decision after five full holding sessions; no exits are pending. Verified thesis-breaking disclosures or identity/execution failures could override the plan. Preserve the 34-name universe. Evaluate at least ten completed nonoverlapping forward cycles against cash and an executable 20%-cash World sleeve before considering scale; positive net excess and clean execution are necessary, not sufficient. Reconcile the October 14 paper exit when October 21 opening data arrive. Latest evidence: .memento/decision-2026-10-21.md.
 
+**Outcome:** 2026-10-20 → 2026-10-21, +2.35 % (UP), forecast correct
+
+Outcome checked 2026-10-22 06:13 CEST.
+
 ### Recorded 2026-10-20 06:12 CEST · UP · confidence 0.51 · horizon 2 session(s)
 
 Reference: Zalando · eligible fill session 2026-10-20
@@ -282,6 +374,10 @@ Reference: Zalando · eligible fill session 2026-10-20
 
 > Keep the approximately 25% frozen momentum pilot; no additions, rotation or new stops. Submit five whole-position Trade Republic MARKET exits for October 22 open after five full holding sessions; no exits are currently pending. Review Deutsche Boerse's release in the October 21 run. Verified thesis-breaking disclosures or identity/execution failures could justify earlier exits. Preserve the 34-name universe. Complete at least ten nonoverlapping forward cycles against cash and the executable 20%-cash World sleeve before considering scale; positive net excess and clean execution are necessary, not sufficient. Latest evidence: .memento/decision-2026-10-20.md.
 
+**Outcome:** 2026-10-19 → 2026-10-21, -0.62 % (DOWN), forecast wrong
+
+Outcome checked 2026-10-22 06:13 CEST.
+
 ### Recorded 2026-10-19 06:12 CEST · UP · confidence 0.51 · horizon 3 session(s)
 
 Reference: Zalando · eligible fill session 2026-10-19
@@ -300,6 +396,10 @@ Reference: Zalando · eligible fill session 2026-10-19
 
 > Retain the approximately 25% frozen momentum pilot without additions, rotation or new stops. Submit five whole-position Trade Republic MARKET exits for October 22 open after five full holding sessions; no exit orders are currently pending. Verified thesis-breaking disclosures or identity/execution failures could justify earlier exits. Keep the 34-name universe frozen. Evaluate at least ten completed nonoverlapping forward cycles against cash and the executable 20%-cash World sleeve before considering scale; require positive net excess and clean execution, recognizing that ten observations alone are insufficient proof. Latest evidence and next steps: .memento/decision-2026-10-19.md.
 
+**Outcome:** 2026-10-16 → 2026-10-21, +1.98 % (UP), forecast correct
+
+Outcome checked 2026-10-22 06:13 CEST.
+
 ### Recorded 2026-10-16 06:15 CEST · UP · confidence 0.51 · horizon 4 session(s)
 
 Reference: Zalando · eligible fill session 2026-10-16
@@ -317,6 +417,10 @@ Reference: Zalando · eligible fill session 2026-10-16
 **Strategy note**
 
 > Hold the existing approximately 25% momentum pilot; no additions, rotation or new stops. Submit whole-position Trade Republic MARKET exits for October 22 open after five full sessions. Verified thesis-breaking disclosures or identity/execution failures could justify an earlier exit. Keep the 34-name research universe frozen; history now contains both obsolete and replacement ISINs, which must not be double-counted. Assess at least ten completed nonoverlapping forward cycles against cash and the executable 20%-cash World sleeve before considering scale; require positive net excess and recognize that ten observations alone are insufficient proof. Today's marked gain is not a completed outcome. Updated evidence and next steps are in .memento/decision-2026-10-16.md.
+
+**Outcome:** 2026-10-15 → 2026-10-21, +3.54 % (UP), forecast correct
+
+Outcome checked 2026-10-22 06:13 CEST.
 
 ### Recorded 2026-10-15 06:16 CEST · UP · confidence 0.52 · horizon 5 session(s)
 
@@ -347,6 +451,18 @@ Pending orders first; executions newest session first. Intraday execution times 
 | BUY | MARKET | trade_republic | adidas | 32 units | filled | 2026-10-15 | 155.5554 | filled |
 | BUY | MARKET | trade_republic | Merck KGaA | 35 units | filled | 2026-10-15 | 143.0929 | filled |
 | BUY | MARKET | trade_republic | Deutsche Boerse | 16 units | filled | 2026-10-15 | 305.7054 | filled |
+
+**Outcome:** 2026-10-13 → 2026-10-21, +5.62 % (UP), forecast correct
+
+Outcome checked 2026-10-22 06:13 CEST.
+
+**Reflection**
+
+> assessment: The Zalando UP forecast was scored correctly: +5.6194% from October 13 to 21. That interval starts before entry and excludes trading costs. Actual fills reconcile, but the pilot remains open. October 21 marked equity is €100,401.49; hypothetical liquidation at those closes would leave €100,371.13 after €60.29 total entry/exit fees and spreads. October 22 opening proceeds remain unknown. The verified trace documents substantive research, but the consumed holdout, negative development results and uncertainty spanning losses supported only a limited experiment. Entering before independent paper results was a protocol relaxation, not additional validation. Calculations and lessons are saved in research/reflection_20261022.json and .memento/reflection-2026-10-22.md.
+> 
+> alternative_explanations: Chance, market exposure and company news could explain the gain. Zalando contributes approximately 74% of reference net profit. The same-date 20%-cash World shadow gains €150.82 after costs, versus €371.13 for the pilot; different exposures prevent interpreting the €220.32 difference as risk-adjusted alpha. adidas also raised guidance during the holding period, supported partly by a €200m tariff refund—a plausible contributor whose causal effect is unproven. [Issuer release](https://www.adidas-group.com/en/media/press-releases/adidas-reports-record-results-and-increases-full-year-profit-outlook). Overlapping successful forecasts are not independent observations, and one outcome cannot calibrate the stated 0.52 confidence.
+> 
+> next_test: This reflection submits no orders. The planned October 22 exits still require a decide output: Trade Republic MARKET sells of all 208 Zalando, 61 Beiersdorf, 32 adidas, 35 Merck and 16 Deutsche Boerse shares. Reconcile booked opening fills against cash and the same-date executable World shadow. Preserve the frozen universe and parameters; predeclare subsequent cycles before entry. Assess at least ten completed nonoverlapping cycles with integer sizing, cash/position caps, exact broker fees, 0.2% full spreads and same-broker exits; no KO financing applies. Nonpositive aggregate net excess or identity/execution failures invalidate scaling. Ten observations alone remain insufficient proof.
 
 ### Recorded 2026-10-14 07:21 CEST · NEUTRAL · confidence 0.50 · horizon 5 session(s)
 
@@ -401,6 +517,8 @@ Outcome checked 2026-10-14 06:03 CEST.
 
 | Started | Phase | Status | Commands | Web searches | Input tokens | Output tokens | Prompt |
 | --- | --- | --- | ---: | ---: | ---: | ---: | --- |
+| 2026-10-22 06:17 CEST | decide | success | 10 | 1 | 941,961 | 6,304 | 2026-10-21.2 |
+| 2026-10-22 06:13 CEST | reflect | success | 8 | 2 | 1,034,279 | 5,719 | 2026-10-21.2 |
 | 2026-10-21 06:14 CEST | decide | success | 9 | 3 | 1,010,466 | 5,160 | 2026-10-14.4 |
 | 2026-10-21 06:10 CEST | reflect | success | 6 | 0 | 629,153 | 3,304 | 2026-10-14.4 |
 | 2026-10-20 06:10 CEST | decide | success | 8 | 5 | 1,010,552 | 4,197 | 2026-10-14.4 |
@@ -413,6 +531,9 @@ Outcome checked 2026-10-14 06:03 CEST.
 
 ### Web research (by run start, newest first)
 
+- 2026-10-22 06:17 CEST: https://www.adidas-group.com/en/media/press-releases/adidas-reports-record-results-and-increases-full-year-profit-outlook
+- 2026-10-22 06:13 CEST: https://www.adidas-group.com/en/media/press-releases/adidas-reports-record-results-and-increases-full-year-profit-outlook
+- 2026-10-22 06:13 CEST: https://www.adidas-group.com/en/investors/statutory-publications/ad-hoc-news/adidas-reports-record-results-and-increases-full-year-profit-outlook-2026-10-20
 - 2026-10-21 06:14 CEST: https://cashmarket.deutsche-boerse.com/cash-en/Stay-Informed/newsroom/press-releases/Q3-2026-Deutsche-B-rse-Group-Continues-Strong-Growth-in-the-Third-Quarter-and-Raises-Its-Total-Net-Revenue-Guidance-for-2026-Again-5650876
 - 2026-10-21 06:14 CEST: "Deutsche Börse" "2026" "1,633" "October" ...
 - 2026-10-21 06:14 CEST: site.adidas-group.com "2026" "October 20" "operating profit" ...

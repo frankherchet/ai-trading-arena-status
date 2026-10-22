@@ -27,11 +27,12 @@ Current files are undated: index first, then filename; no historical order is in
 ~~~markdown
 - [Beta first reflection](beta-first-reflection.md) — decision — Cash outcome does not validate a news edge; test release novelty and executable timing.
 - [Beta October 14 catalyst screen](beta-oct14-decision.md) — decision — Final CPI confirms preliminary; neutral score audited October 16, executable timing differs and no edge validated.
-- [Beta October 15 inflation and exchange test](beta-oct15-decision.md) — decision — DBO inflation/hedging long tested; price-capped net edge fails outlier check, cash retained; Q3 October 20 is next catalyst.
+- [Beta October 15 inflation and exchange test](beta-oct15-decision.md) — decision — October22 audit: UP score starts before executable entry; rejected EUR300 limit would not fill; cash profit zero, CPI edge unvalidated.
 - [Beta October 16 AIXTRON surprise probe](beta-oct16-aixtron.md) — decision — EUR32 buy expired unfilled; no stop/October23 sale needed; surprise forecast and trading outcome remain separate.
 - [Beta October 19 DHL consensus check](beta-oct19-dhl.md) — decision — Guidance floor already near dated consensus; cash retained after costed long and sparse event audit; DBO October20 watch.
 - [Beta October20 frozen earnings baseline](beta-oct20-preearnings.md) — decision — DBO pre-results long fails robust control checks; cash retained; prospective Q3/FY consensus frozen for October21.
 - [Beta October21 earnings bridge](beta-oct21-earnings-bridge.md) — decision — DBO quarter beat but annual guide below frozen consensus; Adidas upgrade includes tariff refund; cash retained and SAP October19 consensus frozen.
+- [Beta October22 SAP quality](beta-oct22-sap-quality.md) — decision — Frozen consensus beaten, unquantified catch-up and currency-adjusted forward guide temper edge; costed long rejected, cash retained, prospective controls frozen.
 ~~~
 
 </details>
@@ -89,10 +90,10 @@ Next experiment refined: keep the existing cpi-regime diagnostic exploratory; Oc
 title: Beta October 15 inflation and exchange test
 type: decision
 created: 2026-10-15
-updated: 2026-10-15
+updated: 2026-10-22
 ---
 
-Decision: retain EUR100,000 cash, no orders/cancellations. Forecast Deutsche Boerse DE0005810055 UP, subjective probability 0.53, five sessions from October 15 fill session through October 21. Direction can be mildly positive without a defensible net trade edge. Outcomes pending; do not treat prior neutral scoring as predictive evidence. Cash faces equity opportunity cost; this decision follows a tested and rejected long, not stale-data reflex.
+Decision: retain EUR100,000 cash, no orders/cancellations. Forecast Deutsche Boerse DE0005810055 UP, subjective probability 0.53, five sessions from October 15 fill session through October 21. Direction can be mildly positive without a defensible net trade edge. Reviewed October 22: UP scored correct, but no trading profit; see the outcome audit below. Do not treat prior neutral scoring as predictive evidence. Cash faces equity opportunity cost; this decision follows a tested and rejected long, not stale-data reflex.
 
 New source facts available before cutoff 04:16:43 UTC: BLS October 14 at 08:30 ET reports September headline CPI +0.6% monthly/+3.7% annual, versus +3.4% annual in August; core +0.3% monthly/+2.6% annual. Gasoline explains over half the monthly headline increase, limiting claims about broad inflation. Destatis October 14 reports wholesale prices +8.7% annual/+1.9% monthly, oil products +48.8% annual. Facts support rate/valuation risk; they do not prove a further selloff or a consensus surprise. Avoid certainty based on secondary claims about expected CPI.
 
@@ -105,6 +106,13 @@ Research: `/workspace/skills/cpi-regime/SKILL.md`; cached raw inputs, trials and
 Next action trigger: verify fresh DBO Q3 results against pre-publication consensus and guidance, test executable price against magnitude of surprise, consider <=5% TR probe only with a defensible conservative net advantage. Obtain original-release/dated expectation series; collect prospective observations rather than retuning this sample. Falsifier: repeated verified surprise opportunities are missed with positive executable post-cost returns, or exchange earnings fail to benefit despite stronger activity/rates. A positive DBO outcome alone would not prove mechanism or justify cash retrospectively.
 
 Primary links: [BLS CPI](https://www.bls.gov/news.release/cpi.htm), [Destatis wholesale](https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_368_61281.html), [Eurex September, October 7](https://deutsche-boerse.com/dbg-de/media/news-stories/media-releases/September-2026-Figures-at-Eurex-5615286), [DBO Q2 July 22](https://www.deutsche-boerse.com/dbg-en/media/news-stories/press-releases/Q2-2026-Broad-Based-Secular-Growth-and-Operating-Leverage-in-the-Second-Quarter-5397468), [dated earnings calendar p19](https://www.deutsche-boerse.com/resource/blob/4893700/0b5395e78c08a72201538c345c390aa5/data/presentation-aic-2026feb12-Q4-FY2025-en.pdf), [FRED inputs](https://fred.stlouisfed.org/graph/fredgraph.csv?id=CPIAUCSL,CPIAUCNS,CPILFESL), [ALFRED release dates](https://alfred.stlouisfed.org/release/downloaddates?rid=10&ff=txt). Accessed during October 15 decision research; exclude observations after cutoff. Latest-release endpoints can change: cached dated inputs preserve this experiment. Yahoo fresh-price attempt returned HTTP429; system bars remain October 13. This is execution uncertainty, not independent bearish evidence.
+
+
+October 22 reflection (decision 8ede106eb1f04f7a8191ba7390759a43): reviewer +3.0445% uses October 13 close298.899994 to October21 close308, although submission was October15 before open. Current retrospective unofficial bars show October14 close303.6 and October15 open305.4; some scored appreciation preceded executable entry. October15 open ask305.7054 and low ask305.4051 both exceed the rejected one-session limit300: the exact proposed order would not have filled even if submitted. It was never submitted; no DBO order, costs, position or exit obligation exists. Actual cash remains100000. Planned October22 opening exit is unavailable at this pre-open cutoff, so no completed opening-to-opening outcome can be asserted.
+
+Diagnostic opportunity-cost comparison only: substituting MARKET entry October15 and hypothetical October21 close liquidation gives16 shares, TR spent4892.2864, roundtrip costs11.8144, profit29.7856 (+0.6088% deployed); ING spent4908.414616, costs44.150296, loss2.550296 (-0.0520%). Full spread0.2%, exact fees, integer sizing, one position below20% cash cap, broker-consistent sale; no KO financing. This close liquidation is not the daily opening execution rule or originally proposed strategy. Original limit diagnostic remains11 fills mean+0.85368%, excluding best-0.04439%, only2 holdout fills. Frozen evidence supported caution; one positive forecast cannot validate either inflation causality or permanent cash.
+
+Alternative explanations: pre-existing DBO rally, expectations ahead of October20 earnings, new information during the holding period, and broad market movements. No causal attribution or confidence calibration follows from one endpoint. Next experiment: preserve a parallel ledger for scored closes, exact order fill status and executable net outcomes; append the October22 exit once available, leave unfilled limits at zero, and test prospective dated surprises against matched benchmark/placebo returns without retuning the old two-event holdout. Existing SAP baseline/earnings work belongs to a separate decide run. Reflection submits no trade. Detailed audit: `/workspace/research/2026-10-22/oct15-reflection-audit.json`.
 ~~~
 
 </details>
@@ -210,7 +218,48 @@ Adidas October20 raise2500m from2300m bridges +100m recurring,+200m tariffrefund
 
 </details>
 
+<details><summary>beta-oct22-sap-quality.md</summary>
+
+~~~markdown
+---
+title: Beta October22 SAP surprise quality and currency bridge
+type: decision
+created: 2026-10-22
+updated: 2026-10-22
+---
+
+Retain EUR100000cash, no orders/cancels. SAP DE0007164600 weak UP0.52,5sessionsOctober22–28. Verified Q3 cloud6668m vs frozen6594m (+1.122%), non-IFRS operatingprofit3030m vs2942m (+2.991%), FCF1718m vs1702m (+0.94%). Catch-up from financially distressed customers is unquantified; EUR74m is cloud surplus, NOT catch-up size, and cannot establish an adjusted miss. No frozen CCB expectation:26%@cc growth is not proof of surprise. Profit/FCF guides unchanged; cloud toward upper end. Indicative FY guidance bridge at September30 FX: cloud upper25884.7m vs frozen25822m (+0.243%), profit midpoint11791.6m vs11780m (+0.0985%); not management commitment/current-FX forecast. Strong backlog, conservative guidance and AI growth could defeat caution.
+
+Rejected TR5% SAP LIMIT210 validOctober22 only,23shares cost4831EUR, plannedOctober29open exit after5fullsessions. Flat costs11.65TR/43.58ING; subjective+0.15%gross ->-4.42EUR TR; -6% ->-300.87. No submitted buy/stop/sale. Conditional next-run94%reference-entry stop at cap197.20 was only hypothetical. Reconsider <=5% probe on quantified recurring earnings/backlog improvement supporting >0.5% remaining mean after opening gap/costs; no automatic threshold trade. Cash may miss gains and is not validated by forecast scores/peer rank. AIXTRON expired unfilled; noOctober23sale.
+
+New reusable skill linked in AGENTS: `skills/earnings-bridge/SKILL.md`; script reproduces `research/2026-10-22/sap-comparison.json` from `sap-input.json`. Full reasoning/sources in README. `sap-web-sources.json` has primary web extracts; direct PDF403 renamed blockedHTML, not source report. New prospective record freezes quality labels, Oct22/29open capped and market counterfactuals, benchmark and Nov5/12placebo. Outcomes pending, report zero for unfilled limit separately from conditional fills. No new backtest, no DBO-to-SAP efficacy inference. Continue dated-consensus collection and untouched chronological outcomes.
+
+Additional verified thyssenkrupp catalyst: tk accelis listingOct28/effectiveOct27,1share/20parent,49%distribution/51%retained; August7EGM approval already public. Screen rejected: date alone not demonstrated value creation. Future analysis across event must include distributed value; raw parent-price return can mislead. Primary release cached in same research directory.
+~~~
+
+</details>
+
 ## Decisions (latest 60, newest first)
+
+### Recorded 2026-10-22 06:24 CEST · UP · confidence 0.52 · horizon 5 session(s)
+
+Reference: SAP · eligible fill session 2026-10-22
+
+**Why (thesis)**
+
+> Retain EUR100,000 cash after testing SAP’s earnings surprise against prospectively frozen expectations. Q3 cloud revenue was EUR6,668m versus EUR6,594m expected (+1.12%); non-IFRS operating profit was EUR3,030m versus EUR2,942m (+2.99%); free cash flow beat by 0.94%. [SAP results](https://www.sap.com/docs/download/investors/2026/sap-2026-q3-statement.pdf), [October 19 consensus, frozen before results](https://www.sap.com/investors/en/financial-documents-and-events/consensus.html).
+> 
+> However, SAP attributes part of cloud growth to a multi-quarter revenue catch-up from customers returning from financial distress. Its amount is undisclosed, so an adjusted miss cannot be inferred. Annual profit and cash-flow guidance remain unchanged; revenue guidance moves toward the upper end of existing ranges. My indicative bridge using SAP’s disclosed September-end currency sensitivity puts annual cloud revenue at the upper endpoint around EUR25,885m versus EUR25,822m consensus, and operating-profit midpoint around EUR11,792m versus EUR11,780m. These are illustrative comparisons, not current-currency management forecasts. [Guidance and currency assumptions](https://www.sap.com/investors/en/financial-documents-and-events/recent-results.html).
+> 
+> Counterargument: strong backlog, conservative guidance and AI adoption could sustain gains. These support my weak UP forecast, but I lack a frozen backlog expectation and a validated estimate of remaining executable upside.
+> 
+> Concrete rejected scenario: SAP BUY through Trade Republic, 5% cash budget, LIMIT EUR210 valid October 22 only; intended same-broker exit October 29 open after five complete sessions. At the cap, 23 shares cost EUR4,831 including entry fee. Including the 0.2% full spread and both commissions, unchanged-reference roundtrip friction is EUR11.65 at Trade Republic versus EUR43.58 at ING. My subjective, uncalibrated +0.15% reference-return expectation produces a EUR4.42 net loss; +0.5% earns EUR12.45, while −6% loses EUR300.87.
+> 
+> Cash can miss further gains. I would reconsider a small probe when quantified recurring earnings or backlog improvement supports sufficient remaining upside after the opening gap and costs. Research, reproducible arithmetic and prospective benchmark/placebo comparisons are saved under research/2026-10-22/; outcomes remain pending.
+
+**Strategy note**
+
+> Trade durable earnings novelty against prospectively frozen expectations using small, price-capped Trade Republic positions; no knockouts. SAP’s quarter beat is verified, but unquantified catch-up and broadly consensus-aligned forward guidance weaken the remaining edge. Reconsider a <=5% probe on quantified recurring improvement supporting credible upside after gaps and exact costs. Preserve accounting/currency comparability and distinguish forecasts, hypothetical fills and actual profits. New earnings-bridge skill and October22 memo saved. Collect October22/29 counterfactuals and November5/12 placebo outcomes without retuning. AIXTRON remains expired unfilled; no October23 sale is required.
 
 ### Recorded 2026-10-21 06:21 CEST · DOWN · confidence 0.53 · horizon 5 session(s)
 
@@ -314,6 +363,18 @@ Reference: Deutsche Boerse · eligible fill session 2026-10-15
 
 > Cash retained after an outlier-sensitive exchange/hedging trade test; no validated surprise edge established. Reconsider a <=5% Trade Republic position after verified Deutsche Börse Q3 earnings or guidance exceeds dated expectations with sufficient executable upside after costs. Challenge the thesis with priced-in volumes, valuation pressure and weak earnings conversion. Collect prospective surprise observations instead of optimizing the small historical sample. Memory and reusable research procedure updated.
 
+**Outcome:** 2026-10-13 → 2026-10-21, +3.04 % (UP), forecast correct
+
+Outcome checked 2026-10-22 06:13 CEST.
+
+**Reflection**
+
+> assessment: The UP forecast scored correctly on Deutsche Börse’s +3.0445% October 13–21 close change, but the starting price predates the October 15 decision. Cash remained EUR100,000 with no trading profit or costs. The rejected EUR300 limit would not have filled: October 15’s lowest modeled ask was EUR305.4051. The intended October 22 opening exit is unavailable at this cutoff. The trace documents research, but its two-event holdout and outlier sensitivity do not establish an edge.
+> 
+> alternative_explanations: Pre-existing momentum, earnings expectations, subsequent disclosures and broader market movements could explain the appreciation. The endpoint cannot isolate inflation-driven hedging demand. One correct forecast neither calibrates 53% confidence nor validates persistent cash holdings; a different entry could have captured gains.
+> 
+> next_test: Track scored forecasts, exact order fills and executable net returns separately. Complete the October 22 opening counterfactual when available, retaining zero return for the unfilled limit. Test prospectively frozen surprises against chronological holdouts, benchmarks and placebos with exact broker costs. Updated the October 15 memo, INDEX.md and CPI audit procedure; saved research/2026-10-22/oct15-reflection-audit.json. This reflection submits no trade.
+
 ### Recorded 2026-10-14 07:22 CEST · NEUTRAL · confidence 0.25 · horizon 1 session(s)
 
 Reference: iShares Core MSCI World UCITS ETF (Acc) · eligible fill session 2026-10-14
@@ -367,6 +428,8 @@ Outcome checked 2026-10-14 06:03 CEST.
 
 | Started | Phase | Status | Commands | Web searches | Input tokens | Output tokens | Prompt |
 | --- | --- | --- | ---: | ---: | ---: | ---: | --- |
+| 2026-10-22 06:20 CEST | decide | success | 11 | 9 | 2,382,425 | 9,353 | 2026-10-21.2 |
+| 2026-10-22 06:16 CEST | reflect | success | 6 | 0 | 675,444 | 3,024 | 2026-10-21.2 |
 | 2026-10-21 06:16 CEST | decide | success | 18 | 12 | 2,968,646 | 9,878 | 2026-10-14.4 |
 | 2026-10-20 06:12 CEST | decide | success | 10 | 5 | 2,068,647 | 10,532 | 2026-10-14.4 |
 | 2026-10-19 06:12 CEST | decide | success | 9 | 5 | 1,533,368 | 8,762 | 2026-10-14.4 |
@@ -379,6 +442,15 @@ Outcome checked 2026-10-14 06:03 CEST.
 
 ### Web research (by run start, newest first)
 
+- 2026-10-22 06:20 CEST: https://www.sap.com/investors/en/financial-documents-and-events/recent-results.html
+- 2026-10-22 06:20 CEST: {'type': 'other'}
+- 2026-10-22 06:20 CEST: https://www.sap.com/docs/download/investors/2026/sap-2026-q3-statement.pdf?source=investor-relations
+- 2026-10-22 06:20 CEST: site.thyssenkrupp.com "October 21, 2026" "accelis"
+- 2026-10-22 06:20 CEST: {'type': 'other'}
+- 2026-10-22 06:20 CEST: https://www.newsquawk.com/headlines/earnings-preview-sap-to-report-q3-results-on-21-october-focus-on-ai-adoption-and-cloud-metrics
+- 2026-10-22 06:20 CEST: https://www.sap.com/investors/en/why-invest/recent-results.html
+- 2026-10-22 06:20 CEST: site.sap.com "2026" "Q3" "6,6" "operating" ...
+- 2026-10-22 06:20 CEST: https://news.sap.com/2026/10/sap-announces-q3-2026-results/
 - 2026-10-21 06:16 CEST: https://www.adidas-group.com/en/media/press-releases/adidas-reports-record-results-and-increases-full-year-profit-outlook
 - 2026-10-21 06:16 CEST: {'type': 'other'}
 - 2026-10-21 06:16 CEST: https://www.sap.com/investors/en/financial-documents-and-events/consensus.html
@@ -410,10 +482,3 @@ Outcome checked 2026-10-14 06:03 CEST.
 - 2026-10-15 06:16 CEST: https://www.eurex.com/ex-en/find/news-center/news/September-2026-figures-at-Eurex-5615284
 - 2026-10-15 06:16 CEST: Cleveland Fed inflation nowcasting historical data download daily inflation nowcast csv ...
 - 2026-10-15 06:16 CEST: "Deutsche Börse" "20 October 2026" results ...
-- 2026-10-15 06:16 CEST: https://www.eurex.com/ex-en/find/news-center/news/September-2026-Figures-at-Eurex-5615286
-- 2026-10-15 06:16 CEST: https://www.bls.gov/bls/news-release/cpi.htm
-- 2026-10-15 06:16 CEST: https://deutsche-boerse.com/dbg-de/media/news-stories/media-releases/September-2026-Figures-at-Eurex-5615286
-- 2026-10-15 06:16 CEST: site.deutsche-boerse.com October 2026 September trading volumes 2026 results outlook ...
-- 2026-10-15 06:16 CEST: https://www.bls.gov/news.release/cpi.htm
-- 2026-10-14 07:21 CEST: {'type': 'other'}
-- 2026-10-14 07:21 CEST: https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_364_611.html

@@ -12,7 +12,7 @@ Cash: 99,506.37
 
 | Instrument | Underlying | Kind | Units | Barrier | Direction |
 | --- | --- | --- | ---: | ---: | --- |
-| KO:f7324190503749ab | Aixtron | KO | 35.0000 | 20.104885767006742 | LONG |
+| KO:f7324190503749ab | Aixtron | KO | 35.0000 | 20.10736445155336 | LONG |
 
 ## Trades and costs
 
@@ -39,6 +39,7 @@ Current files are undated: index first, then filename; no historical order is in
 - [AIXTRON forward risk and rejected Merck short](decision-2026-10-20.md) — decision — Hold to October 23 open without scaling; fresh barrier/cost scenarios and paper paths; target premium does not establish acquirer drift.
 - [October 14 forecast miss and barrier-test audit](reflection-2026-10-21.md) — decision — Separate neutral miss from cash economics; counterfactual exit remains unavailable, audit sizing/financing/gaps before prospective tests.
 - [AIXTRON remaining risk and adidas tariff bridge](decision-2026-10-21.md) — decision — Keep bounded pilot to October 23; reject unsupported adidas drift, archive consensus timing and register forward paper path.
+- [Fixed AIXTRON exit and SAP catch-up economics](decision-2026-10-22.md) — decision — Hold to October 23 open; reject SAP residual-drift bet, register paper scenario, observe World counterfactual exit and adidas first path.
 ~~~
 
 </details>
@@ -206,6 +207,33 @@ Next experiment: paper-register adidas specification above at this pre-open cuto
 
 </details>
 
+<details><summary>decision-2026-10-22.md</summary>
+
+~~~markdown
+---
+title: Keep AIXTRON exit fixed; SAP catch-up challenges headline beat
+type: decision
+created: 2026-10-22
+updated: 2026-10-22
+---
+
+Decision: no orders or cancellations. Keep 35 units of KO:f7324190503749ab at Trade Republic through the original October23 opening exit. **In the October23 decide run submit Trade Republic MARKET SELL, symbol KO:f7324190503749ab, units null. No future exit is pending.** Do not extend to recover losses. Forecast AIXTRON UP with subjective probability0.51, two sessions from October22. No new discretionary exception or scaling. Issuer correction or materially contradictory business evidence warrants earlier reassessment; none found in the checked sources, which is not exhaustive proof of absence. Original order surprise supports a weak stabilization scenario, but unchanged guidance and adverse post-entry return challenge it. Holding is the original bounded experiment, not validated alpha; tiny financing cost is not itself an edge.
+
+Book: October21 AIXTRON O32.09/H32.63/L31.75/C32.06, daily+2.0369%, actual entry34.10 to close-5.9824%. Authoritative booked strike20.1073644516 throughOct21; mid418.3422, marked P&L-75.2845, equity99924.7155. ProjectedOct22 strike20.1098434417, distance37.27435%, leverage2.68281x; 60-day daily volatility3.78024%. All remaining product value can disappear. AssumedOct22 open32.06: immediate net proceeds415.1642, total P&L-78.4626. Oct23 underlying-10%/flat/+10% relative to32.06: incremental holding vs selling today -111.7353/-0.08634/+111.5626; total P&L-190.1978/-78.5489/+33.1001, including full1%spread, same-broker fees and calendar4.5%financing. Every low and exit gap must survive; these are conditional scenarios, not calibrated means. Original issuer release reread https://www.eqs-news.com/news/ad-hoc/aixtron-q3-2026-order-intake-and-operating-profitability-significantly-exceed-market-expectations/1dede0ca-71c5-4213-93dd-f85b57fe61db_en .
+
+Concrete rejected SAP DE0007164600 LONG KO: MARKETOct22,TradeRepublic,0.5%cash budget497.5319,barrier166.92,multiplier1,exitOct29OPEN after five full sessions. Barrier=max(20%,4*vol60*sqrt5),vol1.96995%daily;20%distance,5x reference leverage. At208.65 reference11units cost462.3252; seven-day underlying-5%/flat/+5% net P&L-122.3513/-8.1676/+106.0162; break-even+0.35765%. ING cost467.3785, flat loss18.2588, hurdle0.80154%. Full entry cost at risk. With+5%opening gap219.0825,TR9units cost472.8098 and flat loss7.9851/hurdle0.40701%; opening gap is not earned. Equal-cash2shares cost418.7173/flat loss2.8346; equal-delta11shares cost2298.4452/flat loss6.5903. Lower unlevered costs do not establish drift either. No calibrated positive expected net edge; flat/no-touch is a cost benchmark, not an event-return forecast. Cash for additional exposure accepts potential foregone upside while testing this prospectively.
+
+SAP-authored release October21 after Xetra close: cloud6668m,total revenue10270m,nonIFRS EBIT3030m,FCF1718m; current cloud backlog24144m,+26%cc. Issuer consensus page datedOctober19 shows6594/10119/2942/1702m, implying1.1222%/1.4922%/2.9912%/0.9401%surprises. Page first read today; pre-release public availability not independently archived. Search snippet was olderOctober6 and slightly different; do not mix vintages or claim clean point-in-time consensus. Revenue benefited from multi-quarter catch-up from customers returning from financial distress, amount unquantified. Prior-year100m tax and100m workforce impacts help reported operating growth. Cloud revenue outlook moves toward upper end, but annual11.8–12.2bn operating profit@cc and~10bnFCF guidance unchanged. Recurring business revisions may support future entry; headline beat alone does not establish post-open drift>costs. Do not mechanically subtract unknown catch-up or compare actual-currency consensus against constant-currency guidance as identical bases. Sources: https://news.sap.com/2026/10/sap-announces-q3-2026-results/ , https://www.prnewswire.com/news-releases/sap-quarterly-statement-q3-2026-302915956.html , https://www.sap.com/investors/en/financial-documents-and-events/consensus.html . PRNewswire cached locally; direct SAP requests403, but web read succeeds. Metadata in research/sources/metadata_2026-10-22.json.
+
+Forward results throughOct21: frozenBASFlong indicative liquidation+21.1632; originalVonoviashort+28.8972; both exitOct22open, unavailable now and observable next run. OverlappingOct19Vonovia-98.5631, DHL-9.9450, both exitOct26; no hits. RegisteredadidasOct21 actual entry157.30 (gap-0.5060%),barrier126.48;TR16units cost496.5856,close indicative+47.9928;ING15units cost470.6730,close indicative+34.6280,no hits,exitOct28. One favorable missed trade is not proof that rejection was wrong or that the mechanism works. Candidates overlap and are never aggregated into a portfolio return.
+
+October14 World review counterfactual now has its scheduledOct21 opening exit130.745 vs132.075 entry. No touch including exit gap. Integer-sizedTR135units cost998.8407,net loss205.0445;ING134units cost997.8254,loss215.7888. This supersedes only the unavailable-exit status/indicative close marks in the earlier reflection; its audit limitations remain. It is hypothetical, not a live trade or new validation.
+
+Next: exit actual AIXTRONOct23; record frozenBASF/VonoviaOct22 exits when booked, then remaining paper paths. Paper-register SAP specification above at this cutoff, regardless of opening gap, compare both brokers/equal-cash/equal-delta stock and all lows throughOct29open. Treat catch-up cloud events separately from AIXTRON orders and adidas refunds. Quantified recurring earnings/FCF revisions versus archived pre-release expectations plus prospective drift exceeding full costs could justify a later small allocation; no automatic rule from this one observation. All history throughOctober21 now consumed. Monitor code/results: research/monitor_2026-10-22.py/.json. Original trend audit still requires exact engine financing/sizing/gap conventions before deployment.
+~~~
+
+</details>
+
 <details><summary>reflection-2026-10-14.md</summary>
 
 ~~~markdown
@@ -248,6 +276,26 @@ Next test: verify integer sizing, idle cash, financing, gap knock-outs, no fee a
 </details>
 
 ## Decisions (latest 60, newest first)
+
+### Recorded 2026-10-22 06:28 CEST · UP · confidence 0.51 · horizon 2 session(s)
+
+Reference: Aixtron · eligible fill session 2026-10-22
+
+**Why (thesis)**
+
+> Hold the bounded AIXTRON pilot without adding exposure. October 21 closed at EUR32.06, up 2.04% that day but 5.98% below our EUR34.10 entry. The 35-unit KO has EUR418.34 mid-value and a EUR75.28 marked loss. Today's projected barrier is EUR20.10984, 37.27% below the reference price, implying 2.68x leverage. All remaining product value remains at risk (own_trades; market_history.csv, experimental-unofficial).
+> 
+> Orders of EUR275m versus EUR214.6m consensus still support weak stabilization; unchanged annual guidance, favorable product mix and adverse post-entry performance challenge it. Retain the October 23 opening exit without extending to recover losses. [AIXTRON disclosure](https://www.eqs-news.com/news/ad-hoc/aixtron-q3-2026-order-intake-and-operating-profitability-significantly-exceed-market-expectations/1dede0ca-71c5-4213-93dd-f85b57fe61db_en).
+> 
+> Assuming today's unknown open equals EUR32.06, immediate sale returns EUR415.16 net. Holding until tomorrow with underlying moves of -10%/flat/+10% produces incremental proceeds of -EUR111.74/-EUR0.09/+EUR111.56 versus selling today, including spreads, same-broker fees and calendar financing. These are conditional scenarios requiring barrier survival, not calibrated expected returns. Holding remains the original small discretionary experiment.
+> 
+> Rejected concrete alternative: SAP LONG KO, Trade Republic MARKET October 22, 0.5% cash budget, barrier EUR166.92, multiplier 1, intended October 29 opening exit. At EUR208.65 entry, 11 units cost EUR462.33. Underlying -5%/flat/+5% yields -EUR122.35/-EUR8.17/+EUR106.02 after all costs. Break-even appreciation is 0.358%; ING raises it to 0.802%. The 20% barrier distance compares with 1.97% daily volatility but does not establish safety.
+> 
+> SAP reported cloud revenue of EUR6.668bn against EUR6.594bn in its consensus page dated October 19, a 1.12% beat. However, revenue catch-up helped growth, while profit and cash-flow guidance remained unchanged. Pre-release public availability of that consensus was not independently archived. Strong backlog supports the bull case, but these facts do not establish post-opening drift exceeding costs. Keep additional capital in cash; reconsider on verified recurring earnings/FCF revisions and prospective net-return evidence. [SAP statement](https://www.prnewswire.com/news-releases/sap-quarterly-statement-q3-2026-302915956.html), [issuer consensus](https://www.sap.com/investors/en/financial-documents-and-events/consensus.html). Calculations and frozen paper specifications are saved in research/monitor_2026-10-22.json.
+
+**Strategy note**
+
+> Keep the original AIXTRON pilot bounded; no scaling. Submit Trade Republic MARKET SELL for KO:f7324190503749ab in the October 23 run for that opening exit; no future exit order exists. Reassess earlier on issuer correction or materially contradictory business evidence. Reject additional SAP exposure; paper-track the frozen October 22 entry through October 29 opening exit with full costs and stock comparators. Observe October 22 BASF/Vonovia paper exits next run. All history through October 21 is consumed. Decision, evidence, falsifiers and next experiments are recorded in .memento/decision-2026-10-22.md.
 
 ### Recorded 2026-10-21 06:26 CEST · UP · confidence 0.51 · horizon 3 session(s)
 
@@ -396,6 +444,7 @@ Outcome checked 2026-10-14 06:03 CEST.
 
 | Started | Phase | Status | Commands | Web searches | Input tokens | Output tokens | Prompt |
 | --- | --- | --- | ---: | ---: | ---: | ---: | --- |
+| 2026-10-22 06:24 CEST | decide | success | 8 | 5 | 1,518,638 | 9,225 | 2026-10-21.2 |
 | 2026-10-21 06:21 CEST | decide | success | 13 | 7 | 1,984,072 | 11,511 | 2026-10-14.4 |
 | 2026-10-21 06:11 CEST | reflect | success | 5 | 0 | 598,455 | 4,478 | 2026-10-14.4 |
 | 2026-10-20 06:16 CEST | decide | success | 10 | 4 | 1,014,133 | 8,806 | 2026-10-14.4 |
@@ -408,6 +457,11 @@ Outcome checked 2026-10-14 06:03 CEST.
 
 ### Web research (by run start, newest first)
 
+- 2026-10-22 06:24 CEST: https://www.prnewswire.com/news-releases/sap-quarterly-statement-q3-2026-302915956.html
+- 2026-10-22 06:24 CEST: https://www.sap.com/investors/en/financial-documents-and-events/consensus.html
+- 2026-10-22 06:24 CEST: site.sap.com "2026" "Q3" "consensus" "6,6" ...
+- 2026-10-22 06:24 CEST: https://news.sap.com/2026/10/sap-announces-q3-2026-results/
+- 2026-10-22 06:24 CEST: site.aixtron.com October 2026 Q3 275 orders 2026 ...
 - 2026-10-21 06:21 CEST: https://www.adidas-group.com/en/investors/statutory-publications/ad-hoc-news/adidas-grows-top-line-14percent-and-achieves-record-sales-in-q2-increases-full-year-top-line-guidance-2026-07-30
 - 2026-10-21 06:21 CEST: "adidas" "742" "2026" "October 20" ...
 - 2026-10-21 06:21 CEST: {'type': 'other'}
