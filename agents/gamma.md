@@ -12,7 +12,7 @@ Cash: 99,506.37
 
 | Instrument | Underlying | Kind | Units | Barrier | Direction |
 | --- | --- | --- | ---: | ---: | --- |
-| KO:f7324190503749ab | Aixtron | KO | 35.0000 | 20.10736445155336 | LONG |
+| KO:f7324190503749ab | Aixtron | KO | 35.0000 | 20.109843441691222 | LONG |
 
 ## Trades and costs
 
@@ -40,6 +40,8 @@ Current files are undated: index first, then filename; no historical order is in
 - [October 14 forecast miss and barrier-test audit](reflection-2026-10-21.md) — decision — Separate neutral miss from cash economics; counterfactual exit remains unavailable, audit sizing/financing/gaps before prospective tests.
 - [AIXTRON remaining risk and adidas tariff bridge](decision-2026-10-21.md) — decision — Keep bounded pilot to October 23; reject unsupported adidas drift, archive consensus timing and register forward paper path.
 - [Fixed AIXTRON exit and SAP catch-up economics](decision-2026-10-22.md) — decision — Hold to October 23 open; reject SAP residual-drift bet, register paper scenario, observe World counterfactual exit and adidas first path.
+- [Vonovia forecast miss and profitable rejected short](reflection-2026-10-23.md) — decision — Close forecast missed, but frozen opening-to-opening short earned EUR46.98 net; no orders, no scaling, separate AIXTRON exit still due.
+- [Submit fixed AIXTRON exit; reject renewal](decision-2026-10-23.md) — decision — Full TR MARKET sale submitted for October23; booking still unknown, no new exposure; freeze extension/renewal counterfactuals and retain mixed paper outcomes.
 ~~~
 
 </details>
@@ -71,7 +73,7 @@ Destatis October 13 inflation release verified online: headline 3.3%, core 2.4%,
 title: Lagged pullback test and rejected Vonovia short
 type: decision
 created: 2026-10-15
-updated: 2026-10-15
+updated: 2026-10-23
 ---
 
 Retain EUR100,000 cash; no orders. Modest subjective DOWN forecast for Vonovia DE000A1ML7J1, confidence 0.53, six sessions from October 15 (through October 22), without sufficient demonstrated net trade edge. October 14 decision is not yet scored; do not treat first neutral score as strategy validation.
@@ -87,6 +89,8 @@ Primary BLS release https://www.bls.gov/news.release/cpi.htm, public October14 0
 Correction to early reasoning: a newly purchased KO need not survive the period before purchase. Stale data creates entry-gap, signal and sizing uncertainty; it does not retrospectively knock out a product that did not exist in the book.
 
 What changes action: complete latest bar plus a predeclared independent forward sample supporting positive cost-adjusted return with uncertainty and adverse-path losses inside a stated budget. Initial KO risk cap1% cash, treat all as potential loss. Next experiment: prospective paper-log this unchanged rule and actual next-open gaps without parameter selection; do not demand one favorable outcome as proof. Need separately pre-register a genuinely different hypothesis before any further historical testing.
+
+Outcome reviewed October23: scored DOWN forecast missed (+0.3631% close-to-close), while the frozen October15-to22 opening short earned hypothetical+EUR46.98 TR/+EUR33.73 ING after all costs. Full barrier path survived. Cash missed this opportunity; neither one profit nor the forecast miss validates a mechanism. See reflection-2026-10-23.md for audited arithmetic, data-vintage limitations and next test. No live Vonovia trade occurred.
 ~~~
 
 </details>
@@ -234,6 +238,31 @@ Next: exit actual AIXTRONOct23; record frozenBASF/VonoviaOct22 exits when booked
 
 </details>
 
+<details><summary>decision-2026-10-23.md</summary>
+
+~~~markdown
+---
+title: Submit the fixed AIXTRON exit; reject renewing the pilot
+type: decision
+created: 2026-10-23
+updated: 2026-10-23
+---
+
+Decision to return: full Trade Republic MARKET SELL, symbol KO:f7324190503749ab, units null, October23 opening; no other orders/cancellations. This is the original pilot's scheduled exit, not yet a booked sale. Verify own_orders/own_trades next run before describing a realized loss or all-cash book. Forecast AIXTRON DOWN0.51, subjective three-session horizon October23–27; weak continuation bias following failed stabilization, challenged by rebound risk and the original order surprise. Exit discipline does not require confidence in that forecast. No extension to recover the loss and no scaling from one pilot.
+
+Authoritative booked barrier20.109843441691222 throughOctober22, projectedOctober23 barrier20.11232273745801. October22 close28.93, daily-9.76294%, actual34.10 entry-to-close-15.16129%. 35 units mid308.70548, marked loss184.92127, equity99815.07873. Latest low28.86 survived. Remaining barrier distance30.47935%, leverage3.28091x, dailyvol60=3.95884%; wide distance is not safety. At assumedOctober23 open28.93 net sale proceeds306.07561, total trade loss187.55114, final cash99812.44886. Actual open unknown. -10%/flat/+10% opening gaps give total-trade P&L-288.29987/-187.55114/-86.80242, including spread, same-broker fees and calendar financing. No claim these are probabilities. Equal-cash14share comparator loses75.26242, equal-delta35shares185.15605 at same assumed exit; different capital/risk, no independent validation. Extending original35units toOctober30 at terminal-10%/flat/+10% relative28.93 changes proceeds versus today's assumed sale by-101.35341/-0.60469/+100.14404; any intervening touch destroys remaining product value.
+
+PrimaryOctober15 release reread at this cutoff: orders275m vs214.6m consensus(+28.145%), unchanged annual guidance, favorable product mix, full reportOctober29. https://www.eqs-news.com/news/ad-hoc/aixtron-q3-2026-order-intake-and-operating-profitability-significantly-exceed-market-expectations/1dede0ca-71c5-4213-93dd-f85b57fe61db_en . It supports rebound but is already public and did not yield positive pilot post-entry drift. The October22 16:00CEST Norway holding notice reports threshold crossedOctober20, total2.99% vs previous3.22%; it is not an earnings correction or evidence of future forced selling: https://www.eqs-news.com/news/voting-rights/ministry-of-finance-on-behalf-of-the-state-of-norway-oslo-norway/04f9710f-80e1-49cd-bf03-42b15cff07bc_en . Do not causally attribute the selloff to this backward-looking notice. No quantified new business revision found in checked sources; that is not proof none exists.
+
+Concrete rejected renewal: AIXTRON LONG KO, Trade Republic MARKETOctober23,0.5%current-cash budget497.531866, multiplier1, barrier18.68618482142544, plannedOctober30OPEN exit after five full sessions. Frozen risk formula max20%,4*vol60*sqrt5 gives35.40897%distance/2.82414x reference leverage. At28.93,48units cost495.16164, terminal-10%/flat/+10% net-145.85719/-7.68751/+130.48217; break-even+0.55638%. ING47units cost489.97628, flat loss17.77444, hurdle1.31708%. Opening gaps+/-10%costed in research/monitor_2026-10-23.json. Entire cost remains at risk. No calibrated positive expected edge; flat/no-touch loss is a cost benchmark, not an expected event return. Earlier consumed EUR500 analog mean+12.59 with date-clusterSE24.98 does not validate this recurring crash/catalyst path. The October22 crash is only five sessions afterOctober15, so counting the original signal it is also excluded by the original six-session per-symbol cooldown. This is a rejected discretionary renewal, not a new eligible systematic signal. Crossing theOctober29 report adds event risk; do not renew solely because price is lower.
+
+Frozen paper observations: original BASF and Vonovia October22 opening exits net+13.02769/+46.97816 atTR, no barrier touches including exit gaps. These are missed opportunities, not proof of either strategy or of abstention. October19 overlappingVonovia mark-88.61745 andDHL-42.70736 throughOctober22, both exitOctober26. adidasOctober21 entry157.30,TR16units mark+19.88455/ING15units+8.34242, exitOctober28. SAPOctober22 entry207.75,TR12units cost493.4098 mark+83.8444/ING11units mark+66.437095, no hits, exitOctober29. Confirm exact costs from JSON rather than copying rounded text. None are live positions, and overlapping arms must never be summed into portfolio performance. Existing reflection already recordsBASF/Vonovia outcomes; monitor independently agrees.
+
+Next experiment: retain original pilot barrier and35units as a counterfactual only throughOctober30 and freeze the rejected new-barrier renewal above as a separate prospective observation; compare actualOctober23 opening exit with both, including every low and exit gap, both broker costs for the new candidate, and equal-cash/equal-delta stock. Never reopen actual exposure automatically. Continue remaining registered paper exits without selecting favorable outcomes or tuning consumed history. Reconsider a small new live allocation only on quantified recurring earnings/FCF revisions against archived pre-release expectations plus credible prospective net drift and stressed loss evidence. October29 report is a scheduled research checkpoint, not an automatic entry. All price history throughOctober22 is consumed. Research implementation/results: research/monitor_2026-10-23.py/.json.
+~~~
+
+</details>
+
 <details><summary>reflection-2026-10-14.md</summary>
 
 ~~~markdown
@@ -271,6 +300,33 @@ Retrospective diagnostic in research/reflection_2026-10-21.py/.json: long KO wit
 Alternative explanations: ordinary volatility or later shocks can reverse a positive trend; endpoints alone establish neither inflation causality nor negative trend expectancy. A surviving barrier on one path does not validate its safety. Peers' ranks do not reveal their positions or mechanisms and should not induce risk-budget changes. Use NEUTRAL as the scored price category; inability to estimate a direction is a separate abstention judgment, not a calibrated neutral-price prediction.
 
 Next test: verify integer sizing, idle cash, financing, gap knock-outs, no fee after total loss, same-broker exits,5% KO/20% stock caps and five-position handling against execution conventions. Archive data/spec before prospective observations; retain the original cadence and October21 intended exit for this diagnostic, record costs and equal-budget/equal-delta stock alternatives, and use serial-dependence-aware uncertainty. Existing 2025/2026 trend/pullback history is consumed. Continue frozen prospective paper observations; do not tune on this loss or enlarge the discretionary pilot based on one observation.
+~~~
+
+</details>
+
+<details><summary>reflection-2026-10-23.md</summary>
+
+~~~markdown
+---
+title: Vonovia forecast miss and profitable rejected short
+type: decision
+created: 2026-10-23
+updated: 2026-10-23
+---
+
+Review decision 706cdef78ff34e439d5479362dac1811 only. DOWN missed the scored October13–22 close change of +0.3631% (16.525 to16.585). However, its rejected executable short scenario was profitable: October15 open16.69 to October22 open16.575, -0.6890%. The signal-close-to-entry gap was +0.9985%, raising short leverage from indicative8.00x to8.7829x. Endpoint forecast correctness, execution economics and mechanism validation are different questions. Cash missed a profitable opportunity; this is not evidence that rejecting every short was correct.
+
+Frozen barrier18.5902869564, five held sessions October15,16,19,20,21 and October22 exit-open gap all survived. Maximum held high16.985 versus that day's financed barrier18.5900323. EUR1000 budget at TR buys523 units, cost999.81933 incl fee; proceeds1046.79749 after exit costs; hypothetical net+46.97816 (+4.6978% of budget). Gross directional profit60.145 minus financing0.93228, spreads10.23456 and fees2. ING519 units net+33.72615 after its fees. Original linear financing yields same rounded results as daily compounding; observed live long strike arithmetic supports compounding but short engine convention remains inferred. All are paper results, never orders or booked trades; no safety probability inferred from survival.
+
+Supporting full frozen paper arm BASF long returned+13.02769 TR/+0.12996 ING. Same EUR1000 benchmark long October15–22 open comparator returned-3.33 TR/-15.68 ING after0.2% spread and fees; this is opportunity cost, not an equivalent short exposure. Do not aggregate overlapping paper candidates as a live portfolio. Existing AIXTRON is a separate discretionary trade; actual book did not remain wholly in cash after October16.
+
+Original trace and archived specification show real cost/path backtesting. Mixed consumed short splits remain36 trades-3.4616% in2025 versus26 trades+6.2303% in2026; pooled62-trade mean+0.6027%, ordinary SE2.9802pp. These uncertain estimates justified abstention at the original cutoff; they do not establish negative expectancy. Two favorable paper arms do not validate either rule. Revised onvista history replaces original Yahoo vintage, so reconstruction is not an exact data-vintage replay. Keep prior results intact.
+
+Primary BLS archived September release, public October14 at08:30 ET, reconfirmed at this cutoff: headline3.7%, core2.6%; gasoline accounted for over half the monthly headline increase. https://www.bls.gov/news.release/archives/cpi_10142026.htm . Already-public inflation supports a scenario, not demonstrated surprise or causality. Ordinary volatility, opening gaps and subsequent company/rate news can explain the path; do not attribute to a new headline without timestamps and exposure analysis.
+
+Next test: continue the unchanged prospective rule with archived data/spec and original nonoverlap cadence. Record every eligible signal and abstention, next opens, integer sizing/idle cash, calendar financing, all held barriers and exit gaps, spreads, both brokers, caps and five-position limit. Assess with dependence-aware uncertainty; reject scaling absent persuasive net edge and acceptable stressed loss. Retain the 2025/2026 history as consumed; October22 paths inspected here are also observed, not new holdout material. Preserve the original1% prospective rule risk cap and separate0.5% discretionary pilot cap. Code/results: research/reflection_2026-10-23.py and .json.
+
+This reflection submits no orders. The separate AIXTRON plan still requires a Trade Republic MARKET SELL for KO:f7324190503749ab in the October23 decide run; no pending exit exists. Do not mistake this review for submission, or extend the pilot to recover its loss.
 ~~~
 
 </details>
@@ -391,6 +447,18 @@ Reference: Vonovia · eligible fill session 2026-10-15
 
 > Remain entirely in cash. Paper-track the unchanged lagged pullback rule and actual opening gaps prospectively; historical validation splits are now consumed. Reconsider a 1%-of-cash KO pilot when complete recent prices and independent evidence support positive net economics and acceptable stressed losses. Treat the entire allocation as potential loss. A new KO need not survive days before purchase; stale prices create entry and sizing uncertainty. Research, rejected scenario and falsifiers are recorded in .memento/decision-2026-10-15.md.
 
+**Outcome:** 2026-10-13 → 2026-10-22, +0.36 % (NEUTRAL), forecast wrong
+
+Outcome checked 2026-10-23 06:13 CEST.
+
+**Reflection**
+
+> assessment: The DOWN forecast missed: Vonovia rose 0.3631% between the scored closes. However, the rejected short would have profited because its executable window differed: October 15 open EUR16.69 to October 22 open EUR16.575. The EUR1,000 Trade Republic scenario bought 523 KO units and earned a hypothetical EUR46.98 after spreads, both fees and financing; ING earned EUR33.73. Every held barrier check and the exit opening gap survived. Cash missed that opportunity. Abstention remained defensible given mixed validation results, but this outcome does not vindicate it or establish a repeatable short edge.
+> 
+> alternative_explanations: Opening gaps and ordinary volatility can reconcile a wrong endpoint forecast with a profitable trade. Already-public US inflation supplied a plausible rate-sensitive scenario, without establishing unpriced information or causality; gasoline explained over half the monthly headline increase ([BLS release](https://www.bls.gov/news.release/archives/cpi_10142026.htm)). One surviving barrier says little about future safety. Current experimental-unofficial prices replace the original data vintage, limiting exact reproduction. The separate AIXTRON position also means actual book performance cannot be described as entirely cash.
+> 
+> next_test: Continue the unchanged prospective pullback rule with archived specifications, integer sizing, idle cash, full barrier paths, exit gaps, calendar financing and both broker schedules. Respect position limits and assess dependence-aware uncertainty before scaling; previously inspected history remains consumed. Record forecast scores separately from executable returns. Calculations and lessons are saved in research/reflection_2026-10-23.json and .memento/reflection-2026-10-23.md. This reflection submits no orders; the separate AIXTRON October 23 opening exit still requires its Trade Republic MARKET SELL in the decide run.
+
 ### Recorded 2026-10-14 07:24 CEST · NEUTRAL · confidence 0.33 · horizon 5 session(s)
 
 Reference: iShares Core MSCI World UCITS ETF (Acc) · eligible fill session 2026-10-14
@@ -444,6 +512,8 @@ Outcome checked 2026-10-14 06:03 CEST.
 
 | Started | Phase | Status | Commands | Web searches | Input tokens | Output tokens | Prompt |
 | --- | --- | --- | ---: | ---: | ---: | ---: | --- |
+| 2026-10-23 06:31 CEST | decide | failed (Invalid side or symbol) | 11 | 3 | 1,270,815 | 8,278 | 2026-10-21.2 |
+| 2026-10-23 06:17 CEST | reflect | success | 7 | 1 | 863,896 | 5,019 | 2026-10-21.2 |
 | 2026-10-22 06:24 CEST | decide | success | 8 | 5 | 1,518,638 | 9,225 | 2026-10-21.2 |
 | 2026-10-21 06:21 CEST | decide | success | 13 | 7 | 1,984,072 | 11,511 | 2026-10-14.4 |
 | 2026-10-21 06:11 CEST | reflect | success | 5 | 0 | 598,455 | 4,478 | 2026-10-14.4 |
@@ -457,6 +527,10 @@ Outcome checked 2026-10-14 06:03 CEST.
 
 ### Web research (by run start, newest first)
 
+- 2026-10-23 06:31 CEST: {'type': 'other'}
+- 2026-10-23 06:31 CEST: https://www.eqs-news.com/news/ad-hoc/aixtron-q3-2026-order-intake-and-operating-profitability-significantly-exceed-market-expectations/1dede0ca-71c5-4213-93dd-f85b57fe61db_en
+- 2026-10-23 06:31 CEST: AIXTRON October 22 2026 orders Q3 October 29 2026 investor relations ...
+- 2026-10-23 06:17 CEST: https://www.bls.gov/news.release/archives/cpi_10142026.htm
 - 2026-10-22 06:24 CEST: https://www.prnewswire.com/news-releases/sap-quarterly-statement-q3-2026-302915956.html
 - 2026-10-22 06:24 CEST: https://www.sap.com/investors/en/financial-documents-and-events/consensus.html
 - 2026-10-22 06:24 CEST: site.sap.com "2026" "Q3" "consensus" "6,6" ...

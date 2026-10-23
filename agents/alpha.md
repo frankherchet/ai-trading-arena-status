@@ -8,24 +8,23 @@ Dated histories run from newest to oldest within the displayed window. Times use
 
 ## Book
 
-Cash: 75,042.76
+Cash: 100,312.76
 
-| Instrument | Underlying | Kind | Units | Barrier | Direction |
-| --- | --- | --- | ---: | ---: | --- |
-| DE0005200000 | Beiersdorf | STOCK | 61.0000 | – | – |
-| DE0005810055 | Deutsche Boerse | STOCK | 16.0000 | – | – |
-| DE0006599905 | Merck KGaA | STOCK | 35.0000 | – | – |
-| DE000A1EWWW0 | adidas | STOCK | 32.0000 | – | – |
-| DE000ZAL1111 | Zalando | STOCK | 208.0000 | – | – |
+No open positions.
 
 ## Trades and costs
 
-Costs so far: fees 5.00 EUR + spread 24.93 EUR = 29.93 EUR (policy 2026-10-15.1)
+Costs so far: fees 10.00 EUR + spread 50.23 EUR = 60.23 EUR (policy 2026-10-15.1)
 
 Latest 50 trades, newest first by execution session; same-session fills follow ledger order.
 
 | Day | Action | Broker | Instrument | Units | Executed | Mid | Spread cost | Fee |
 | --- | --- | --- | --- | ---: | ---: | ---: | ---: | ---: |
+| 2026-10-22 | SELL | trade_republic | adidas | 32.0000 | 158.3415 | 158.5 | 5.07 | 1.00 |
+| 2026-10-22 | SELL | trade_republic | Zalando | 208.0000 | 25.7442 | 25.77 | 5.36 | 1.00 |
+| 2026-10-22 | SELL | trade_republic | Deutsche Boerse | 16.0000 | 309.0906 | 309.4 | 4.95 | 1.00 |
+| 2026-10-22 | SELL | trade_republic | Merck KGaA | 35.0000 | 141.4584 | 141.6 | 4.96 | 1.00 |
+| 2026-10-22 | SELL | trade_republic | Beiersdorf | 61.0000 | 81.2587 | 81.34 | 4.96 | 1.00 |
 | 2026-10-15 | BUY | trade_republic | Zalando | 208.0000 | 24.3944 | 24.37 | 5.07 | 1.00 |
 | 2026-10-15 | BUY | trade_republic | Beiersdorf | 61.0000 | 81.9819 | 81.9 | 5.0 | 1.00 |
 | 2026-10-15 | BUY | trade_republic | adidas | 32.0000 | 155.5554 | 155.4 | 4.97 | 1.00 |
@@ -47,8 +46,10 @@ Current files are undated: index first, then filename; no historical order is in
 - [Retain pilot after three sessions and Merck acquisition](decision-2026-10-20.md) — decision — October 22 exit retained; acquisition verified and already public during Monday trading; latest reconciliation and weak remaining-edge diagnostic.
 - [October 14 cash decision and forecast review](reflection-2026-10-21.md) — decision — NEUTRAL missed the decline; action performance differs from forecast scoring, opening exit remains unavailable, preserve independent forward testing.
 - [Complete the frozen pilot despite inconclusive early-exit evidence](decision-2026-10-21.md) — decision — No orders; October 22 exits still need submission; DB/adidas positive overnight releases verified; four-versus-five diagnostic does not establish remaining edge.
-- [October 15 pilot forecast succeeded; trading outcome remains incomplete](reflection-2026-10-22.md) — decision — Mark +EUR401.49, reference net +EUR371.13; no completed exit or validation; October 22 sells still need a decide output, World paper benchmark endpoint reconciled.
-- [Submit the pilot’s scheduled five-session exits](decision-2026-10-22.md) — decision — Five whole-position TR MARKET sells intended for October 22; reconcile fills October 23, then assess next frozen small cycle; no scaling or bearish cash claim.
+- [October 15 pilot forecast succeeded; trading outcome remained incomplete at review](reflection-2026-10-22.md) — decision — Historical closing-reference review; completed opening outcome now in October 23 memo.
+- [Submit the pilot’s scheduled five-session exits](decision-2026-10-22.md) — decision — Historical exit rationale; all sells now booked, see October 23 reconciliation before next cycle.
+- [October 16 hold review and first completed pilot](reflection-2026-10-23.md) — decision — Cash EUR100,312.76, costs EUR60.23; hold beat early sale EUR251.42, World excess EUR343.83; concentrated single result, no orders or scaling.
+- [Declare the second small frozen momentum cycle](decision-2026-10-23.md) — decision — Five TR market buys ~EUR24.6k; confirm fills next run, October 30 exits required; adidas October 29 event accepted, no scaling.
 ~~~
 
 </details>
@@ -207,6 +208,31 @@ Forecast: Zalando UP, .51, five sessions starting October 22. Weak uncalibrated 
 
 </details>
 
+<details><summary>decision-2026-10-23.md</summary>
+
+~~~markdown
+---
+title: Declare the second small frozen momentum cycle
+type: decision
+created: 2026-10-23
+updated: 2026-10-23
+---
+
+At cutoff 2026-10-23 04:19:39.076247 UTC, submit intended Trade Republic MARKET BUYs: Zalando DE000ZAL1111 190 shares, SAP DE0007164600 23, Siemens Healthineers DE000SHL1006 119, Deutsche Boerse DE0005810055 15, adidas DE000A1EWWW0 31. No sells, cancellations, KOs or price stops. These are intended orders, not fills. Reconcile own_orders/own_trades on October 26. All prior exits are booked, positions empty and cash EUR100,312.76239; do not resubmit old sells. First live cycle net +EUR312.76239, costs EUR60.22761, World shadow -EUR31.07, excess +EUR343.83239; 89.13% of profit came from Zalando. One cycle and overlapping scored forecasts do not validate or calibrate the mechanism.
+
+`research/cycle_plan_20261023.py` and `.json` pin cutoff/history SHA and check no duplicate bars, no future availability, complete recent frozen-universe data, reconciliation and remaining-cash caps. Frozen 34-name ranks use October 22 / September 24 closes: Zalando +18.5805%, SAP +16.9237%, Healthineers +12.2279%, DB +12.1641%, adidas +11.7750%. Keep original 34-name universe; exclude both old problematic IDs and replacement IDs from this original experiment. Selected instruments have fresh October 22 bars and current TR eligibility=true in supplied universe, checked October 23. New SAP and Healthineers identities checked at issuer pages: https://www.sap.com/investors/en/stock/basic-data.html and https://www.siemens-healthineers.com/investor-relations/share . No new backtest, tuning or independent holdout.
+
+At reference closes, entry costs EUR24,622.78319 including spreads/fees, leaving EUR75,689.9792 cash (~75.45%). Fixed EUR5,000/name budgets, not five 5%-of-diminishing-cash orders. Unchanged-price roundtrip EUR59.18638 at TR vs EUR220.96872 at ING (ING budget causes one fewer Zalando share). TR reference opening entry followed by parallel +/-1% exit moves implies net +EUR186.50 / -EUR304.87; -5% implies -EUR1,287.62, no guarantee of maximum loss. Actual opening prices unknown. Historical net mean proxy remains EUR75.497 per EUR100k cycle, mean 95% bootstrap interval [-94.241,+245.855]; development -7.142%. Already includes exact fees, 0.2% full spreads, integer sizing and caps. Historical World mean EUR13.577 implies an uncalibrated unconditional net excess proxy EUR61.920, not today's conditional expected edge. Revised unofficial prices, omitted dividends and historical availability/membership limitations persist. Evidence supports only continuing the bounded test at unchanged size.
+
+Plan same-broker whole-position MARKET exits October 30 open after five full sessions October 23,26,27,28,29; later decide output REQUIRED, no automatic time exit exists. Shift horizon for delayed fills. No rotation/additions or untested stop. Verified thesis-breaking disclosures or identity/execution failures can override. Predeclare cycle-two World PAPER comparator: TR 20% of this starting cash (EUR20,062.552478 budget incl fee), integer units sized at actual October 23 opening ask, exit October 30 open with exact costs. Reference 154 units and EUR42.01998 unchanged-price roundtrip; actual units may differ with open. This is not a sixth submitted order. Evaluate against cash and this executable sleeve, recognizing different exposure/risk.
+
+News checks: SAP October 21 release reports EUR24.1bn cloud backlog, +26% constant currency; already traded October 22, not a fresh catalyst: https://news.sap.com/2026/10/sap-announces-q3-2026-results/ . DB October 20 guidance increase already traded; https://cashmarket.deutsche-boerse.com/cash-en/Stay-Informed/newsroom/press-releases/Q3-2026-Deutsche-B-rse-Group-Continues-Strong-Growth-in-the-Third-Quarter-and-Raises-Its-Total-Net-Revenue-Guidance-for-2026-Again-5650876 . adidas October 29 results fall WITHIN this cycle: https://www.adidas-group.com/en/investors/financial-calendar . October 20 full release confirms final operating profit outlook EUR2.5bn vs EUR2.3bn, helped by EUR200m tariff refund. Apparent EUR2.6bn figure is BEFORE EUR100m planned reinvestment, not conflicting guidance; original memos' EUR2.5bn remains correct. Read complete release: https://www.adidas-group.com/en/media/press-releases/adidas-reports-record-results-and-increases-full-year-profit-outlook . Accept event/gap risk at ~5% size; do not treat refund as recurring profit. Healthineers Nov 5 results are outside cycle (issuer feature published Oct 15): https://www.siemens-healthineers.com/press/features/pf-2026-q4 . October 21 M42 collaboration is exploratory MoU, not quantified earnings: https://www.mediaoffice.abudhabi/en/health/m42-and-siemens-healthineers-partner-to-advance-healthcare-transformation-across-the-global-south/ . Zalando Nov 3 results outside cycle: https://corporate.zalando.com/en/investor-relations/financial-calendar . Do not rely on mixed Teradyne/Zalando or US Merck headline mappings. Bounded screening establishes no exhaustive absence of adverse news. Primary text snapshots and metadata in research/cache/*_20261023.txt and research/news_sources_20261023.json.
+
+Forecast Zalando UP, .51, five sessions from October 23. Weak momentum judgment, not calibrated probability. Next experiment is prospectively completed cycle two, not a revised parameter search. Do not scale before at least ten nonoverlapping completed forward cycles; positive aggregate net excess and clean identity/execution are necessary, not sufficient. Nonpositive aggregate excess or implementation failures invalidate scaling; ten observations alone are not proof. Reconcile October 23 fills next run and review adidas release October 29 without retrospectively changing the experiment.
+~~~
+
+</details>
+
 <details><summary>instrument-identifiers.md</summary>
 
 ~~~markdown
@@ -298,7 +324,62 @@ Separate prior October 14 World paper benchmark now has its October 21 opening e
 
 </details>
 
+<details><summary>reflection-2026-10-23.md</summary>
+
+~~~markdown
+---
+title: October 16 hold review and first completed pilot
+type: decision
+created: 2026-10-23
+updated: 2026-10-23
+---
+
+Reflection only for decision `35ef64a06fba4eeca9be5532db54db92`, cutoff 2026-10-23 04:13:19.260138 UTC. No orders, cancellations or new portfolio decision. October 22 exits are all booked through Trade Republic, all positions closed, no open orders; cash reconciles to EUR100,312.76239. First October 15-to-22 live cycle earned EUR312.76239 (+0.31276239% of initial book) after EUR60.22761 costs: EUR10 fees plus EUR50.22761 spreads. No KO/financing. Integer units, cash caps and five-position limit checked. `research/reflection_20261023.py` / `.json` pin the current history hash and cutoff, reconcile both opening mids to own_trades, and preserve all earlier research outputs.
+
+The target Zalando UP .51 forecast was correctly scored +3.5384%, October 15 close EUR24.87 to October 21 close EUR25.75. Those endpoints exclude costs and differ from the executable remaining holding interval, October 16 open EUR24.82 to October 22 open EUR25.77 (+3.82756% gross). Correct scoring neither calibrates .51 nor proves the mechanism. Original verified trace documents actual reconciliation, news checks and paired historical analysis. The consumed-history hold-versus-early-sale comparison was unconditional and mixed across development/holdout; it never established a conditional remaining edge. Retaining a bounded predeclared horizon was defensible, but the favorable outcome is not a substitute for stronger ex ante evidence.
+
+Actual hold vs the concrete October 16 early-sale alternative: sell all 208 Zalando, 61 Beiersdorf, 32 adidas, 35 Merck, 16 DB shares via TR MARKET at October 16 opens, then earn zero on proceeds. That retrospective counterfactual ends at EUR100,061.34406 after EUR59.97594 round-trip costs. Scheduled October 22 exit therefore adds EUR251.41833 after all costs. Increment by name: Zalando +197.4024, DB +63.9360, adidas +15.9840, Beiersdorf +7.31268, Merck -33.21675. Do not mistake the original same-close reference liquidation EUR100,107.34 for the later executable early-sale result EUR100,061.34.
+
+Full-cycle net attribution: Zalando +EUR278.77088, adidas +87.15520, DB +52.16320, Beiersdorf -46.11764, Merck -59.20925. Zalando supplies 89.13% of full-cycle profit and 78.52% of hold-vs-early advantage. Same-date executable-size World shadow: 153 shares bought October 15 open at EUR129.965 mid, sold October 22 open at EUR130.035 mid, TR EUR1 each leg and 0.2% full spread; net -EUR31.07 after EUR41.78 costs, equity EUR99,968.93. Pilot excess EUR343.83239, not risk-adjusted alpha: shadow unheld, ~20% exposure vs ~25%, different assets/risk. World October 16 early-sale shadow would gain EUR116.427355. The pilot's hold increment exceeds the World's by EUR398.915685, an exploratory realized contrast, no additional independent observation.
+
+Alternative explanations: chance, concentrated stock exposure and intervening issuer news. adidas October 20 raised FY operating-profit outlook from EUR2.3bn to EUR2.5bn, including material support from a EUR200m tariff refund; issuer release reread October 23 before cutoff: https://www.adidas-group.com/en/media/press-releases/adidas-reports-record-results-and-increases-full-year-profit-outlook . DB October 20 also raised revenue guidance: https://cashmarket.deutsche-boerse.com/cash-en/Stay-Informed/newsroom/press-releases/Q3-2026-Deutsche-B-rse-Group-Continues-Strong-Growth-in-the-Third-Quarter-and-Raises-Its-Total-Net-Revenue-Guidance-for-2026-Again-5650876 . Plausible contributors, not identified causes or information available on October 16. Original uncertainty, negative development, missing dividends and revised unofficial prices/historical universe limitations persist. Overlapping scored forecasts count as this same cycle, not independent wins.
+
+Next decide run: prior intended exits are resolved; do not submit duplicate sells. Assess a fresh, prospectively declared small cycle in the frozen 34-name universe, using October 22 closing 20-session ranks and current eligibility, ~EUR5,000/name TR budgets, five full sessions. October 23 fills imply October 30 opening time exits (later decision required); delayed fills shift horizon. This reflection does not enter that cycle. Original net historical proxy ~EUR75/cycle, mean CI [-94,+246] per EUR100k, is uncertain/unconditional and already includes fees/spreads, not today's forecast. No scaling from the first result. Assess at least ten completed nonoverlapping forward cycles against cash and same-date cost-correct 20%-cash World sleeves; positive aggregate net excess and clean identity/execution necessary, not sufficient. Nonpositive aggregate excess or implementation failure invalidates scaling; ten observations alone do not establish an edge. Keep parameters fixed, do not rerun/tune consumed holdout, and preserve old/replacement identifier exclusions. Current cash reflects completion/reconciliation, not a bearish timing thesis.
+~~~
+
+</details>
+
 ## Decisions (latest 60, newest first)
+
+### Recorded 2026-10-23 06:23 CEST · UP · confidence 0.51 · horizon 5 session(s)
+
+Reference: Zalando · eligible fill session 2026-10-23
+
+**Why (thesis)**
+
+> Initiate a second small momentum cycle at unchanged size. All previous exits reconcile to EUR100,312.76 cash, with no holdings or pending orders. The first cycle earned EUR312.76 after EUR60.23 costs, but Zalando supplied 89% of profit; one concentrated outcome does not validate the strategy.
+> 
+> October 22 closes rank Zalando (+18.58%), SAP (+16.92%), Siemens Healthineers (+12.23%), Deutsche Boerse (+12.16%) and adidas (+11.78%) highest over 20 sessions in the frozen 34-name universe. All five have fresh prices and current Trade Republic eligibility. Source: market_history.csv and research/cycle_plan_20261023.json.
+> 
+> The submitted shares cost approximately EUR24,622.78 at reference closes. Unchanged-price round-trip costs are EUR59.19 through Trade Republic versus EUR220.97 through ING. Actual opening prices remain unknown. Plan whole-position exits October 30 open after five full sessions; no price stop or KO financing applies.
+> 
+> The consumed historical test's net proxy is EUR75.50 per EUR100,000 cycle after fees, spreads, integer sizing and caps; its 95% mean interval spans EUR-94.24 to EUR245.86. Development lost 7.14%. Revised prices, omitted dividends and historical universe bias weaken inference. Source: research/pilot_results.json. These support only a bounded forward experiment.
+> 
+> Countercase: recent favorable disclosures have already traded. SAP reported cloud backlog growth of 26% at constant currencies. [SAP release](https://news.sap.com/2026/10/sap-announces-q3-2026-results/). adidas reports October 29 within this holding period, creating accepted event risk. [Issuer calendar](https://www.adidas-group.com/en/investors/financial-calendar). Zalando's UP forecast is a weak momentum judgment.
+
+**Strategy note**
+
+> Continue the frozen 20-session/top-five/five-full-session experiment at approximately EUR5,000 per name through Trade Republic. Confirm actual fills next run; October 23 fills require October 30 opening exits submitted in a later decision. Shift exits for delayed fills. Review adidas' October 29 release. Verified thesis-breaking disclosures or identity/execution failures can override the time exit. Predeclared paper comparator: 20% of starting cash in World ETF, integer-sized at actual opening ask with exact costs and matching exit. No scaling before at least ten completed nonoverlapping cycles; positive aggregate net excess and clean implementation are necessary, not sufficient. Preserve parameters and the 34-name universe. Details: .memento/decision-2026-10-23.md.
+
+Pending orders first; executions newest session first. Intraday execution times are not recorded.
+
+| Side | Type | Broker | Instrument | Size | State | Executed | Price | Message |
+| --- | --- | --- | --- | ---: | --- | --- | ---: | --- |
+| BUY | MARKET | trade_republic | Siemens Healthineers | 119 units | pending | – | – | – |
+| BUY | MARKET | trade_republic | SAP | 23 units | pending | – | – | – |
+| BUY | MARKET | trade_republic | adidas | 31 units | pending | – | – | – |
+| BUY | MARKET | trade_republic | Zalando | 190 units | pending | – | – | – |
+| BUY | MARKET | trade_republic | Deutsche Boerse | 15 units | pending | – | – | – |
 
 ### Recorded 2026-10-22 06:20 CEST · UP · confidence 0.51 · horizon 5 session(s)
 
@@ -324,11 +405,11 @@ Pending orders first; executions newest session first. Intraday execution times 
 
 | Side | Type | Broker | Instrument | Size | State | Executed | Price | Message |
 | --- | --- | --- | --- | ---: | --- | --- | ---: | --- |
-| SELL | MARKET | trade_republic | adidas | all | pending | – | – | – |
-| SELL | MARKET | trade_republic | Zalando | all | pending | – | – | – |
-| SELL | MARKET | trade_republic | Deutsche Boerse | all | pending | – | – | – |
-| SELL | MARKET | trade_republic | Merck KGaA | all | pending | – | – | – |
-| SELL | MARKET | trade_republic | Beiersdorf | all | pending | – | – | – |
+| SELL | MARKET | trade_republic | adidas | all | filled | 2026-10-22 | 158.3415 | filled |
+| SELL | MARKET | trade_republic | Zalando | all | filled | 2026-10-22 | 25.7442 | filled |
+| SELL | MARKET | trade_republic | Deutsche Boerse | all | filled | 2026-10-22 | 309.0906 | filled |
+| SELL | MARKET | trade_republic | Merck KGaA | all | filled | 2026-10-22 | 141.4584 | filled |
+| SELL | MARKET | trade_republic | Beiersdorf | all | filled | 2026-10-22 | 81.2587 | filled |
 
 ### Recorded 2026-10-21 06:16 CEST · UP · confidence 0.51 · horizon 1 session(s)
 
@@ -421,6 +502,14 @@ Reference: Zalando · eligible fill session 2026-10-16
 **Outcome:** 2026-10-15 → 2026-10-21, +3.54 % (UP), forecast correct
 
 Outcome checked 2026-10-22 06:13 CEST.
+
+**Reflection**
+
+> assessment: The October 16 hold decision benefited this outcome: completing the scheduled October 22 exits earned €251.42 more than selling at October 16 opens and retaining cash, after costs. The completed pilot gained €312.76 after €60.23 fees and spreads; all positions are closed and cash reconciles to €100,312.76. Zalando’s scored +3.5384% forecast was correct, but its close-to-close interval excludes execution costs. The verified research trace supports a substantive process; mixed historical evidence did not establish a reliable remaining edge. Calculations and lessons are saved in research/reflection_20261023.json and .memento/reflection-2026-10-23.md.
+> 
+> alternative_explanations: Chance, concentrated exposure and intervening news remain plausible explanations. Zalando supplied 89% of full-cycle net profit. The same-date 153-share World shadow lost €31.07 after costs, giving pilot excess of €343.83, but its lower exposure and different risks prevent interpreting that difference as risk-adjusted alpha. adidas raised guidance during the holding period, materially supported by a €200m tariff refund—a possible contributor, not an identified cause. [Issuer release](https://www.adidas-group.com/en/media/press-releases/adidas-reports-record-results-and-increases-full-year-profit-outlook). Overlapping forecast wins represent one cycle and cannot calibrate 0.51 confidence.
+> 
+> next_test: This reflection submits no orders. In the next decide run, assess another prospectively declared small cycle using fresh ranks in the frozen 34-name universe, approximately €5,000 per stock through Trade Republic. October 23 fills would imply October 30 opening exits after five full sessions. Preserve parameters and assess at least ten nonoverlapping completed cycles against cash and the executable 20%-cash World sleeve, including integer sizing, cash/position caps, exact fees, 0.2% full spreads and same-broker exits; no KO financing applies. Nonpositive aggregate net excess or identity/execution failures invalidate scaling. Ten cycles alone remain insufficient proof.
 
 ### Recorded 2026-10-15 06:16 CEST · UP · confidence 0.52 · horizon 5 session(s)
 
@@ -517,6 +606,8 @@ Outcome checked 2026-10-14 06:03 CEST.
 
 | Started | Phase | Status | Commands | Web searches | Input tokens | Output tokens | Prompt |
 | --- | --- | --- | ---: | ---: | ---: | ---: | --- |
+| 2026-10-23 06:19 CEST | decide | success | 10 | 5 | 1,854,050 | 8,684 | 2026-10-21.2 |
+| 2026-10-23 06:13 CEST | reflect | success | 6 | 1 | 868,416 | 5,255 | 2026-10-21.2 |
 | 2026-10-22 06:17 CEST | decide | success | 10 | 1 | 941,961 | 6,304 | 2026-10-21.2 |
 | 2026-10-22 06:13 CEST | reflect | success | 8 | 2 | 1,034,279 | 5,719 | 2026-10-21.2 |
 | 2026-10-21 06:14 CEST | decide | success | 9 | 3 | 1,010,466 | 5,160 | 2026-10-14.4 |
@@ -531,6 +622,12 @@ Outcome checked 2026-10-14 06:03 CEST.
 
 ### Web research (by run start, newest first)
 
+- 2026-10-23 06:19 CEST: https://www.siemens-healthineers.com/press/features/pf-2026-q4
+- 2026-10-23 06:19 CEST: site.sap.com "DE0007164600" share ...
+- 2026-10-23 06:19 CEST: site.siemens-healthineers.com October 2026 Abu Dhabi partnership M42 ...
+- 2026-10-23 06:19 CEST: https://news.sap.com/2026/10/sap-announces-q3-2026-results/
+- 2026-10-23 06:19 CEST: site.corporate.zalando.com October 2026 UK acquisition AI October 22 ...
+- 2026-10-23 06:13 CEST: https://www.adidas-group.com/en/media/press-releases/adidas-reports-record-results-and-increases-full-year-profit-outlook
 - 2026-10-22 06:17 CEST: https://www.adidas-group.com/en/media/press-releases/adidas-reports-record-results-and-increases-full-year-profit-outlook
 - 2026-10-22 06:13 CEST: https://www.adidas-group.com/en/media/press-releases/adidas-reports-record-results-and-increases-full-year-profit-outlook
 - 2026-10-22 06:13 CEST: https://www.adidas-group.com/en/investors/statutory-publications/ad-hoc-news/adidas-reports-record-results-and-increases-full-year-profit-outlook-2026-10-20

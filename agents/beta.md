@@ -27,12 +27,13 @@ Current files are undated: index first, then filename; no historical order is in
 ~~~markdown
 - [Beta first reflection](beta-first-reflection.md) — decision — Cash outcome does not validate a news edge; test release novelty and executable timing.
 - [Beta October 14 catalyst screen](beta-oct14-decision.md) — decision — Final CPI confirms preliminary; neutral score audited October 16, executable timing differs and no edge validated.
-- [Beta October 15 inflation and exchange test](beta-oct15-decision.md) — decision — October22 audit: UP score starts before executable entry; rejected EUR300 limit would not fill; cash profit zero, CPI edge unvalidated.
-- [Beta October 16 AIXTRON surprise probe](beta-oct16-aixtron.md) — decision — EUR32 buy expired unfilled; no stop/October23 sale needed; surprise forecast and trading outcome remain separate.
+- [Beta October 15 inflation and exchange test](beta-oct15-decision.md) — decision — October23 update: original EUR300 cap unfilled; completed market alternative +EUR52.16 TR, cash profit zero; CPI edge unvalidated.
+- [Beta October 16 AIXTRON surprise probe](beta-oct16-aixtron.md) — decision — October23 audit: UP forecast wrong (-6.617%); EUR32 order unfilled, P&L/costs zero; no sale needed, limit efficacy unproven.
 - [Beta October 19 DHL consensus check](beta-oct19-dhl.md) — decision — Guidance floor already near dated consensus; cash retained after costed long and sparse event audit; DBO October20 watch.
 - [Beta October20 frozen earnings baseline](beta-oct20-preearnings.md) — decision — DBO pre-results long fails robust control checks; cash retained; prospective Q3/FY consensus frozen for October21.
 - [Beta October21 earnings bridge](beta-oct21-earnings-bridge.md) — decision — DBO quarter beat but annual guide below frozen consensus; Adidas upgrade includes tariff refund; cash retained and SAP October19 consensus frozen.
-- [Beta October22 SAP quality](beta-oct22-sap-quality.md) — decision — Frozen consensus beaten, unquantified catch-up and currency-adjusted forward guide temper edge; costed long rejected, cash retained, prospective controls frozen.
+- [Beta October22 SAP quality](beta-oct22-sap-quality.md) — decision — October23 update: rejected SAP cap would fill; October29 exit pending, no actual position/profit; recurring-quality concern remains.
+- [Beta October23 gold and rates](beta-oct23-gold-rates.md) — decision — Nominal/real yields fall, but capped gold diagnostic fails controls; cash retained, prospective October23/30 and November6/13 arms frozen.
 ~~~
 
 </details>
@@ -90,7 +91,7 @@ Next experiment refined: keep the existing cpi-regime diagnostic exploratory; Oc
 title: Beta October 15 inflation and exchange test
 type: decision
 created: 2026-10-15
-updated: 2026-10-22
+updated: 2026-10-23
 ---
 
 Decision: retain EUR100,000 cash, no orders/cancellations. Forecast Deutsche Boerse DE0005810055 UP, subjective probability 0.53, five sessions from October 15 fill session through October 21. Direction can be mildly positive without a defensible net trade edge. Reviewed October 22: UP scored correct, but no trading profit; see the outcome audit below. Do not treat prior neutral scoring as predictive evidence. Cash faces equity opportunity cost; this decision follows a tested and rejected long, not stale-data reflex.
@@ -113,6 +114,8 @@ October 22 reflection (decision 8ede106eb1f04f7a8191ba7390759a43): reviewer +3.0
 Diagnostic opportunity-cost comparison only: substituting MARKET entry October15 and hypothetical October21 close liquidation gives16 shares, TR spent4892.2864, roundtrip costs11.8144, profit29.7856 (+0.6088% deployed); ING spent4908.414616, costs44.150296, loss2.550296 (-0.0520%). Full spread0.2%, exact fees, integer sizing, one position below20% cash cap, broker-consistent sale; no KO financing. This close liquidation is not the daily opening execution rule or originally proposed strategy. Original limit diagnostic remains11 fills mean+0.85368%, excluding best-0.04439%, only2 holdout fills. Frozen evidence supported caution; one positive forecast cannot validate either inflation causality or permanent cash.
 
 Alternative explanations: pre-existing DBO rally, expectations ahead of October20 earnings, new information during the holding period, and broad market movements. No causal attribution or confidence calibration follows from one endpoint. Next experiment: preserve a parallel ledger for scored closes, exact order fill status and executable net outcomes; append the October22 exit once available, leave unfilled limits at zero, and test prospective dated surprises against matched benchmark/placebo returns without retuning the old two-event holdout. Existing SAP baseline/earnings work belongs to a separate decide run. Reflection submits no trade. Detailed audit: `/workspace/research/2026-10-22/oct15-reflection-audit.json`.
+
+October23 completion: October22 opening exit is now available (reference309.4). Original EUR300cap would remain unfilled=>zero. Parallel MARKET October15entry/October22openexit yields TR52.1632EUR (1.06623%deployed) and ING19.77136EUR; WorldETFsame-windowmarketTR-9.22EUR. Exactfees/spread/integerbudgetincluded; this replaces no original prediction and is not originalstrategyP&L. Cash missed this marketopportunity; one result does not prove CPI transmission. Actualtrades/costs/profits0. Reproducible follow-up research/2026-10-23/track_prior.py and prior-counterfactuals-update.json.
 ~~~
 
 </details>
@@ -124,7 +127,7 @@ Alternative explanations: pre-existing DBO rally, expectations ahead of October2
 title: Beta October 16 AIXTRON surprise probe
 type: decision
 created: 2026-10-16
-updated: 2026-10-19
+updated: 2026-10-23
 ---
 
 Decision submitted: BUY DE000A0WMPJ6 through Trade Republic, allocation 3% of EUR100,000 cash (EUR3,000 fee-inclusive budget), LIMIT EUR32 ask, valid October 16 only. No cancellation; no existing holdings. At cap 93 shares cost EUR2,977; lower fills can change units. Eligibility true in supplied universe. Forecast UP, subjective confidence 0.55, five sessions counted October 16, 19, 20, 21, 22. Submission is not evidence of a fill: inspect own_orders/portfolio next run.
@@ -145,6 +148,12 @@ Next experiment: collect dated original consensus, all positive AND negative ear
 
 
 October19 outcome: own_orders confirms EUR32 one-session buy EXPIRED UNFILLED: October16 low32.05, lowask32.08205 >32. Portfolio still100000EURcash, no positions or protective orders. No stop or October23 exit needed. Do not renew automatically; expired order is neither trading P&L nor evidence of forecast success. October16 open34.10 versus priorclose30.98 (+10.07%) had already repriced the after-close disclosure; close32.89 does not make a missed limit a realized loss.
+
+October23 reflection (cutoff 04:15:42.476034 UTC): five-session UP forecast scored WRONG: October15 close30.98 to October22 close28.93 = -6.6172%. Actual book remains EUR100000 cash, zero trades/costs/P&L. Recomputed October16 openask34.1341 and strict-lowask32.08205 both exceed32, confirming expiry. Price-cap scenario arithmetic is correct: EUR2977 deployed/93 shares, flat-reference friction EUR7.946 TR versus EUR30.611 ING; subjective +1% gross produces EUR21.754 TR. Neither that expectation nor 55% confidence was calibrated. The original nine-event generic selloff holdout (+2.373% versus +2.381% delayed placebo, negative median) did not validate this earnings interpretation. A trace documenting research does not strengthen those statistics.
+
+Opening repricing (+10.071%) followed by weakness is compatible with a beat being absorbed before entry, unchanged annual guidance/product-mix doubts and broader tech risk. Current supplied bars show October22 AIX -9.763%, Infineon -6.037%, World -0.983%; co-movement is descriptive, not a causal attribution or a beta-adjusted sector control. Reopened original issuer release confirms the reported order beat, unchanged guidance and mix contribution; no inference of order cancellations or demand reversal follows from price alone. One wrong forecast does not disprove earnings drift, and an unfilled losing candidate does not validate a limit rule. The intended October23 opening exit is still unavailable at cutoff; no actual exit is required. Preserve this distinction when completing any market-entry comparison later.
+
+Research audit: `research/2026-10-23/aixtron_reflection.py` and `aixtron-reflection-audit.json`, pinned current history hash and cutoff. Next experiment: prospectively freeze consensus and recurring-quality annotations for all positive AND negative earnings events; compare market and original one-session-cap arms, count nonfills as cash, retain chronological outcomes and same-window benchmark/sector plus delayed placebo controls with exact fees/spreads/size caps/same-broker exits. Separate five-session forecast endpoint from sixth-session-open exit. Do not tune cap/holding period to this loser. Complete October23 counterfactual only after prices arrive. Issuer schedules complete Q3 report for October29; obtain dated expectations before publication, without presuming a new trade. Strategy remains small, capped ordinary-share probes on durable earnings novelty, no KO; this reflection places no orders and changes no past decision.
 ~~~
 
 </details>
@@ -225,7 +234,7 @@ Adidas October20 raise2500m from2300m bridges +100m recurring,+200m tariffrefund
 title: Beta October22 SAP surprise quality and currency bridge
 type: decision
 created: 2026-10-22
-updated: 2026-10-22
+updated: 2026-10-23
 ---
 
 Retain EUR100000cash, no orders/cancels. SAP DE0007164600 weak UP0.52,5sessionsOctober22–28. Verified Q3 cloud6668m vs frozen6594m (+1.122%), non-IFRS operatingprofit3030m vs2942m (+2.991%), FCF1718m vs1702m (+0.94%). Catch-up from financially distressed customers is unquantified; EUR74m is cloud surplus, NOT catch-up size, and cannot establish an adjusted miss. No frozen CCB expectation:26%@cc growth is not proof of surprise. Profit/FCF guides unchanged; cloud toward upper end. Indicative FY guidance bridge at September30 FX: cloud upper25884.7m vs frozen25822m (+0.243%), profit midpoint11791.6m vs11780m (+0.0985%); not management commitment/current-FX forecast. Strong backlog, conservative guidance and AI growth could defeat caution.
@@ -235,11 +244,56 @@ Rejected TR5% SAP LIMIT210 validOctober22 only,23shares cost4831EUR, plannedOcto
 New reusable skill linked in AGENTS: `skills/earnings-bridge/SKILL.md`; script reproduces `research/2026-10-22/sap-comparison.json` from `sap-input.json`. Full reasoning/sources in README. `sap-web-sources.json` has primary web extracts; direct PDF403 renamed blockedHTML, not source report. New prospective record freezes quality labels, Oct22/29open capped and market counterfactuals, benchmark and Nov5/12placebo. Outcomes pending, report zero for unfilled limit separately from conditional fills. No new backtest, no DBO-to-SAP efficacy inference. Continue dated-consensus collection and untouched chronological outcomes.
 
 Additional verified thyssenkrupp catalyst: tk accelis listingOct28/effectiveOct27,1share/20parent,49%distribution/51%retained; August7EGM approval already public. Screen rejected: date alone not demonstrated value creation. Future analysis across event must include distributed value; raw parent-price return can mislead. Primary release cached in same research directory.
+
+October23 entry-only tracking: rejectedSAP210cap would fillOctober22openingask207.95775,24shares4991.986EURTR; ING23shares4799.885820625. No actual submittedbuy,positionorP&L. PlannedOctober29openexit/November5and12placebo remain pending. Do not infer finalprofit from October22close or retrofit stop into primary time-exit arm. Frozen original prospective record preserved; follow-up in research/2026-10-23/prior-counterfactuals-update.json.
+~~~
+
+</details>
+
+<details><summary>beta-oct23-gold-rates.md</summary>
+
+~~~markdown
+---
+title: Beta October23 gold and rates diagnostic
+type: decision
+created: 2026-10-23
+updated: 2026-10-23
+---
+
+Retain EUR100,000cash, no orders/cancels. Gold ETC IE00B4ND3602 weakUP0.52 over five sessionsOctober23–29; hypothetical exitOctober30open is a different endpoint. TreasuryOct22nominal10Y4.96% vs5.13%(-17bp), real10Y2.64% vs2.76%(-12bp) verified primary. GoldEUR70.20vs71.51(-1.8319%). Lower opportunitycost supports rebound inference, not calibrated edge; nominal/real, asynchronous US/Xetra timing, liquidation/momentum and unhedgedUSD/EUR matter. Sources and full reasoning in research/2026-10-23/gold-source-audit.json and README.md.
+
+New exploratory diagnostic: nominalyielddrop>=10bp; interactiongoldloss>=1%; nextopenentry, sixthsessionopenexit, exactfees/spread/integerbudget, same-windowWorldETF, +10sessiongoldplacebos, Jan2024split, nonfills0. Broad32earlier/15later:TRmarketmeans+0.0283%/-0.4423%budget, cappedlater-0.5538%vsdelayed+0.8131%. Interaction0earlier/6later means not trained/validated; market+1.1109%,cap+0.09558%(4fills),conditionaldeployed+0.14691%,capplacebo+0.71519%; excludingbestcap-0.08132%. Revisedmacrohistory and unofficialbars, thresholds selected after today'sstate: chronologicalpartition is NOT untouchedOOS. Real-yield corroboration was not a historical filter. No rule/entry retuning after results.
+
+RejectedTR5%goldLIMIT70.34validOctober23only,71units/outlay4995.14, intendedOctober30openexit. Flatcost11.9783EUR TR; ING70units4941.0095outlay/44.2322flatcost. +0.5%ref->12.9425TR;-6%->-311.028. Naiveunconditional6eventprojection4.7788EUR vsplacebo35.7593EUR is not reliableexpectededge; conditionalprojection~7.34. NoKO; ETC TER embedded in bars. Reconsider <=5%probe if sustainedverifiedrealyieldeasing plus independentexecutableevidence supports >0.5% remainingreference mean after gaps/costs, or freshdurableearningssurprise. Cash maymiss gold/equitygains. No automaticthresholdtrade.
+
+Next: preserve gold-prospective-record.json:October23market/capentry,October30exit,WorldETF,+10sessionplaceboNovember6/13, all outcomespending. Collect both nominal/realrates,FX and publicationtimestampvintages prospectively; no backfitting to sixevents. Reusable rates-gold skill linkedAGENTS; script frozen today'scutoff, adaptCOPYfornewruns. Continue earnings-bridge consensus freezing.
+
+Priortracking: prior-counterfactuals-update.json/track_prior.py completes DBOOct15/22openmarket alternative+52.1632EURTR,+19.77136ING; WorldETFmarket-9.22EURTR. Original300capunfilled=>0,actualprofits/costs0. Missedmarketgain challenges tightcaps/permanentcash but doesn't proveCPI mechanism. SAPOct22rejected210capwouldfillopeningask207.95775,24shares4991.986TR; October29exit/November5/12placebopending,notactualposition/profit. AIXTRONbuyexpired; noOct23sale; originalOct23openstillunavailableatcutoff. ExistingOctober15/22memosupdated without rewriting frozen predictions.
 ~~~
 
 </details>
 
 ## Decisions (latest 60, newest first)
+
+### Recorded 2026-10-23 06:31 CEST · UP · confidence 0.52 · horizon 5 session(s)
+
+Reference: iShares Physical Gold ETC · eligible fill session 2026-10-23
+
+**Why (thesis)**
+
+> Retain EUR100,000 cash after testing a gold rebound trade. October 22 US Treasury yields fell from 5.13% to 4.96% nominally and from 2.76% to 2.64% in real terms. Lower opportunity cost supports my weak positive gold forecast, but does not establish remaining upside after the opening repricing. [Treasury nominal rates](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026), [real rates](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_real_yield_curve&field_tdr_date_value=2026).
+> 
+> The supplied gold ETC closed at EUR70.20, down 1.83%. Liquidation, momentum and currency movements could overwhelm the rate benefit. This USD-based physical-gold ETC retains currency exposure when traded in euros. [Issuer KID](https://www.ishares.com/uk/professional/en/literature/kiid/uk_priips-ishares-physical-gold-etc-gb-ie00b4nd3602-en.pdf).
+> 
+> The exploratory diagnostic used next-session entry, five complete sessions, integer sizing and exact broker costs. Following nominal yield declines of at least 10bp, 15 later-period market entries averaged −0.442% net. Six historical dates also had gold declines exceeding 1%: market entries averaged +1.111%, the strongest counterargument to cash. However, the capped-entry rule averaged only +0.096% of budget versus +0.715% for delayed controls; excluding its best observation made the mean negative. There were no matching pre-2024 observations. Retrospectively selected conditions, revised macro history and unofficial bars prevent treating these chronological partitions as validated out-of-sample evidence.
+> 
+> Concrete rejected scenario: BUY IE00B4ND3602 through Trade Republic, 5% cash budget, LIMIT EUR70.34 valid October 23 only; intended same-broker exit October 30 open. At the cap, 71 units cost EUR4,995.14. Including the 0.2% full spread and both EUR1 fees, flat-reference friction is EUR11.98. A +0.5% reference return earns EUR12.94; −6% loses EUR311.03. ING permits 70 units within budget and incurs EUR44.23 flat-reference friction. The comparable six-event capped mean projects merely EUR4.78 per EUR5,000 budget, an unreliable expected-edge estimate below its placebo.
+> 
+> Cash can miss a rebound. It already missed a Deutsche Börse market-entry alternative worth EUR52.16 after costs; the original EUR300 cap would not have filled. Reconsider a small position when independently verified forward evidence supports sufficient remaining upside after gaps and costs. Research and prospective controls are frozen under research/2026-10-23/.
+
+**Strategy note**
+
+> Seek fresh, durable earnings or macro transmission with positive executable returns after exact costs; use small Trade Republic positions and no knockouts. Gold's rate mechanism is plausible, but capped-entry evidence fails controls. Track October23/30 gold market and capped counterfactuals, benchmark and November6/13 placebos without retuning. Collect nominal/real-yield and FX publication vintages prospectively. Continue frozen-consensus earnings comparisons. SAP's rejected October22 cap would fill; October29 exit remains pending. AIXTRON expired unfilled, so no sale is required. Memory and rates-gold skill updated.
 
 ### Recorded 2026-10-22 06:24 CEST · UP · confidence 0.52 · horizon 5 session(s)
 
@@ -343,6 +397,18 @@ Pending orders first; executions newest session first. Intraday execution times 
 | --- | --- | --- | --- | ---: | --- | --- | ---: | --- |
 | BUY | LIMIT limit ≤ 32.00 | trade_republic | Aixtron | 3.0 % | expired | – | – | expired after 1 session(s): not reached on 2026-10-16 |
 
+**Outcome:** 2026-10-15 → 2026-10-22, -6.62 % (DOWN), forecast wrong
+
+Outcome checked 2026-10-23 06:13 CEST.
+
+**Reflection**
+
+> assessment: The AIXTRON UP forecast was wrong: EUR30.98 to EUR28.93, −6.6172%. The EUR32 Trade Republic limit expired unfilled: October 16’s lowest modeled ask was EUR32.08205. Actual trading P&L and costs are zero; cash remains EUR100,000. Original cost arithmetic was correct, but the subjective +1% expected return lacked calibration. The nine-event selloff holdout performed no better than delayed placebos and did not validate an earnings-surprise edge.
+> 
+> alternative_explanations: The 10.07% opening gap could have absorbed the reported surprise before entry. Unchanged annual guidance, favorable product mix and broader technology weakness could explain subsequent declines. [AIXTRON’s release](https://aixtron.com/de/investoren/AIXTRON%20Q3%202026%20Auftragseingang%20und%20operative%20Profitabilit%C3%A4t%20deutlich%20%C3%BCber%20Markterwartungen_n5412642) confirms the guidance and mix qualifications. Price weakness alone proves neither deteriorating demand nor failure of earnings drift. An unfilled losing candidate also does not validate the limit rule.
+> 
+> next_test: Freeze dated expectations and earnings-quality annotations prospectively for positive and negative surprises. Compare market and capped entries against benchmarks, sector controls and delayed placebos, including exact broker costs and nonfills as cash. Preserve the original October 23 opening exit; its price is unavailable at cutoff, and no actual sale is required. Updated the AIXTRON memo, memory index and earnings-bridge procedure; saved research/2026-10-23/aixtron-reflection-audit.json. This reflection submits no orders.
+
 ### Recorded 2026-10-15 06:22 CEST · UP · confidence 0.53 · horizon 5 session(s)
 
 Reference: Deutsche Boerse · eligible fill session 2026-10-15
@@ -428,6 +494,8 @@ Outcome checked 2026-10-14 06:03 CEST.
 
 | Started | Phase | Status | Commands | Web searches | Input tokens | Output tokens | Prompt |
 | --- | --- | --- | ---: | ---: | ---: | ---: | --- |
+| 2026-10-23 06:23 CEST | decide | success | 15 | 7 | 2,382,611 | 15,606 | 2026-10-21.2 |
+| 2026-10-23 06:15 CEST | reflect | success | 5 | 1 | 824,440 | 4,029 | 2026-10-21.2 |
 | 2026-10-22 06:20 CEST | decide | success | 11 | 9 | 2,382,425 | 9,353 | 2026-10-21.2 |
 | 2026-10-22 06:16 CEST | reflect | success | 6 | 0 | 675,444 | 3,024 | 2026-10-21.2 |
 | 2026-10-21 06:16 CEST | decide | success | 18 | 12 | 2,968,646 | 9,878 | 2026-10-14.4 |
@@ -442,6 +510,14 @@ Outcome checked 2026-10-14 06:03 CEST.
 
 ### Web research (by run start, newest first)
 
+- 2026-10-23 06:23 CEST: {'type': 'other'}
+- 2026-10-23 06:23 CEST: '10/22/2026'
+- 2026-10-23 06:23 CEST: https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026
+- 2026-10-23 06:23 CEST: site.gold.org "opportunity cost" "yields" gold ...
+- 2026-10-23 06:23 CEST: site.gold.org "2026" "October" "yields" gold ...
+- 2026-10-23 06:23 CEST: site.treasury.gov resource-center-data-chart-center interest-rates 2026 October 22 2026 4.96 ...
+- 2026-10-23 06:23 CEST: October 22 2026 Deutsche Telekom buyback satellite T Mobile results ...
+- 2026-10-23 06:15 CEST: https://aixtron.com/de/investoren/AIXTRON%20Q3%202026%20Auftragseingang%20und%20operative%20Profitabilit%C3%A4t%20deutlich%20%C3%BCber%20Markterwartungen_n5412642
 - 2026-10-22 06:20 CEST: https://www.sap.com/investors/en/financial-documents-and-events/recent-results.html
 - 2026-10-22 06:20 CEST: {'type': 'other'}
 - 2026-10-22 06:20 CEST: https://www.sap.com/docs/download/investors/2026/sap-2026-q3-statement.pdf?source=investor-relations
@@ -474,11 +550,3 @@ Outcome checked 2026-10-14 06:03 CEST.
 - 2026-10-19 06:12 CEST: site.group.dhl.com "2026" "July 7" expectations EBIT 6.5 ...
 - 2026-10-19 06:12 CEST: site.group.dhl.com "2026" "16" "October" guidance EBIT ...
 - 2026-10-16 06:15 CEST: 'Prognose für 2026'
-- 2026-10-16 06:15 CEST: https://www.aixtron.com/de/investoren/news/finanznachrichten/Starkes%20Momentum%20in%20der%20Optoelektronik%20h%C3%A4lt%20an_n14146
-- 2026-10-16 06:15 CEST: site.aixtron.com "2024" "erhöht" "Prognose" ...
-- 2026-10-16 06:15 CEST: https://www.aixtron.com/de/investoren/news/ad-hoc-news/AIXTRON%20Q3%202026%20Auftragseingang%20und%20operative%20Profitabilit%C3%A4t%20deutlich%20%C3%BCber%20Markterwartungen_n5412641
-- 2026-10-16 06:15 CEST: site.aixtron.com 15.10.2026 Auftragseingang Profitabilität Q3 2026 ...
-- 2026-10-15 06:16 CEST: '20 October'
-- 2026-10-15 06:16 CEST: https://www.eurex.com/ex-en/find/news-center/news/September-2026-figures-at-Eurex-5615284
-- 2026-10-15 06:16 CEST: Cleveland Fed inflation nowcasting historical data download daily inflation nowcast csv ...
-- 2026-10-15 06:16 CEST: "Deutsche Börse" "20 October 2026" results ...
